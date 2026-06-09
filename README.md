@@ -112,5 +112,5 @@ The site is fully static and can be deployed to any web server or CDN:
 
 ## ✦ License
 
-© 2025 **Air Menu** — All Rights Reserved.
+© 2026 **Air Menu** — All Rights Reserved.
 Built with care in Saudi Arabia 🇸🇦
