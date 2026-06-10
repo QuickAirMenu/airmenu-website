@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net https://code.iconify.design https://cdnjs.cloudflare.com; style-src 'self' https://cdn.jsdelivr.net https://fonts.googleapis.com https://cdnjs.cloudflare.com 'unsafe-inline'; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net; frame-src 'self'; form-action 'self'; connect-src 'self';">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net https://code.iconify.design https://cdnjs.cloudflare.com; style-src 'self' https://cdn.jsdelivr.net https://fonts.googleapis.com https://cdnjs.cloudflare.com 'unsafe-inline'; img-src 'self' data:; media-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net; frame-src 'self'; form-action 'self'; connect-src 'self';">
   <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.svg" />
   <link rel="stylesheet" href="../assets/libs/owl.carousel/dist/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="../assets/libs/aos-master/dist/aos.css">
@@ -203,87 +203,58 @@
   <div class="page-wrapper overflow-hidden">
 
     <!--  Hero Section -->
-    <div class="carousel-inner">
-      
-          <!-- Slide 1 -->
-         
-          <div class="carousel-item active">
-            <section class="banner-section position-relative d-flex align-items-end min-vh-100">
-              <video id="hero-video" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" autoplay muted playsinline preload="auto"></video>
-              <div class="container">
-                <div class="d-flex flex-column gap-4 pb-8 position-relative z-1">
-                  <div class="row align-items-center">
-                    <div class="col-xl-6 d-flex align-items-center gap-3" 
-                         data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-                      <p id="rotating-text" class="mb-0">
-                        <!-- النص المتغير سيظهر هنا -->
-                      </p>
-                    </div>
-                  </div>
-                  <div class="d-flex align-items-end gap-3" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                    <h2 class="mb-0 fs-16 text-white lh-1">AirMenu</h2>
-                    <a href="contact.html" class="p-1 ps-7 bg-primary rounded-pill">
-                      <span class="bg-white round-52 rounded-circle d-flex align-items-center justify-content-center text-primary ">
-                        <iconify-icon icon="lucide:arrow-up-right" class="fs-8"></iconify-icon>
-                      </span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <script>
-                const heroContent = [
-                  {
-                    video: '../assets/images/backgrounds/01_Brand-Identity-Visual-Design.mp4',
-                    text: `Your Brand Deserves a <span class="text-warning">Powerful Visual Identity.</span>`
-                  },
-                  {
-                    video: '../assets/images/backgrounds/02_digital-idenyity.mp4',
-                    text: `Your Digital Identity Defines <span class="text-warning">Your Business Future.</span>`
-                  },
-                  {
-                    video: '../assets/images/backgrounds/02-2_digital-idenyity.mp4',
-                    text: `Secure Your Digital Presence with <span class="text-warning">A Trusted Identity.</span>`
-                  },
-                  {
-                    video: '../assets/images/backgrounds/02-3_digital-idenyity.mp4',
-                    text: `Build Your Global Brand with <span class="text-warning">A Powerful Digital Footprint.</span>`
-                  },
-                  {
-                    video: '../assets/images/backgrounds/04_iMenu-Digital-Menu.mp4',
-                    text: `Transform Your Restaurant with <span class="text-warning">A Smart Digital Menu.</span>`
-                  },
-                  {
-                    video: '../assets/images/backgrounds/04-2_iMenu-Digital-Menu.mp4',
-                    text: `Elevate Every Dining Experience with <span class="text-warning">An Interactive Digital Menu.</span>`
-                  },
-                  {
-                    video: '../assets/images/backgrounds/05_digital-icard.mp4',
-                    text: `Your Business Card, Reinvented <span class="text-warning">Digitally.</span>`
-                  }
-                ];
-                let i = 0;
-                const vid = document.getElementById('hero-video');
-                const textEl = document.getElementById('rotating-text');
-                function nextVideo() {
-                  const item = heroContent[i];
-                  vid.src = item.video;
-                  textEl.innerHTML = item.text;
-                  vid.play().catch(function() {
-                    vid.muted = true;
-                    vid.play();
-                  });
-                  i = (i + 1) % heroContent.length;
-                }
-                vid.addEventListener('ended', nextVideo);
-                nextVideo();
-              </script>
-            </section>
+    <section class="banner-section position-relative d-flex align-items-end min-vh-100 overflow-hidden" style="background:#143257">
+      <video id="hero-video" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" muted playsinline preload="auto"></video>
+      <div class="container">
+        <div class="d-flex flex-column gap-4 pb-8 position-relative z-1">
+          <div class="row align-items-center">
+            <div class="col-xl-6 d-flex align-items-center gap-3" 
+                 data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+              <p id="rotating-text" class="mb-0">
+              </p>
+            </div>
           </div>
-          
-          
-          
-    
+          <div class="d-flex align-items-end gap-3" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+            <h2 class="mb-0 fs-16 text-white lh-1">AirMenu</h2>
+            <a href="contact.html" class="p-1 ps-7 bg-primary rounded-pill">
+              <span class="bg-white round-52 rounded-circle d-flex align-items-center justify-content-center text-primary ">
+                <iconify-icon icon="lucide:arrow-up-right" class="fs-8"></iconify-icon>
+              </span>
+            </a>
+          </div>
         </div>
+      </div>
+      <script>
+        const vid = document.getElementById('hero-video');
+        const textEl = document.getElementById('rotating-text');
+        const heroContent = [
+          { video: '../assets/images/backgrounds/01_Brand-Identity-Visual-Design.mp4', text: 'Your Brand Deserves a <span class="text-warning">Powerful Visual Identity.</span>' },
+          { video: '../assets/images/backgrounds/02_digital-idenyity.mp4', text: 'Your Digital Identity Defines <span class="text-warning">Your Business Future.</span>' },
+          { video: '../assets/images/backgrounds/02-2_digital-idenyity.mp4', text: 'Secure Your Digital Presence with <span class="text-warning">A Trusted Identity.</span>' },
+          { video: '../assets/images/backgrounds/02-3_digital-idenyity.mp4', text: 'Build Your Global Brand with <span class="text-warning">A Powerful Digital Footprint.</span>' },
+          { video: '../assets/images/backgrounds/04_iMenu-Digital-Menu.mp4', text: 'Transform Your Restaurant with <span class="text-warning">A Smart Digital Menu.</span>' },
+          { video: '../assets/images/backgrounds/04-2_iMenu-Digital-Menu.mp4', text: 'Elevate Every Dining Experience with <span class="text-warning">An Interactive Digital Menu.</span>' },
+          { video: '../assets/images/backgrounds/05_digital-icard.mp4', text: 'Your Business Card, Reinvented <span class="text-warning">Digitally.</span>' }
+        ];
+        let i = 0;
+        function playCurrent() {
+          vid.play().catch(function() {
+            vid.muted = true;
+            setTimeout(function() { vid.play(); }, 500);
+          });
+        }
+        function nextVideo() {
+          const item = heroContent[i];
+          vid.src = item.video;
+          vid.load();
+          textEl.innerHTML = item.text;
+          i = (i + 1) % heroContent.length;
+        }
+        vid.addEventListener('canplay', playCurrent);
+        vid.addEventListener('ended', nextVideo);
+        nextVideo();
+      </script>
+    </section>
       
     <!--  Stats & Facts Section -->
     <section class="stats-facts py-5 py-lg-11 py-xl-12 position-relative overflow-hidden bg-light-gray">
