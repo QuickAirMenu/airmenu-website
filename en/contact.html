@@ -3,8 +3,55 @@
 
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net https://code.iconify.design https://cdnjs.cloudflare.com; style-src 'self' https://cdn.jsdelivr.net https://fonts.googleapis.com https://cdnjs.cloudflare.com 'unsafe-inline'; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net; frame-src 'self'; form-action 'self'; connect-src 'self';">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Air Menu | Contact Us</title>
+  
+  <!-- Page Title -->
+  <title>Contact Us | Air Menu</title>
+  
+  <!-- Meta Description -->
+  <meta name="description" content="Get in touch with Air Menu. Contact us via phone, WhatsApp, or email for digital solutions.">
+  
+  <!-- Meta Keywords -->
+  <meta name="keywords" content="Air Menu, digital solutions, Saudi Arabia">
+  
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Contact Us | Air Menu">
+  <meta property="og:description" content="Get in touch with Air Menu. Contact us via phone, WhatsApp, or email for digital solutions.">
+  <meta property="og:image" content="https://AirMenu.net/logo.png">
+  <meta property="og:url" content="https://AirMenu.net">
+  <meta property="og:type" content="website">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact Us | Air Menu">
+  <meta name="twitter:description" content="Get in touch with Air Menu. Contact us via phone, WhatsApp, or email for digital solutions.">
+  <meta name="twitter:image" content="https://AirMenu.net/logo.png">
+  
+  <!-- Schema.org Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Air Menu",
+    "url": "https://AirMenu.net",
+    "logo": "https://AirMenu.net/logo.png",
+    "description": "Air Menu is your strategic digital partner offering web design, corporate email, branding, digital menu and iCard solutions with ongoing technical support.",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+966500518950",
+      "contactType": "customer service",
+      "areaServed": "SA"
+    },
+    "sameAs": [
+      "https://www.facebook.com/GoAirMenu",
+      "https://www.instagram.com/GoAirMenu",
+      "https://www.linkedin.com/in/GoAirMenu",
+      "https://x.com/GoAirMenu",
+      "https://www.youtube.com/@GoAirMenu"
+    ]
+  }
+  </script>
   <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.svg" />
   <link rel="stylesheet" href="../assets/libs/owl.carousel/dist/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="../assets/libs/aos-master/dist/aos.css">
@@ -18,81 +65,102 @@
     <div class="container">
       <div class="header-wrapper d-flex align-items-center justify-content-between">
         <div class="logo">
-          <a href="index.html" class="logo-white">
-            <img src="../assets/images/logos/logo-white.svg" alt="logo" class="img-fluid">
-          </a>
-          <a href="index.html" class="logo-dark">
-            <img src="../assets/images/logos/logo-dark.svg" alt="logo" class="img-fluid">
+          <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+            <img class="logo-white" src="../assets/images/logos/logo-white.svg" alt="air-menu-logo" style="width: 150px">
+            <img class="logo-dark" src="../assets/images/logos/logo-dark.svg" alt="air-menu-logo" style="width: 150px">
           </a>
         </div>
-        <div class="d-flex align-items-center gap-4">
 
-          <div class="btn-group">
+        <!-- Desktop Nav -->
+        <ul class="nav-desktop list-unstyled mb-0 d-none d-xl-flex align-items-center gap-1">
+          <li><a href="index.html" class="nav-desktop-link">Home</a></li>
+          <li><a href="about-us.html" class="nav-desktop-link">About</a></li>
+          <li class="dropdown position-relative">
+            <a href="#" class="nav-desktop-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Services</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="index.html#services">Brand Identity</a></li>
+              <li><a class="dropdown-item" href="index.html#services">Digital Solutions</a></li>
+              <li><a class="dropdown-item" href="index.html#services">All Services</a></li>
+            </ul>
+          </li>
+          <li class="dropdown position-relative">
+            <a href="#" class="nav-desktop-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Digital Products</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="https://imenu.airmenu.net/" target="_blank" rel="noopener noreferrer">i-Menu</a></li>
+              <li><a class="dropdown-item" href="https://icard.airmenu.net/" target="_blank" rel="noopener noreferrer">i-Card</a></li>
+            </ul>
+          </li>
+          <li><a href="blog.html" class="nav-desktop-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-desktop-link active">Contact</a></li>
+        </ul>
+
+        <!-- Mobile Hamburger (hidden on desktop) -->
+        <div class="d-flex align-items-center gap-4">
+          <div class="btn-group d-xl-none">
             <button
-              class="btn btn-secondary toggle-menu round-45 p-2 d-flex align-items-center justify-content-center bg-white rounded-circle"
-              type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
-              <iconify-icon icon="solar:hamburger-menu-line-duotone" class="menu-icon fs-8 text-dark"></iconify-icon>
+              class="btn btn-secondary toggle-menu round-45 p-2 d-flex align-items-center justify-content-center bg-primary rounded-circle 
+               text-dark"
+              type="button"
+              data-bs-toggle="dropdown"
+              data-bs-auto-close="true"
+              aria-expanded="false"
+            >
+              <iconify-icon icon="solar:hamburger-menu-line-duotone" class="menu-icon fs-8 text-white"></iconify-icon>
             </button>
-            <ul class="dropdown-menu dropdown-menu-end p-4">
+            <div class="dropdown-menu dropdown-menu-end p-4">
               <div class="d-flex flex-column gap-6">
                 <div class="hstack justify-content-between border-bottom pb-6">
-                  <p class="mb-0 fs-5 text-dark">Menu</p>
+                  <p class="mb-0 fs-5">Menu</p>
                   <button type="button" class="btn-close opacity-75" aria-label="Close"></button>
                 </div>
                 <div class="d-flex flex-column gap-3">
                   <ul class="header-menu list-unstyled mb-0 d-flex flex-column gap-2">
                     <li class="header-item">
-                      <a href="index.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
-                          src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
-                          class="img-fluid animate-spin">Home</a>
+                      <a href="index.html" class="header-link hstack gap-2 fs-7 fw-bold">
+                        <img src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin">Home
+                      </a>
                     </li>
                     <li class="header-item">
-                      <a href="about-us.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
-                          src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
-                          class="img-fluid animate-spin">About</a>
+                      <a href="about-us.html" class="header-link hstack gap-2 fs-7 fw-bold">
+                        <img src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin">About
+                      </a>
+                    </li>
+                    <li class="header-item dropdown">
+                      <a href="#" class="header-link dropdown-toggle hstack gap-2 fs-7 fw-bold" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin">Services
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="index.html#services">Brand Identity</a></li>
+                        <li><a class="dropdown-item" href="index.html#services">Digital Solutions</a></li>
+                        <li><a class="dropdown-item" href="index.html#services">All Services</a></li>
+                      </ul>
+                    </li>
+                    <li class="header-item dropdown">
+                      <a href="#" class="header-link dropdown-toggle hstack gap-2 fs-7 fw-bold" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin">Digital Products
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="https://imenu.airmenu.net/" target="_blank" rel="noopener noreferrer">i-Menu</a></li>
+                        <li><a class="dropdown-item" href="https://icard.airmenu.net/" target="_blank" rel="noopener noreferrer">i-Card</a></li>
+                      </ul>
                     </li>
                     <li class="header-item">
-                      <a href="projects.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
-                          src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
-                          class="img-fluid animate-spin">Projects</a>
+                      <a href="blog.html" class="header-link hstack gap-2 fs-7 fw-bold">
+                        <img src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin">Blog
+                      </a>
                     </li>
                     <li class="header-item">
-                      <a href="blog.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
-                          src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
-                          class="img-fluid animate-spin">Blog</a>
-                    </li>
-                    <li class="header-item">
-                      <a href="index.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
-                          src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
-                          class="img-fluid animate-spin">Services</a>
-                    </li>
-                    <li class="header-item">
-                      <a href="contact.html" aria-current="true"
-                        class="header-link active hstack gap-2 fs-7 fw-bold text-dark"><img
-                          src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
-                          class="img-fluid animate-spin">Contact</a>
-                    </li>
-                    <li class="header-item">
-                      <a href="index.html" class="header-link hstack gap-2 fs-7 fw-bold text-dark"><img
-                          src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
-                          class="img-fluid animate-spin">Docs</a>
+                      <a href="contact.html" aria-current="true" class="header-link active hstack gap-2 fs-7 fw-bold">
+                        <img src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin">Contact
+                      </a>
                     </li>
                   </ul>
                   <div class="hstack gap-3">
-                    <a href="sign-in.html"
-                      class="btn btn-outline-light fs-6 bg-white px-3 py-2 text-dark w-50 hstack justify-content-center">Sign
-                      In</a>
-                    <a href="sign-up.html"
-                      class="btn btn-dark text-white fs-6 bg-dark px-3 py-2 w-50 hstack justify-content-center">Sign
-                      Up</a>
+                    <a href="index.html" class="btn btn-dark text-white fs-6 px-3 py-2 w-50 hstack justify-content-center text-bg-dark">????</a>
                   </div>
                 </div>
-                <div>
-                  <a class="text-dark" href="tel:+966500518950">+966 500 518 950</a>
-                  <a class="fs-8 text-dark fw-bold" href="mailto:info@AirMenu.net">info@AirMenu.net</a>
-                </div>
               </div>
-            </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -113,7 +181,7 @@
                 data-aos-duration="1000">
                 <img src="../assets/images/svgs/primary-leaf.svg" alt="" class="img-fluid animate-spin">
                 <p class="mb-0 text-white fs-5 text-opacity-70">Ready to <span class="text-primary">start
-                    something</span> great? Reach out weâ€™d love to hear from you.</p>
+                    something</span> great? Reach out we’d love to hear from you.</p>
               </div>
             </div>
           </div>
@@ -156,8 +224,8 @@
           </div>
           <div class="row justify-content-between gap-7 gap-xl-0">
             <div class="col-xl-3">
-              <p class="mb-0 fs-5" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">Letâ€™s collaborate
-                and create something amazing! Tell me about your projectâ€”Iâ€™m all
+              <p class="mb-0 fs-5" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">Let’s collaborate
+                and create something amazing! Tell me about your project—I’m all
                 ears.</p>
             </div>
             <div class="col-xl-8">
@@ -188,48 +256,127 @@
 
   </div>
 
-  <footer class="footer bg-dark py-5 py-lg-11 py-xl-12">
+    <footer class="footer py-5 bg-dark py-lg-11 py-xl-12">
     <div class="container">
-      <div class="row">
-        <div class="col-xl-5 mb-8 mb-xl-0">
-          <div class="d-flex flex-column gap-8 pe-xl-5">
-            <h2 class="mb-0 text-white">Build something together?</h2>
-            <div class="d-flex flex-column gap-2">
-              <a       href="https://www.airmenu.net/" target="_blank" class="link-hover hstack gap-3 text-white fs-5">
-                <iconify-icon icon="lucide:arrow-up-right" class="fs-7 text-primary"></iconify-icon>
-                info@AirMenu.net
-              </a>
-              <a href="https://maps.app.goo.gl/hpDp81fqzGt5y4bC8" target="_blank"
-                class="link-hover hstack gap-3 text-white fs-5">
-                <iconify-icon icon="lucide:map-pin" class="fs-7 text-primary"></iconify-icon>
-                Saudi Arabia, Riyadh
-              </a>
+      <div class="row gy-6">
+        
+        <!-- About & Contact Info -->
+        <div class="col-xl-6 mb-8 mb-xl-5">
+          <div class="d-flex flex-column gap-4 pe-xl-4">
+            <div class="footer-info">
+              <img
+                src="../assets/images/logos/logo-white.svg"
+                style="width: 190px; margin-bottom: 30px;"
+                alt="air-menu-logo"
+              />
+              <p class="mb-3 text-white footer-paragraph" >
+                Take your business to new heights with Air Menu. We deliver cutting-edge digital
+                solutions that empower your brand and drive success.
+              </p>
             </div>
           </div>
         </div>
-        <div class="col-md-4 col-xl-2 mb-8 mb-xl-0">
-          <ul class="footer-menu list-unstyled mb-0 d-flex flex-column gap-2">
-            <li><a class="link-hover fs-5 text-white" href="index.html">Home</a></li>
-            <li><a class="link-hover fs-5 text-white" href="about-us.html">About</a></li>
-            <li><a class="link-hover fs-5 text-white" id="services" href="#services">Services</a></li>
-            <li><a class="link-hover fs-5 text-white" href="projects.html">Work</a></li>
-            <li><a class="link-hover fs-5 text-white" href="terms-and-conditions.html">Terms</a></li>
-            <li><a class="link-hover fs-5 text-white" href="privacy-policy.html">Privacy Policy</a></li>
-            <li><a class="link-hover fs-5 text-white" href="404.html">Error 404</a></li>
+
+        <!-- Service & Product Links -->
+        <div class="col-md-4 col-xl-3 mb-8 mb-xl-0 order-2">
+          <h5 class="text-white mb-4">Service Links</h5>
+          <ul class="list-unstyled text-white fs-5 mb-5">
+            <li class="d-flex align-items-center gap-2 mb-3">
+              <i class="bi bi-person-badge text-primary"></i>
+              <a href="index.html#services" class="text-white text-decoration-none link-hover">Digital Identity Design</a>
+            </li>
+            <li class="d-flex align-items-center gap-2 mb-3">
+              <i class="bi bi-easel2-fill text-primary"></i>
+              <a href="index.html#services" class="text-white text-decoration-none link-hover">Visual Branding Design</a>
+            </li>
+            <li class="d-flex align-items-center gap-2 mb-3">
+              <i class="bi bi-file-earmark-text-fill text-primary"></i>
+              <a href="index.html#services" class="text-white text-decoration-none link-hover">Company Profiles</a>
+            </li>
+          </ul>
+
+          <h5 class="text-white mb-4">Product Links</h5>
+          <ul class="list-unstyled text-white fs-5">
+            <li class="d-flex align-items-center gap-2 mb-3">
+              <i class="bi bi-ui-checks-grid text-primary"></i>
+              <a href="https://imenu.airmenu.net/" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none link-hover">Digital Menu System</a>
+            </li>
+            <li class="d-flex align-items-center gap-2">
+              <i class="bi bi-credit-card-2-front-fill text-primary"></i>
+              <a href="https://icard.airmenu.net/" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none link-hover">iCard System</a>
+            </li>
           </ul>
         </div>
-        <div class="col-md-4 col-xl-2 mb-8 mb-xl-0">
-          <ul class="footer-menu list-unstyled mb-0 d-flex flex-column gap-2">
-            <li><a class="link-hover fs-5 text-white" href="https://www.facebook.com/">Facebook</a></li>
-            <li><a class="link-hover fs-5 text-white" href="https://www.instagram.com/">Instagram</a></li>
-            <li><a class="link-hover fs-5 text-white" href="https://x.com/">Twitter</a></li>
+
+        <!-- Get in Touch -->
+        <div class="col-md-4 col-xl-3 mb-8 mb-xl-0 order-4">
+          <h5 class="text-white mb-4">Get in Touch</h5>
+          <ul class="list-unstyled text-white fs-5">
+            <li class="d-flex align-items-center gap-2 mb-3">
+              <i class="bi bi-telephone-fill text-primary"></i>
+              <a href="tel:+966500518950" class="text-white text-decoration-none link-hover">+966 500 518 950</a>
+            </li>
+            <li class="d-flex align-items-center gap-2 mb-3">
+              <i class="bi bi-whatsapp text-primary"></i>
+              <a href="https://wa.me/966500518950" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none link-hover">+966 500 518 950</a>
+            </li>
+            <li class="d-flex align-items-center gap-2 mb-3">
+              <i class="bi bi-envelope-fill text-primary"></i>
+              <a href="mailto:info@AirMenu.net" class="text-white text-decoration-none link-hover">info@AirMenu.net</a>
+            </li>
+          </ul>
+
+          <h5 class="text-white mb-4" style="margin-top: 50px;">Follow Us</h5>
+          <ul class="footer-menu list-unstyled d-flex gap-3 mb-0 fs-4" style="margin-top: 50px;">
+            <li>
+              <a class="social-icon" href="https://www.facebook.com/GoAirMenu" aria-label="Facebook" target="_blank" rel="noopener noreferrer" rel="noopener">
+                <i class="bi bi-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a class="social-icon" href="https://www.instagram.com/GoAirMenu/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" rel="noopener">
+                <i class="bi bi-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a class="social-icon" href="https://x.com/goairmenu" target="_blank" rel="noopener noreferrer" aria-label="Twitter" rel="noopener">
+                <i class="bi bi-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a class="social-icon" href="https://www.tiktok.com/@goairmenu" target="_blank" rel="noopener noreferrer" aria-label="TikTok" rel="noopener">
+                <i class="bi bi-tiktok"></i>
+              </a>
+            </li>
+            <li>
+              <a class="social-icon" href="https://www.linkedin.com/in/GoAirMenu" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" rel="noopener">
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a class="social-icon" href="https://www.youtube.com/@GoAirMenu" target="_blank" rel="noopener noreferrer" aria-label="YouTube" rel="noopener">
+                <i class="bi bi-youtube"></i>
+              </a>
+            </li>
           </ul>
         </div>
-        <div class="col-md-4 col-xl-3 mb-8 mb-xl-0">
-          <p class="mb-0 text-white text-opacity-70 text-md-end">Â© Air Menu 2025 â€“ All Rights Reserved</p>
+
+      </div>
+
+      <!-- Copyright -->
+      <div class="row mt-5">
+        <div class="col-12 text-center text-md-center">
+          <p class="mb-0 text-white text-opacity-70 fs-6">&copy; Air Menu 2026 &ndash; All Rights Reserved</p>
         </div>
       </div>
     </div>
+
+    <style>
+      .social-icon i { font-size: 1.6rem; color: white; transition: color 0.3s ease; }
+      .social-icon:hover i, .social-icon:focus i { color: var(--bs-primary); }
+      .social-icon { text-decoration: none; display: inline-block; }
+      .footer-paragraph { font-size: 1.1rem; line-height: 1.6; }
+    </style>
   </footer>
 
   <button class="btn bg-primary p-2 round-52 rounded-circle hstack justify-content-center flex-shrink-0"

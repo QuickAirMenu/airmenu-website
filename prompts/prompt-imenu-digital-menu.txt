@@ -1,0 +1,29 @@
+# ─────────────────────────────────────────────
+# iMenu — Digital Menu (المنيو الرقمي)
+# ─────────────────────────────────────────────
+# برومت فيديو iMenu
+# مناسب لـ: Runway Gen-3 / Pika / Kling / Sora
+
+المشهد الأول — 3 ثوانٍ
+جهاز لوحي شفاف يطفو في الفضاء المظلم. شاشة المنيو الرقمي iMenu مضاءة بتصميم أنيق — أطباق بصور احترافية، أسعار، أيقونات تصنيف (مقبلات، رئيسي، مشروبات، حلويات). إضاءة ناعمة دافئة تبرز الطعام. الخط واضح بالعربية والإنجليزية.
+
+A floating transparent tablet in dark space displays the iMenu digital menu — professional food photos, prices, category icons (starters, mains, drinks, desserts). Warm soft lighting highlights the food. Bilingual Arabic/English typography.
+
+المشهد الثاني — 4 ثوانٍ
+تفاعل المستخدم مع iMenu: إصبع يلمس الشاشة لاختيار صنف، فيظهر وصف تفصيلي للطبق مع مكونات وسعر. تأثيرات انتقالية سلسة. أيقونات إضافة إلى السلة وتخصيص الطلب.
+
+User taps a menu item — detailed card expands with description, ingredients, price. Smooth transitions. Add-to-cart and customization options with glow effects.
+
+المشهد الثالث — 3 ثوانٍ
+تكامل iMenu مع الأجهزة: هاتف زبون، جهاز كاشير، شاشة مطبخ. خطوط ضوئية توضح تدفق الطلب من الزبون إلى المطبخ.
+
+Multi-device integration: customer phone → POS → kitchen display. Light flow lines trace the order journey.
+
+مشهد ختامي — ثانيتان
+شعار iMenu مع نص "iMenu — منيو رقمي". إضاءة دافئة تخفت ببطء.
+
+iMenu logo — "iMenu — Digital Menu". Warm light fades.
+
+# إرشادات
+- 4K — 24fps — 11-13 ثانية
+- ألوان: أسود — سماوي — ذهبي للأزرار

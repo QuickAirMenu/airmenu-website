@@ -1,0 +1,33 @@
+# ─────────────────────────────────────────────
+# Brand Identity & Visual Design
+# ─────────────────────────────────────────────
+# برومت الفيديو الأول — الهوية البصرية والعلامة التجارية
+# مناسب لـ: Runway Gen-3 / Pika / Kling / Sora
+
+مشهد افتتاحي — 3 ثوانٍ
+خلفية سوداء عميقة مع إضاءة خافتة ذهبية-زرقاء من الخلف. شعار Air Menu يظهر بتأثير بصري فاخر — يتشكل من نقاط ضوئية متجمعة ثم يتحول إلى شعار كامل بإضاءة داخلية متوهجة. الخط عصري أنيق عربي-إنجليزي. جزيئات ضوئية متناثرة. موسيقى تصويرية إلكترونية هادئة.
+
+Cinematic establishing shot, deep black background with subtle gold-blue volumetric backlight. The Air Menu logo materializes from coalescing light particles into the full brand mark — premium 3D inner glow, elegant Arabic/Latin typography. Floating light particles, slow motion. Ambient cinematic electronic music. Mood: luxury, modern, brand-first.
+
+مشهد الهوية البصرية — 4 ثوانٍ
+انتقال سلس. تظهر عناصر الهوية البصرية بشكل ثلاثي الأبعاد عائم: بطاقات عمل (business cards) تتدور ببطء، ألوان العلامة التجارية (سماوي وذهبي) تظهر كطبقات لونية متدرجة، نماذج من المطبوعات (brochures, flyers) تظهر وتختفي. الخطوط والألوان والأيقونات تنساب في الفضاء. إضاءة ناعمة. الكاميرا تتحرك ببطء (tracking shot).
+
+Seamless transition — brand identity elements float in 3D space: rotating premium business cards, brand color swatches (cyan/gold) as translucent gradient layers, stationery mockups (brochures, flyers) fade in/out. Typography, color palette, and brand icons flow gracefully. Soft rim lighting. Slow tracking camera. Mood: creative, cohesive, visually refined.
+
+مشهد التطبيق العملي — 3-4 ثوانٍ
+تظهر شاشات رقمية تعرض الهوية البصرية مطبقة على منصات مختلفة: موقع إلكتروني (website)، تطبيق جوال (mobile app)، منيو رقمي (digital menu). كل شاشة بإطار شفاف وتأثير زجاجي. الهوية البصرية موحّدة عبر جميع المنصات. إضاءة زرقاء مع لمسات ذهبية. حركة كاميرا دائرية بطيئة.
+
+Multiple floating transparent screens showcase the brand identity applied across platforms: website, mobile app, digital menu interfaces — all with consistent branding, glassmorphism frames, unified cyan/gold palette. Slow orbit camera movement around the screens. Deep blue lighting, gold highlights. Mood: cohesive, professional, multi-platform.
+
+مشهد ختامي — ثانيتان
+تلاشي إلى الشعار مع النص السفلي: "Brand Identity — Visual Design" بخط أنيق. اختفاء تدريجي إلى الأسود مع نبض ضوئي خفيف.
+
+Fade to final frame: Air Menu logo centered, elegant subtitle "Brand Identity — Visual Design" in premium sans-serif. Gentle fade to black with a soft light pulse.
+
+# إرشادات عامة
+- 4K (3840×2160) — 24fps — 12-14 ثانية
+- ألوان: أسود عميق — سماوي (#00D4FF) — ذهبي (#FFD700)
+- إضاءة حجمية ناعمة (volumetric + rim lights)
+- حركة كاميرا بطيئة smooth — لا مشاهد سريعة
+- موسيقى: إلكترونية تصويرية هادئة مع ريفيرب
+- لا وجوه بشرية — لا علامات مائية

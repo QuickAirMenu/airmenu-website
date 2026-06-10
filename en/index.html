@@ -3,17 +3,12 @@
 
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net https://code.iconify.design https://cdnjs.cloudflare.com; style-src 'self' https://cdn.jsdelivr.net https://fonts.googleapis.com https://cdnjs.cloudflare.com 'unsafe-inline'; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net; frame-src 'self'; form-action 'self'; connect-src 'self';">
   <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.svg" />
   <link rel="stylesheet" href="../assets/libs/owl.carousel/dist/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="../assets/libs/aos-master/dist/aos.css">
   <link rel="stylesheet" href="../assets/css/styles.css" />
-  
-  <link
-  href="../assets/vendor/fontawesome-free/css/all.min.css"
-  rel="stylesheet"
-/>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
   
@@ -67,24 +62,15 @@
   </script>
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/images/logos/favicon.svg" rel="icon">
+  <link href="../assets/images/logos/favicon.svg" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-
   <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
 
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
 
@@ -105,12 +91,37 @@
       <div class="header-wrapper d-flex align-items-center justify-content-between">
         <div class="logo">
           <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-            <img id="main-logo" src="../assets/images/logos/logo-color.png" alt="air-menu-logo" style="width: 190px">
+            <img class="logo-white" src="../assets/images/logos/logo-white.svg" alt="air-menu-logo" style="width: 150px">
+            <img class="logo-dark" src="../assets/images/logos/logo-dark.svg" alt="air-menu-logo" style="width: 150px">
           </a>
         </div>
-        
+
+        <!-- Desktop Nav -->
+        <ul class="nav-desktop list-unstyled mb-0 d-none d-xl-flex align-items-center gap-1">
+          <li><a href="index.html" class="nav-desktop-link active">Home</a></li>
+          <li><a href="about-us.html" class="nav-desktop-link">About</a></li>
+          <li class="dropdown position-relative">
+            <a href="#" class="nav-desktop-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Services</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="index.html#services">Brand Identity</a></li>
+              <li><a class="dropdown-item" href="index.html#services">Digital Solutions</a></li>
+              <li><a class="dropdown-item" href="index.html#services">All Services</a></li>
+            </ul>
+          </li>
+          <li class="dropdown position-relative">
+            <a href="#" class="nav-desktop-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Digital Products</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="https://imenu.airmenu.net/" target="_blank" rel="noopener noreferrer">i-Menu</a></li>
+              <li><a class="dropdown-item" href="https://icard.airmenu.net/" target="_blank" rel="noopener noreferrer">i-Card</a></li>
+            </ul>
+          </li>
+          <li><a href="blog.html" class="nav-desktop-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-desktop-link">Contact</a></li>
+        </ul>
+
+        <!-- Mobile Hamburger (hidden on desktop) -->
         <div class="d-flex align-items-center gap-4">
-          <div class="btn-group">
+          <div class="btn-group d-xl-none">
             <button
               class="btn btn-secondary toggle-menu round-45 p-2 d-flex align-items-center justify-content-center bg-primary rounded-circle 
                text-dark"
@@ -146,9 +157,9 @@
                         <img src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin"> Services
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Project A</a></li>
-                        <li><a class="dropdown-item" href="#">Project B</a></li>
-                        <li><a class="dropdown-item" href="#">All Projects</a></li>
+                        <li><a class="dropdown-item" href="index.html#services">Brand Identity</a></li>
+                        <li><a class="dropdown-item" href="index.html#services">Digital Solutions</a></li>
+                        <li><a class="dropdown-item" href="index.html#services">All Services</a></li>
                       </ul>
                     </li>
                     <li class="header-item dropdown">
@@ -156,13 +167,12 @@
                         <img src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin"> Digital Products
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Category 1</a></li>
-                        <li><a class="dropdown-item" href="#">Category 2</a></li>
-                        <li><a class="dropdown-item" href="#">All Blogs</a></li>
+                        <li><a class="dropdown-item" href="https://imenu.airmenu.net/" target="_blank" rel="noopener noreferrer">i-Menu</a></li>
+                        <li><a class="dropdown-item" href="https://icard.airmenu.net/" target="_blank" rel="noopener noreferrer">i-Card</a></li>
                       </ul>
                     </li>
                     <li class="header-item">
-                      <a href="#blog" class="header-link hstack gap-2 fs-7 fw-bold ">
+                      <a href="blog.html" class="header-link hstack gap-2 fs-7 fw-bold ">
                         <img src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin">Blog
                       </a>
                     </li>
@@ -173,17 +183,11 @@
                     </li>
                   </ul>
                   <div class="hstack gap-3 ">
-                  <!--  <a href="sign-in.html"
-                      class="btn btn-outline-light fs-6 bg-white px-3 py-2 w-50 hstack justify-content-center text-bg-dark">Sign
-                      In</a>-->
-                    <a href="sign-up.html"
-                      class="btn btn-dark text-white fs-6 px-3 py-2 w-50 hstack justify-content-center text-bg-dark " >عربي</a>
+                    <a href="index.html"
+                      class="btn btn-dark text-white fs-6 px-3 py-2 w-50 hstack justify-content-center text-bg-dark" >عربي</a>
                   </div>
-                <div>
-                  <p class="fw-bold ">The Future of Your Digital Business Starts Here.</p>
-              
-                  
-              
+                  <div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -193,51 +197,25 @@
     </div>
   </header>
   
-  <!-- تأكد تضيف السكريبت أسفل الصفحة أو في ال body -->
   
+
   <!--  Page Wrapper -->
   <div class="page-wrapper overflow-hidden">
 
-    <!--  Banner Section -->
-   
-    <div class="page-wrapper overflow-hidden">
-
-      <!--   hero Section -->
-         
-   
-        <!-- Slides -->
-        <div class="carousel-inner">
+    <!--  Hero Section -->
+    <div class="carousel-inner">
       
           <!-- Slide 1 -->
          
           <div class="carousel-item active">
             <section class="banner-section position-relative d-flex align-items-end min-vh-100">
               <video id="hero-video" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" autoplay muted playsinline></video>
-              <script>
-                const videos = [
-                  '../assets/images/backgrounds/1.mp4',
-                  '../assets/images/backgrounds/2.mp4',
-                  '../assets/images/backgrounds/3.mp4',
-                  '../assets/images/backgrounds/4.mp4',
-                  '../assets/images/backgrounds/5.mp4',
-                  '../assets/images/backgrounds/06.mp4'
-                ];
-                let i = 0;
-                const vid = document.getElementById('hero-video');
-                function nextVideo() {
-                  vid.src = videos[i];
-                  vid.play();
-                  i = (i + 1) % videos.length;
-                }
-                vid.addEventListener('ended', nextVideo);
-                nextVideo();
-              </script>
               <div class="container">
                 <div class="d-flex flex-column gap-4 pb-8 position-relative z-1">
                   <div class="row align-items-center">
                     <div class="col-xl-6 d-flex align-items-center gap-3" 
                          data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-                      <p id="rotating-text" class="mb-0 text-white fs-6 fw-bold text-opacity-90">
+                      <p id="rotating-text" class="mb-0">
                         <!-- النص المتغير سيظهر هنا -->
                       </p>
                     </div>
@@ -252,6 +230,50 @@
                   </div>
                 </div>
               </div>
+              <script>
+                const heroContent = [
+                  {
+                    video: '../assets/images/backgrounds/01_Brand-Identity&Visual-Design.mp4',
+                    text: `Your Brand Deserves a <span class="text-warning">Powerful Visual Identity.</span>`
+                  },
+                  {
+                    video: '../assets/images/backgrounds/02_digital-idenyity.mp4',
+                    text: `Your Digital Identity Defines <span class="text-warning">Your Business Future.</span>`
+                  },
+                  {
+                    video: '../assets/images/backgrounds/02-2_digital-idenyity.mp4',
+                    text: `Secure Your Digital Presence with <span class="text-warning">A Trusted Identity.</span>`
+                  },
+                  {
+                    video: '../assets/images/backgrounds/02-3_digital-idenyity.mp4',
+                    text: `Build Your Global Brand with <span class="text-warning">A Powerful Digital Footprint.</span>`
+                  },
+                  {
+                    video: '../assets/images/backgrounds/04_iMenu-Digital-Menu.mp4',
+                    text: `Transform Your Restaurant with <span class="text-warning">A Smart Digital Menu.</span>`
+                  },
+                  {
+                    video: '../assets/images/backgrounds/04-2_iMenu-Digital-Menu.mp4',
+                    text: `Elevate Every Dining Experience with <span class="text-warning">An Interactive Digital Menu.</span>`
+                  },
+                  {
+                    video: '../assets/images/backgrounds/05_digital-icard.mp4',
+                    text: `Your Business Card, Reinvented <span class="text-warning">Digitally.</span>`
+                  }
+                ];
+                let i = 0;
+                const vid = document.getElementById('hero-video');
+                const textEl = document.getElementById('rotating-text');
+                function nextVideo() {
+                  const item = heroContent[i];
+                  vid.src = item.video;
+                  textEl.innerHTML = item.text;
+                  vid.play();
+                  i = (i + 1) % heroContent.length;
+                }
+                vid.addEventListener('ended', nextVideo);
+                nextVideo();
+              </script>
             </section>
           </div>
           
@@ -260,12 +282,6 @@
     
         </div>
       
-      
-      </section>
-      
-  
-    
-         
     <!--  Stats & Facts Section -->
     <section class="stats-facts py-5 py-lg-11 py-xl-12 position-relative overflow-hidden bg-light-gray">
       <div class="container">
@@ -474,7 +490,7 @@
                   <h4 class="mb-0 ">Al-Sheikh Holding Company
                   </h4>
                   <div class="hstack gap-2">
-                <a href="">    <span class="badge text-dark border">Digital Identity </span></a>
+                    <span class="badge text-dark border">Digital Identity</span>
                   </div>
                 </div>
               </div>
@@ -494,8 +510,7 @@
                   <h4 class="mb-0"> Raj Indian Restaurant
 </h4>
                   <div class="hstack gap-2">
-                 <a href="">   <span class="badge text-dark border"> Integrated Software Solutions     <br>&  Visual Identity 
-                    </span></a>
+                    <span class="badge text-dark border">Integrated Software Solutions & Visual Identity</span>
                   </div>
                 </div>
               </div>
@@ -514,8 +529,7 @@
                 <div class="portfolio-details d-flex flex-column gap-3">
                   <h4 class="mb-0"> Naqsh Advertising & Marketing</h4>
                   <div class="hstack gap-2">
-                 <a href="">   <span class="badge text-dark border"> Digital Identity 
-                </span></a>
+                    <span class="badge text-dark border">Digital Identity</span>
                   </div>
                 </div>
               </div>
@@ -535,9 +549,7 @@
                   <h3 class="mb-0">Saudi RNA
                   </h3>
                   <div class="hstack gap-2">
-                <a href=""><span class="badge text-dark border">Visual Identity
-                </span></a>    
-                    
+                    <span class="badge text-dark border">Visual Identity</span>
                   </div>
                 </div>
               </div>
@@ -558,10 +570,7 @@
 
                   </h3>
                   <div class="hstack gap-2">
-                <a href=""><span class="badge text-dark border">Digital Identity 
-
-                </span></a>    
-                    
+                    <span class="badge text-dark border">Digital Identity</span>
                   </div>
                 </div>
               </div>
@@ -644,12 +653,7 @@
                   <div class="tab-pane h-100" id="four" role="tabpanel" aria-labelledby="four-tab" tabindex="0">
                     <img src="../assets/images/services/services-img-4.jpg" alt="services" class="img-fluid">
                   </div>
-                  <div class="tab-pane h-100" id="five" role="tabpanel" aria-labelledby="five-tab" tabindex="0">
-                    <img src="../assets/images/services/services-img-5.jpg" alt="services" class="img-fluid">
-                  </div>
-                  <div class="tab-pane h-100" id="six" role="tabpanel" aria-labelledby="six-tab" tabindex="0">
-                    <img src="../assets/images/services/services-img-6.jpg" alt="services" class="img-fluid">
-                  </div>
+
                 </div>
               </div>
               
@@ -878,7 +882,7 @@
               Worker Housing | Field Offices | Guard Cabins<br>
               Ready buildings – mobile or fixed – designed for immediate delivery and efficiently adapted to the requirements of various project sites.
             </p>
-            <a href=" " class="btn mt-4" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+            <a href="https://imenu.airmenu.net/" class="btn mt-4" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
               <span class="btn-text">Learn more</span>
               <i class="bi bi-arrow-up-right btn-icon bg-white text-primary round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm"></i>
             </a>
@@ -894,7 +898,7 @@
             <p class="fs-3">
               Your smart, secure, and convenient way to share information anytime, anywhere. Expand your network and discover new opportunities with just one tap.
             </p>
-            <a href="AirMenu.net/icard " class="btn mt-4" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+            <a href="https://icard.airmenu.net/" class="btn mt-4" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
               <span class="btn-text">Learn more</span>
               <i class="bi bi-arrow-up-right btn-icon bg-white text-primary round-52 
               rounded-circle hstack justify-content-center fs-7 shadow-sm"></i>
@@ -1011,7 +1015,7 @@
                   <span class="round-36 flex-shrink-0 text-white rounded-circle  hstack justify-content-center 
                   fw-medium bg-dark">06</span>
                   <hr class="border-line bg-primary">
-                  <span class="badge bg-dark">Why chosse us</span>
+                  <span class="badge bg-dark">Why choose us</span>
                 </div>
                 <h2 class="mb-5 text-dark" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
                    Why Choose US?</h2>
@@ -1277,69 +1281,49 @@ border-radius: 50%;">
           <div class="d-flex flex-column gap-8" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
             <p class="fs-5 mb-0 text-center text-dark">More than 320 trusted partners & clients</p>
             <div class="marquee w-100 d-flex align-items-center overflow-hidden">
-              <div class="marquee-content d-flex align-items-center gap-8">
-                <div class="marquee-tag hstack justify-content-center">
-                  <img src="../assets/images/pricing/1.png" alt="partners" class="img-fluid">
-                </div>
-                <div class="marquee-tag hstack justify-content-center">
-                  <img src="../assets/images/pricing/2.png" alt="partners" class="img-fluid">
-                </div>
-                <div class="marquee-tag hstack justify-content-center">
-                  <img src="../assets/images/pricing/3.png" alt="partners" class="img-fluid">
-                </div>
-                <div class="marquee-tag hstack justify-content-center">
-                  <img src="../assets/images/pricing/4.png" alt="partners" class="img-fluid">
-
-
-                </div>
-                <div class="marquee-tag hstack justify-content-center">
-                  <img src="../assets/images/pricing/5.png" alt="partners" class="img-fluid">
-                </div>
-                <div class="marquee-tag hstack justify-content-center">
-                  <img src="../assets/images/pricing/6.png" alt="partners" class="img-fluid">
-                </div>
-                <div class="marquee-tag hstack justify-content-center">
-                  <img src="../assets/images/pricing/7.png" alt="partners" class="img-fluid">
-                </div>
-                <div class="marquee-tag hstack justify-content-center">
-                  <img src="../assets/images/pricing/8.png" alt="partners" class="img-fluid">
-                </div>
-                <div class="marquee-tag hstack justify-content-center">
-                  <img src="../assets/images/pricing/9.png" alt="partners" class="img-fluid">
-                </div>
-                <div class="marquee-tag hstack justify-content-center">
-                  <img src="../assets/images/pricing/10.png" alt="partners" class="img-fluid">
-                </div>
-                <div class="marquee-tag hstack justify-content-center">
-                  <img src="../assets/images/pricing/11.png" alt="partners" class="img-fluid">
-                </div>
-                <div class="marquee-tag hstack justify-content-center">
-                  <img src="../assets/images/pricing/12.png" alt="partners" class="img-fluid">
-                </div>
-                <div class="marquee-tag hstack justify-content-center">
-                  <img src="../assets/images/pricing/13.png" alt="partners" class="img-fluid">
-                </div>
-                <div class="marquee-tag hstack justify-content-center">
-                  <img src="../assets/images/pricing/14.png" alt="partners" class="img-fluid">
-                </div>
-                <div class="marquee-tag hstack justify-content-center">
-                  <img src="../assets/images/pricing/15.png" alt="partners" class="img-fluid">
-                </div>
-                <div class="marquee-tag hstack justify-content-center">
-                  <img src="../assets/images/pricing/16.png" alt="partners" class="img-fluid">
-                </div>
-                <div class="marquee-tag hstack justify-content-center">
-                  <img src="../assets/images/pricing/17.png" alt="partners" class="img-fluid">
-                </div>
-                <div class="marquee-tag hstack justify-content-center">
-                  <img src="../assets/images/pricing/18.png" alt="partners" class="img-fluid">
-                </div>
-                <div class="marquee-tag hstack justify-content-center">
-                  <img src="../assets/images/pricing/19.png" alt="partners" class="img-fluid">
-                </div>
-                <div class="marquee-tag hstack justify-content-center">
-                  <img src="../assets/images/pricing/20.png" alt="partners" class="img-fluid">
-                </div>
+              <div class="marquee-content">
+                <div class="marquee-tag"><img src="../assets/images/pricing/1.png" alt="partner"></div>
+                <div class="marquee-tag"><img src="../assets/images/pricing/2.png" alt="partner"></div>
+                <div class="marquee-tag"><img src="../assets/images/pricing/3.png" alt="partner"></div>
+                <div class="marquee-tag"><img src="../assets/images/pricing/4.png" alt="partner"></div>
+                <div class="marquee-tag"><img src="../assets/images/pricing/5.png" alt="partner"></div>
+                <div class="marquee-tag"><img src="../assets/images/pricing/6.png" alt="partner"></div>
+                <div class="marquee-tag"><img src="../assets/images/pricing/7.png" alt="partner"></div>
+                <div class="marquee-tag"><img src="../assets/images/pricing/8.png" alt="partner"></div>
+                <div class="marquee-tag"><img src="../assets/images/pricing/9.png" alt="partner"></div>
+                <div class="marquee-tag"><img src="../assets/images/pricing/10.png" alt="partner"></div>
+                <div class="marquee-tag"><img src="../assets/images/pricing/11.png" alt="partner"></div>
+                <div class="marquee-tag"><img src="../assets/images/pricing/12.png" alt="partner"></div>
+                <div class="marquee-tag"><img src="../assets/images/pricing/13.png" alt="partner"></div>
+                <div class="marquee-tag"><img src="../assets/images/pricing/14.png" alt="partner"></div>
+                <div class="marquee-tag"><img src="../assets/images/pricing/15.png" alt="partner"></div>
+                <div class="marquee-tag"><img src="../assets/images/pricing/16.png" alt="partner"></div>
+                <div class="marquee-tag"><img src="../assets/images/pricing/17.png" alt="partner"></div>
+                <div class="marquee-tag"><img src="../assets/images/pricing/18.png" alt="partner"></div>
+                <div class="marquee-tag"><img src="../assets/images/pricing/19.png" alt="partner"></div>
+                <div class="marquee-tag"><img src="../assets/images/pricing/20.png" alt="partner"></div>
+              </div>
+              <div class="marquee-content">
+                <div class="marquee-tag"><img src="../assets/images/pricing/1.png" alt="partner"></div>
+                <div class="marquee-tag"><img src="../assets/images/pricing/2.png" alt="partner"></div>
+                <div class="marquee-tag"><img src="../assets/images/pricing/3.png" alt="partner"></div>
+                <div class="marquee-tag"><img src="../assets/images/pricing/4.png" alt="partner"></div>
+                <div class="marquee-tag"><img src="../assets/images/pricing/5.png" alt="partner"></div>
+                <div class="marquee-tag"><img src="../assets/images/pricing/6.png" alt="partner"></div>
+                <div class="marquee-tag"><img src="../assets/images/pricing/7.png" alt="partner"></div>
+                <div class="marquee-tag"><img src="../assets/images/pricing/8.png" alt="partner"></div>
+                <div class="marquee-tag"><img src="../assets/images/pricing/9.png" alt="partner"></div>
+                <div class="marquee-tag"><img src="../assets/images/pricing/10.png" alt="partner"></div>
+                <div class="marquee-tag"><img src="../assets/images/pricing/11.png" alt="partner"></div>
+                <div class="marquee-tag"><img src="../assets/images/pricing/12.png" alt="partner"></div>
+                <div class="marquee-tag"><img src="../assets/images/pricing/13.png" alt="partner"></div>
+                <div class="marquee-tag"><img src="../assets/images/pricing/14.png" alt="partner"></div>
+                <div class="marquee-tag"><img src="../assets/images/pricing/15.png" alt="partner"></div>
+                <div class="marquee-tag"><img src="../assets/images/pricing/16.png" alt="partner"></div>
+                <div class="marquee-tag"><img src="../assets/images/pricing/17.png" alt="partner"></div>
+                <div class="marquee-tag"><img src="../assets/images/pricing/18.png" alt="partner"></div>
+                <div class="marquee-tag"><img src="../assets/images/pricing/19.png" alt="partner"></div>
+                <div class="marquee-tag"><img src="../assets/images/pricing/20.png" alt="partner"></div>
               </div>
             </div>
           </div>
@@ -1412,7 +1396,7 @@ border-radius: 50%;">
                       Can I customize the services to fit my business needs?                   </button>
                   </h2>
                   <div id="flush-collapseThree" class="accordion-collapse collapse"
-                    da ta-bs-parent="#accordionFlushExample">
+                    data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body pt-0 fs-5  text-dark">Yes, all our solutions are flexible and tailored to match your goals and industry requirements. </div>
                   </div>
                 </div>
@@ -1496,8 +1480,7 @@ border-radius: 50%;">
                   <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100"
                     data-aos-duration="1000">
                     <h2 class="mb-0 text-dark">Recent news</h2>
-                    <p class="fs-5 mb-0 text-opacity-70 text-dark ">Discover fresh updates, smart solutions, and creative ideas from Air Men
-                      u, covering the latest in digital innovation, web design, and business growth strategies. </p>
+                    <p class="fs-5 mb-0 text-opacity-70 text-dark ">Discover fresh updates, smart solutions, and creative ideas from Air Menu, covering the latest in digital innovation, web design, and business growth strategies. </p>
                   </div>
                 </div>
               </div>
@@ -1546,9 +1529,7 @@ border-radius: 50%;">
       </div>
     </section>
 
-    <!--  Get in touch Section -->
-   <!-- رابط أيقونات Iconify -->
-<script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <!--  Get in Touch Section -->
 
 <section class="get-in-touch py-5 py-lg-11 py-xl-12">
   <div class="container">
@@ -1780,15 +1761,15 @@ border-radius: 50%;">
         <ul class="list-unstyled text-white fs-5 mb-5">
           <li class="d-flex align-items-center gap-2 mb-3">
             <i class="bi bi-person-badge text-primary"></i>
-            <a href="digital-identity.html" class="text-white text-decoration-none link-hover">Digital Identity Design</a>
+            <a href="index.html#services" class="text-white text-decoration-none link-hover">Digital Identity Design</a>
           </li>
           <li class="d-flex align-items-center gap-2 mb-3">
             <i class="bi bi-easel2-fill text-primary"></i>
-            <a href="visual-branding.html" class="text-white text-decoration-none link-hover">Visual Branding Design</a>
+            <a href="index.html#services" class="text-white text-decoration-none link-hover">Visual Branding Design</a>
           </li>
           <li class="d-flex align-items-center gap-2 mb-3">
             <i class="bi bi-file-earmark-text-fill text-primary"></i>
-            <a href="company-profiles.html" class="text-white text-decoration-none link-hover">Company Profiles</a>
+            <a href="index.html#services" class="text-white text-decoration-none link-hover">Company Profiles</a>
           </li>
         </ul>
 
@@ -1796,11 +1777,11 @@ border-radius: 50%;">
         <ul class="list-unstyled text-white fs-5">
           <li class="d-flex align-items-center gap-2 mb-3">
             <i class="bi bi-ui-checks-grid text-primary"></i>
-            <a href="#" class="text-white text-decoration-none link-hover">Digital Menu System</a>
+            <a href="https://imenu.airmenu.net/" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none link-hover">Digital Menu System</a>
           </li>
           <li class="d-flex align-items-center gap-2">
             <i class="bi bi-credit-card-2-front-fill text-primary"></i>
-            <a href="#" class="text-white text-decoration-none link-hover">iCard System</a>
+            <a href="https://icard.airmenu.net/" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none link-hover">iCard System</a>
           </li>
         </ul>
       </div>
@@ -1815,7 +1796,7 @@ border-radius: 50%;">
           </li>
           <li class="d-flex align-items-center gap-2 mb-3">
             <i class="bi bi-whatsapp text-primary"></i>
-            <a href="https://wa.me/966500518950" target="_blank" class="text-white text-decoration-none link-hover">+966 500 518 950</a>
+            <a href="https://wa.me/966500518950" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none link-hover">+966 500 518 950</a>
           </li>
           <li class="d-flex align-items-center gap-2 mb-3">
             <i class="bi bi-envelope-fill text-primary"></i>
@@ -1826,32 +1807,32 @@ border-radius: 50%;">
         <h5 class="text-white mb-4" style="margin-top: 50px;">Follow Us</h5>
         <ul class="footer-menu list-unstyled d-flex gap-3 mb-0 fs-4" style="margin-top: 50px;">
           <li>
-            <a class="social-icon" href="https://www.facebook.com/photo/?fbid=1081828300622614&set=a.473765791428871" aria-label="Facebook" target="_blank" rel="noopener">
+            <a class="social-icon" href="https://www.facebook.com/GoAirMenu" aria-label="Facebook" target="_blank" rel="noopener noreferrer" rel="noopener">
               <i class="bi bi-facebook"></i>
             </a>
           </li>
           <li>
-            <a class="social-icon" href="https://www.instagram.com/GoAirMenu/" target="_blank" aria-label="Instagram" rel="noopener">
+            <a class="social-icon" href="https://www.instagram.com/GoAirMenu/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" rel="noopener">
               <i class="bi bi-instagram"></i>
             </a>
           </li>
           <li>
-            <a class="social-icon" href="https://x.com/goairmenu" target="_blank" aria-label="Twitter" rel="noopener">
+            <a class="social-icon" href="https://x.com/goairmenu" target="_blank" rel="noopener noreferrer" aria-label="Twitter" rel="noopener">
               <i class="bi bi-twitter"></i>
             </a>
           </li>
           <li>
-            <a class="social-icon" href="https://www.tiktok.com/@goairmenu" target="_blank" aria-label="TikTok" rel="noopener">
+            <a class="social-icon" href="https://www.tiktok.com/@goairmenu" target="_blank" rel="noopener noreferrer" aria-label="TikTok" rel="noopener">
               <i class="bi bi-tiktok"></i>
             </a>
           </li>
           <li>
-            <a class="social-icon" href="https://www.linkedin.com/in/GoAirMenu" target="_blank" aria-label="LinkedIn" rel="noopener">
+            <a class="social-icon" href="https://www.linkedin.com/in/GoAirMenu" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" rel="noopener">
               <i class="bi bi-linkedin"></i>
             </a>
           </li>
           <li>
-            <a class="social-icon" href="https://www.youtube.com/@GoAirMenu" target="_blank" aria-label="YouTube" rel="noopener">
+            <a class="social-icon" href="https://www.youtube.com/@GoAirMenu" target="_blank" rel="noopener noreferrer" aria-label="YouTube" rel="noopener">
               <i class="bi bi-youtube"></i>
             </a>
           </li>
@@ -1892,14 +1873,11 @@ border-radius: 50%;">
   </style>
 </footer>
 
- 
+  <button class="btn bg-primary p-2 round-52 rounded-circle hstack justify-content-center flex-shrink-0"
+    id="scrollToTopBtn">
+    <iconify-icon icon="lucide:arrow-up" class="fs-7 text-dark"></iconify-icon>
+  </button>
 
-  <div class="get-template hstack gap-2">
-    <button class="btn bg-primary p-2 round-52 rounded-circle hstack justify-content-center flex-shrink-0 text-white"
-      id="scrollToTopBtn" >
-      <iconify-icon icon="lucide:arrow-up" class="fs-7 " ></iconify-icon>
-    </button>
-  </div>
   <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
   <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../assets/libs/owl.carousel/dist/owl.carousel.min.js"></script>
@@ -1923,50 +1901,9 @@ border-radius: 50%;">
     });
   });
   </script>
-  <script>
-    const phrases = [
-      `The Future of Your Digital Business Starts Here! <span class="text-primary">Book your consultation today.</span>`,
-      `Get fully integrated digital solutions that elevate your business to leadership.
-       <span class="text-primary">  We design your outstanding digital future. </span>`,
-      ` A New Beginning, A New Identity with Air Menu!
-  . <span class="text-primary">Your one-stop destination for digital solutions. </span>`,
-
-     ` Innovative digital solutions to enhance your online presence.
- From professional websites to official email creation
-  . <span class="text-primary">  Air Menu offers you a complete package that fuels your growth and strengthens your brand identity.
 
 
-</span>`,
-   
-    ];
-  
-    let index = 0;
-    const textElement = document.getElementById("rotating-text");
-  
-    function rotateText() {
-      textElement.innerHTML = phrases[index];
-      index = (index + 1) % phrases.length;
-    }
-  
-    rotateText(); // عرض أول نص مباشرة
-    setInterval(rotateText, 4000); // تحديث كل 3 ثواني
-  </script>
-<script>
-  const defaultLogo = "../assets/images/logos/logo-color.png";
-  const scrolledLogo = "../assets/images/logos/logo-white.svg";
 
-  const logo = document.getElementById("main-logo");
 
-  window.addEventListener("scroll", function () {
-    if (window.scrollY > 50) {
-      logo.src = scrolledLogo;
-    } else {
-      logo.src = defaultLogo;
-    }
-  });
-</script>
-
-   ]
-</body>
 
 </html>

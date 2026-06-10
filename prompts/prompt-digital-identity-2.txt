@@ -1,0 +1,29 @@
+# ─────────────────────────────────────────────
+# Digital Identity 2 — (الهوية الرقمية)
+# ─────────────────────────────────────────────
+# برومت فيديو إضافي للهوية الرقمية
+# مناسب لـ: Runway Gen-3 / Pika / Kling / Sora
+
+المشهد الأول — 3 ثوانٍ
+شبكة رقمية ثلاثية الأبعاد تمتد في العمق. أيقونات أمان وتوثيق: درع، بصمة، قفل، شارة موثقة. خطوط ضوئية تتصل بينها. حركة كاميرا أمامية.
+
+3D digital grid extending into depth. Security icons: shield, fingerprint, lock, verified badge. Connecting light lines. Forward camera movement.
+
+المشهد الثاني — 4 ثوانٍ
+بطاقة هوية رقمية متطورة تعرض بيانات موثقة. طبقات تشفير متعددة تظهر كحلقات ضوئية حول البطاقة. أيقونة توثيق ذهبية. الكاميرا تدور ببطء.
+
+Advanced digital ID card with verified data. Multiple encryption layers as light rings around card. Gold verified badge. Slow orbit camera.
+
+المشهد الثالث — 3 ثوانٍ  
+الهوية تعمل عبر منصات: دخول موحد (SSO)، توثيق ثنائي (2FA)، بصمة. إضاءة زرقاء أمنية.
+
+Identity across platforms: SSO login, 2FA, biometric scan. Secure blue lighting.
+
+مشهد ختامي — ثانيتان
+شعار Air Menu مع نص "Digital Identity — هوية رقمية". تلاشي أمني.
+
+Air Menu logo — "Digital Identity — هوية رقمية". Secure fade out.
+
+# إرشادات
+- 4K — 24fps — 11-13 ثانية
+- ألوان: أسود — سماوي — ذهبي للتوثيق

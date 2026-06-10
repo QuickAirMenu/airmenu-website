@@ -1,0 +1,30 @@
+# ─────────────────────────────────────────────
+# Digital Solutions (الحلول الرقمية)
+# ─────────────────────────────────────────────
+# برومت فيديو الحلول الرقمية المؤسسية
+# مناسب لـ: Runway Gen-3 / Pika / Kling / Sora
+
+مشهد 1 — 3 ثوانٍ
+خريطة عالمية هولوجرامية ثلاثية الأبعاد تدور ببطء. نقاط ضوئية تظهر على المدن الكبرى (دبي، الرياض، لندن، نيويورك) وتتصل بخطوط ضوئية متدفقة — تعبر عن الحلول الرقمية العالمية. إضاءة زرقاء داكنة من الأسفل.
+
+Holographic 3D world map slowly rotating. Light nodes activate across major cities (Dubai, Riyadh, London, NY) connecting via flowing light beams — representing global digital solutions reach. Dark blue under-lighting.
+
+مشهد 2 — 4 ثوانٍ
+لوحة تحليلات (Analytics Dashboard) شفافة عائمة تعرض بيانات وإحصائيات متحركة بالعربية والإنجليزية — إيرادات، مستخدمين، طلبات، نمو. رسوم بيانية متوهجة. أيقونات الخدمات الرقمية (إدارة، تحليل، تقارير، أتمتة) تدور حول اللوحة.
+
+A floating transparent analytics dashboard displays real-time data in Arabic/English — revenue, users, orders, growth. Glowing charts animate with flowing data streams. Service icons (management, analytics, reporting, automation) orbit around. Gold accent on key metrics.
+
+مشهد 3 — 3 ثوانٍ
+أنظمة متكاملة تظهر على شكل وحدات (modules) متصلة — نظام طلبات، نظام مخزون، نظام عملاء، نظام تقارير — كل وحدة مكعبة شفافة متصلة بخطوط ضوئية. تكامل سلس بين الأنظمة.
+
+Integrated system modules connected in a network — ordering system, inventory, CRM, reporting — each as a transparent cube linked by flowing light lines. Seamless data flow visualization.
+
+مشهد ختامي — ثانيتان
+شعار Air Menu مع نص "Digital Solutions — حلول رقمية". تلاشي إلى الأسود.
+
+Air Menu logo — "Digital Solutions — حلول رقمية". Fade to black.
+
+# إرشادات
+- 4K — 24fps — 12-14 ثانية
+- ألوان: كحلي/أسود — سماوي — ذهبي للبيانات المهمة
+- أسلوب: corporate, enterprise-grade, scalable

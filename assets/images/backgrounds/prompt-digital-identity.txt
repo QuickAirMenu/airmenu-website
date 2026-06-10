@@ -1,0 +1,34 @@
+# ─────────────────────────────────────────────
+# Digital Identity (الهوية الرقمية)
+# ─────────────────────────────────────────────
+# برومت الفيديو الثاني — الهوية الرقمية
+# مناسب لـ: Runway Gen-3 / Pika / Kling / Sora
+
+المشهد الأول — 3 ثوانٍ
+خلفية سوداء عميقة مع شبكة رقمية (digital grid) ثلاثية الأبعاد تمتد إلى الأفق. أيقونات الهوية الرقمية تظهر تباعاً: بصمة رقمية متوهجة، بطاقة تعريف إلكترونية شفافة، رمز QR متحرك. خطوط بيانات ضوئية تتصل بين الأيقونات. حركة كاميرا أمامية بطيئة.
+
+Opening shot — deep black background with 3D digital perspective grid extending to infinity. Digital identity icons appear sequentially: glowing fingerprint, transparent electronic ID card, animated QR code. Data light lines connect between icons. Slow forward camera movement.
+
+المشهد الثاني — 4 ثوانٍ
+بطاقة هوية رقمية عائمة بتأثير زجاجي شفاف (glassmorphism) في منتصف الإطار — تعرض اسم الشركة، الشعار، أيقونة توثيق موثقة (verified badge) متوهجة. طبقات أمان رقمية (درع تشفير، أيقونات حماية) تظهر كطبقات شفافة تغطي البطاقة ثم تختفي. إضاءة زرقاء سماوية مع لمسات ذهبية على أيقونة التوثيق. الكاميرا تدور ببطء حول البطاقة بزاوية 360 درجة.
+
+A glassmorphism digital ID card floats at center — company name, logo, glowing verified badge. Digital security layers (encryption shield, protection icons) appear as transparent overlays covering the card then fading away. Cyan-blue lighting with gold highlights on the verification badge. Slow 360-degree orbit camera around the card.
+
+المشهد الثالث — 3 ثوانٍ
+الهوية الرقمية تتكامل مع أجهزة مختلفة في مشهد واحد: هاتف ذكي يعرض البطاقة الرقمية على الشاشة، جهاز لوحي يعرض رمز QR، شاشة متجر تعرض اسم المستخدم الموثق. رمز NFC يومض في الزاوية السفلية. إضاءة ليلية داكنة مع توهجات شاشة ناعمة.
+
+Digital identity in use across devices in a single frame: smartphone displaying the digital card, tablet showing QR code, store terminal displaying verified user identity. NFC icon pulses in corner. Dark night-mode lighting with soft screen glow reflections.
+
+المشهد الرابع — ثانيتان
+تلاشي إلى شعار Air Menu في منتصف الإطار مع نص سفلي: "Digital Identity — هوية رقمية" بخط عصري أنيق. البطاقة الرقمية تصغر وتتلاشى داخل الشعار. اختفاء تدريجي في العمق الرقمي مع نبض ضوئي.
+
+Fade to Air Menu logo centered with subtitle "Digital Identity — هوية رقمية" in elegant typeface. The digital card shrinks and dissolves into the logo. Gradual fade into digital depth with a soft light pulse.
+
+# إرشادات عامة
+- 4K (3840×2160) — 24fps — 11-13 ثانية
+- ألوان: أسود عميق — سماوي (#00D4FF) — ذهبي (#FFD700) للتوثيق والأمان
+- أسلوب: glassmorphism، عالي التقنية، sleek
+- إضاءة: حجمية ناعمة مع rim lights زرقاء
+- حركة كاميرا: بطيئة سلسة — لا مشاهد سريعة
+- موسيقى: إلكترونية تصويرية هادئة مع نبضات أمان خفيفة
+- لا وجوه بشرية — أيدي فقط عند الحاجة

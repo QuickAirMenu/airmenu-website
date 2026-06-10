@@ -1,0 +1,30 @@
+# ─────────────────────────────────────────────
+# Digital Menu (المنيو الرقمي)
+# ─────────────────────────────────────────────
+# برومت فيديو المنيو الرقمي للمطاعم
+# مناسب لـ: Runway Gen-3 / Pika / Kling / Sora
+
+مشهد 1 — 3 ثوانٍ
+جهاز لوحي شفاف (tablet) يطفو في الفضاء المظلم. شاشة المنيو الرقمي مضاءة بتصميم أنيق — أطباق بصور احترافية، أسعار، أيقونات تصنيف (مقبلات، رئيسي، مشروبات، حلويات). إضاءة ناعمة دافئة تبرز الطعام. الخط واضح بالعربية والإنجليزية.
+
+A floating transparent tablet in dark space displays the digital menu with elegant UI design — professional food photos, prices, category icons (starters, mains, drinks, desserts). Warm soft lighting highlights the food imagery. Bilingual Arabic/English typography.
+
+مشهد 2 — 4 ثوانٍ
+تفاعل المستخدم مع المنيو: إصبع يلمس الشاشة لاختيار صنف، فيظهر وصف تفصيلي للطبق مع مكونات وسعر. تأثيرات انتقالية سلسة بين الصفحات. أيقونات إضافة إلى السلة وتخصيص الطلب. إضاءة زرقاء مع لمسات ذهبية على الأزرار.
+
+User interaction: a finger taps a menu item — a detailed dish card expands with description, ingredients, price. Smooth page transitions. Add-to-cart and customization buttons with gold hover glow. Cyan backlight, gold accent on CTAs.
+
+مشهد 3 — 3 ثوانٍ
+المنيو الرقمي يعمل على أجهزة متعددة: هاتف زبون يطلب، جهاز كاشير المطعم يستقبل الطلب، شاشة المطبخ تعرض الطلب. تكامل متكامل وسلس. خطوط ضوئية توضح تدفق الطلب من الزبون إلى المطبخ.
+
+Multi-device integration: customer's phone placing order, restaurant POS receiving it, kitchen display showing order. Light flow lines trace the order journey. Seamless ecosystem. Smart, efficient, professional.
+
+مشهد ختامي — ثانيتان
+شعار Air Menu مع نص "Digital Menu — منيو رقمي". إضاءة دافئة تخفت ببطء.
+
+Air Menu logo — "Digital Menu — منيو رقمي". Warm light fades slowly.
+
+# إرشادات
+- 4K — 24fps — 11-13 ثانية
+- ألوان: أسود — سماوي — ذهبي للأزرار — إضاءة دافئة للطعام
+- أسلوب: restaurant-tech, clean, appetizing
