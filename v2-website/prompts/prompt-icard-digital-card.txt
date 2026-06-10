@@ -1,0 +1,29 @@
+# ─────────────────────────────────────────────
+# iCard — Digital Card (البطاقة الرقمية)
+# ─────────────────────────────────────────────
+# برومت فيديو iCard
+# مناسب لـ: Runway Gen-3 / Pika / Kling / Sora
+
+المشهد الأول — 3 ثوانٍ
+بطاقة iCard رقمية فاخرة بتأثير زجاجي شفاف في منتصف الإطار — شعار الشركة، الاسم، المسمى الوظيفي، معلومات الاتصال. البطاقة تتوهج بإضاءة داخلية. خلفية سوداء مع جزيئات ضوئية.
+
+Premium iCard digital business card with glassmorphism — company logo, name, title, contact info. The card glows with soft inner light. Dark background with floating particles.
+
+المشهد الثاني — 4 ثوانٍ
+البطاقة تتقلب للوجه الخلفي — روابط التواصل الاجتماعي (Instagram, LinkedIn, WhatsApp) كأيقونات مضيئة. زر "حفظ جهة اتصال" ينبض. أيقونة NFC تومض. QR code يتشكل.
+
+Card flips to back — social links as glowing icons. "Save Contact" button pulses. NFC icon blinks. QR code morphs into view.
+
+المشهد الثالث — 3 ثوانٍ
+مشاركة iCard عبر NFC: هاتفان يقتربان — البطاقة تنتقل بتأثير ضوئي. أو مسح QR code. مشاركة فورية.
+
+Sharing via NFC: two phones tap — card transfers with light effect. Or QR scan. Instant sharing.
+
+مشهد ختامي — ثانيتان
+شعار iCard مع نص "iCard — بطاقة رقمية". البطاقة تصغر وتختفي في الضوء.
+
+iCard logo — "iCard — Digital Card". Card shrinks into light.
+
+# إرشادات
+- 4K — 24fps — 11-13 ثانية
+- ألوان: أسود — سماوي — ذهبي

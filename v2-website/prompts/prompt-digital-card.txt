@@ -1,0 +1,31 @@
+# ─────────────────────────────────────────────
+# Digital Card (البطاقة الرقمية — NFC)
+# ─────────────────────────────────────────────
+# برومت فيديو البطاقة الرقمية / بطاقة الأعمال الإلكترونية
+# مناسب لـ: Runway Gen-3 / Pika / Kling / Sora
+
+مشهد 1 — 3 ثوانٍ
+بطاقة عمل رقمية فاخرة تظهر بتأثير زجاجي شفاف (glassmorphism) في منتصف الإطار — شعار الشركة، الاسم، المسمى الوظيفي، رقم الهاتف، البريد الإلكتروني، موقع الويب. البطاقة تتوهج بإضاءة داخلية ناعمة. خلفية سوداء مع جزيئات ضوئية متطايرة.
+
+A premium digital business card with glassmorphism effect materializes at center — company logo, name, title, phone, email, website all elegantly arranged. The card glows with soft inner illumination. Dark background with floating light particles.
+
+مشهد 2 — 4 ثوانٍ
+البطاقة تتقلب لتظهر الوجه الخلفي — روابط التواصل الاجتماعي (Instagram, LinkedIn, Twitter, WhatsApp) كأيقونات مضيئة. زر "حفظ جهة اتصال" (Save Contact) يظهر مع تأثير نبضي. أيقونة NFC تومض في الزاوية — تعبر عن تقنية المشاركة باللمس. أيقونة QR code تتشكل.
+
+The card flips to reveal the back side — social media links as glowing icons (Instagram, LinkedIn, Twitter, WhatsApp). A "Save Contact" button pulses gently. NFC icon blinks in the corner. A QR code morphs into existence.
+
+مشهد 3 — 3 ثوانٍ
+إظهار المشاركة: هاتفان يقتربان من بعضهما (تقنية NFC) — البطاقة الرقمية تنتقل من جهاز إلى آخر بتأثير ضوئي. أو مسح QR code بهاتف آخر. سهولة المشاركة والتخزين.
+
+Sharing demonstration: two phones approach each other (NFC tap) — the digital card transfers between devices with a light burst effect. Alternative: scanning QR code with another phone. Instant sharing, instant saving. Effortless networking.
+
+مشهد ختامي — ثانيتان
+شعار Air Menu مع نص "Digital Card — بطاقة رقمية". البطاقة تصغر وتختفي في الضوء.
+
+Air Menu logo — "Digital Card — بطاقة رقمية". The card shrinks and dissolves into light.
+
+# إرشادات
+- 4K — 24fps — 11-13 ثانية
+- ألوان: أسود — سماوي — ذهبي للأيقونات المهمة
+- أسلوب: glassmorphism، minimalist، networking
+- لا تظهر وجوه بشرية — أيدي فقط أو أجهزة
