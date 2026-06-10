@@ -209,7 +209,7 @@
          
           <div class="carousel-item active">
             <section class="banner-section position-relative d-flex align-items-end min-vh-100">
-              <video id="hero-video" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" autoplay muted playsinline></video>
+              <video id="hero-video" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" autoplay muted playsinline preload="auto"></video>
               <div class="container">
                 <div class="d-flex flex-column gap-4 pb-8 position-relative z-1">
                   <div class="row align-items-center">
@@ -233,7 +233,7 @@
               <script>
                 const heroContent = [
                   {
-                    video: '../assets/images/backgrounds/01_Brand-Identity&Visual-Design.mp4',
+                    video: '../assets/images/backgrounds/01_Brand-Identity-Visual-Design.mp4',
                     text: `Your Brand Deserves a <span class="text-warning">Powerful Visual Identity.</span>`
                   },
                   {
@@ -268,7 +268,10 @@
                   const item = heroContent[i];
                   vid.src = item.video;
                   textEl.innerHTML = item.text;
-                  vid.play();
+                  vid.play().catch(function() {
+                    vid.muted = true;
+                    vid.play();
+                  });
                   i = (i + 1) % heroContent.length;
                 }
                 vid.addEventListener('ended', nextVideo);
