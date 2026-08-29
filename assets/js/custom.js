@@ -37,18 +37,41 @@ $(function () {
     })
 
 
-    // Count
-    $('.count').each(function () {
-		$(this).prop('Counter', 0).animate({
-			Counter: $(this).text()
-		}, {
-			duration: 1000,
-			easing: 'swing',
-			step: function (now) {
-				$(this).text(Math.ceil(now));
-			}
-		});
-	});
+    // Count with Intersection Observer
+    var countSection = document.querySelector('.stats-facts');
+    if (countSection && typeof IntersectionObserver !== 'undefined') {
+        var observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    $('.count').each(function () {
+                        $(this).prop('Counter', 0).animate({
+                            Counter: $(this).text()
+                        }, {
+                            duration: 1000,
+                            easing: 'swing',
+                            step: function (now) {
+                                $(this).text(Math.ceil(now));
+                            }
+                        });
+                    });
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.3 });
+        observer.observe(countSection);
+    } else {
+        $('.count').each(function () {
+            $(this).prop('Counter', 0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 1000,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
+        });
+    }
 
 
     // ScrollToTop
@@ -59,16 +82,44 @@ $(function () {
         });
     }
 
+    function scrollToBottom() {
+        window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: 'smooth'
+        });
+    }
+
     const btn = document.getElementById("scrollToTopBtn");
-    btn.addEventListener("click", scrollToTop);
+    const icon = document.getElementById("scrollIcon");
+    const progressRing = document.getElementById("scrollProgress");
+    const wrapper = document.querySelector(".scroll-btn-wrapper");
+    const circumference = 2 * Math.PI * 26;
+
+    btn.addEventListener("click", function () {
+        if (document.documentElement.scrollTop > 500 || document.body.scrollTop > 500) {
+            scrollToTop();
+        } else {
+            scrollToBottom();
+        }
+    });
 
     window.onscroll = function () {
-        const btn = document.getElementById("scrollToTopBtn");
-        if (document.documentElement.scrollTop > 100 || document.body.scrollTop > 100) {
-            btn.style.display = "flex";
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrollPercent = docHeight > 0 ? scrollTop / docHeight : 0;
+
+        if (scrollTop > 100) {
+            wrapper.style.display = "flex";
         } else {
-            btn.style.display = "none";
+            wrapper.style.display = "none";
         }
+        if (scrollTop > 500) {
+            icon.setAttribute("icon", "lucide:arrow-up");
+        } else {
+            icon.setAttribute("icon", "lucide:arrow-down");
+        }
+
+        progressRing.style.strokeDashoffset = circumference - (scrollPercent * circumference);
     };
 
 

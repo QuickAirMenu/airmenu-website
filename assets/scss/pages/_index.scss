@@ -120,34 +120,6 @@
 }
 
 
-.marquee-content {
-    animation: marquee 20s linear infinite running;
-}
-
-.marquee-content:hover {
-    animation-play-state: paused;
-}
-
-.marquee-tag {
-    width: 200px;
-    transition: all 0.2s ease;
-}
-
-.marquee-tag:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
-@keyframes marquee {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translate(-50%);
-    }
-}
-
 
 .accordion-button {
     &::after {

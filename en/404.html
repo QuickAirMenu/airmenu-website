@@ -1,9 +1,9 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net https://code.iconify.design https://cdnjs.cloudflare.com; style-src 'self' https://cdn.jsdelivr.net https://fonts.googleapis.com https://cdnjs.cloudflare.com 'unsafe-inline'; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net; frame-src 'self'; form-action 'self'; connect-src 'self';">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net https://code.iconify.design https://cdnjs.cloudflare.com; style-src 'self' https://cdn.jsdelivr.net https://fonts.googleapis.com https://cdnjs.cloudflare.com 'unsafe-inline'; img-src 'self' data:; media-src 'self'; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://cdn.jsdelivr.net; frame-src 'self'; form-action 'self'; connect-src 'self';">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <!-- Page Title -->
@@ -156,7 +156,7 @@
                     </li>
                   </ul>
                   <div class="hstack gap-3">
-                    <a href="index.html" class="btn btn-dark text-white fs-6 px-3 py-2 w-50 hstack justify-content-center text-bg-dark">عربي</a>
+                                        
                   </div>
                 </div>
               </div>
@@ -190,133 +190,202 @@
 
   </div>
 
-  <footer class="footer py-5 bg-dark py-lg-11 py-xl-12">
-    <div class="container">
-      <div class="row gy-6">
-        
-        <!-- About & Contact Info -->
-        <div class="col-xl-6 mb-8 mb-xl-5">
-          <div class="d-flex flex-column gap-4 pe-xl-4">
-            <div class="footer-info">
-              <img
-                src="../assets/images/logos/logo-white.svg"
-                style="width: 190px; margin-bottom: 30px;"
-                alt="air-menu-logo"
-              />
-              <p class="mb-3 text-white footer-paragraph" >
-                Take your business to new heights with Air Menu. We deliver cutting-edge digital
-                solutions that empower your brand and drive success.
-              </p>
+    <footer class="footer position-relative overflow-hidden" style="background:linear-gradient(135deg,#0b1a2e 0%,#143257 40%,#1a3f6a 70%,#0d2440 100%);">
+      <!-- Decorative top gradient line -->
+      <div class="position-absolute top-0 start-0 w-100" style="height:5px;background:linear-gradient(90deg,#3b82f6,#06b6d4,#8b5cf6,#3b82f6);"></div>
+      <!-- Glow orbs -->
+      <div class="position-absolute" style="top:-100px;right:-60px;width:350px;height:350px;border-radius:50%;background:radial-gradient(circle,rgba(59,130,246,0.12),transparent 70%);pointer-events:none;"></div>
+      <div class="position-absolute" style="bottom:-80px;left:-50px;width:250px;height:250px;border-radius:50%;background:radial-gradient(circle,rgba(6,182,212,0.08),transparent 70%);pointer-events:none;"></div>
+
+      <div class="container position-relative" style="z-index:1;">
+        <div class="py-6 py-xl-9">
+          <div class="row gy-6">
+
+            <!-- Column 1: Brand -->
+            <div class="col-xl-4 col-lg-6">
+              <div class="d-flex flex-column gap-3">
+                <img src="../assets/images/logos/logo-white.svg" style="width:175px;" alt="air-menu-logo">
+                <p class="text-white-50 mb-0 lh-lg" style="font-size:1rem;max-width:360px;">
+                  Take your business to new heights with Air Menu. We deliver cutting-edge digital solutions that empower your brand and drive success.
+                </p>
+                <!-- Mini stats -->
+                <div class="d-flex gap-4 mt-2 pt-2">
+                  <div><span class="text-white fw-bold fs-5">500+</span><br><span class="text-white-50 fs-small">Projects</span></div>
+                  <div class="vr opacity-25"></div>
+                  <div><span class="text-white fw-bold fs-5">350+</span><br><span class="text-white-50 fs-small">Clients</span></div>
+                  <div class="vr opacity-25"></div>
+                  <div><span class="text-white fw-bold fs-5">6+</span><br><span class="text-white-50 fs-small">Years</span></div>
+                </div>
+              </div>
             </div>
+
+            <!-- Column 2: Services + Company -->
+            <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+              <h6 class="footer-heading">Services</h6>
+              <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+                <li><a href="index.html#services" class="footer-link"><i class="bi bi-chevron-right footer-arrow"></i> Digital Identity</a></li>
+                <li><a href="index.html#services" class="footer-link"><i class="bi bi-chevron-right footer-arrow"></i> Visual Branding</a></li>
+                <li><a href="index.html#services" class="footer-link"><i class="bi bi-chevron-right footer-arrow"></i> Mobile Apps</a></li>
+                <li><a href="index.html#services" class="footer-link"><i class="bi bi-chevron-right footer-arrow"></i> Company Profiles</a></li>
+                <li><a href="index.html#services" class="footer-link"><i class="bi bi-chevron-right footer-arrow"></i> SEO &amp; Analytics</a></li>
+              </ul>
+              <h6 class="footer-heading mt-4">Company</h6>
+              <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+                <li><a href="about-us.html" class="footer-link"><i class="bi bi-chevron-right footer-arrow"></i> About Us</a></li>
+                <li><a href="projects.html" class="footer-link"><i class="bi bi-chevron-right footer-arrow"></i> Portfolio</a></li>
+                <li><a href="contact.html" class="footer-link"><i class="bi bi-chevron-right footer-arrow"></i> Contact</a></li>
+              </ul>
+            </div>
+
+            <!-- Column 3: SaaS Products + Tools -->
+            <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+              <h6 class="footer-heading">SaaS Products</h6>
+              <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+                <li><a href="https://imenu.airmenu.net/" target="_blank" class="footer-link"><i class="bi bi-chevron-right footer-arrow"></i> iMenu</a></li>
+                <li><a href="https://icard.airmenu.net/" target="_blank" class="footer-link"><i class="bi bi-chevron-right footer-arrow"></i> iCard</a></li>
+                <li><a href="https://iblog.airmenu.net/" target="_blank" class="footer-link"><i class="bi bi-chevron-right footer-arrow"></i> iBlog</a></li>
+                <li><a href="https://iprojects.airmenu.net/" target="_blank" class="footer-link"><i class="bi bi-chevron-right footer-arrow"></i> iProjects</a></li>
+              </ul>
+              <h6 class="footer-heading mt-4">Tools</h6>
+              <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+                <li><a href="https://tinypix.airmenu.net/" target="_blank" class="footer-link"><i class="bi bi-chevron-right footer-arrow"></i> TinyPix</a></li>
+                <li><a href="https://leadshub.airmenu.net/" target="_blank" class="footer-link"><i class="bi bi-chevron-right footer-arrow"></i> LeadsHub</a></li>
+              </ul>
+            </div>
+
+            <!-- Column 4: Contact + Social -->
+            <div class="col-xl-4 col-lg-6">
+              <h6 class="footer-heading">Get in Touch</h6>
+              <ul class="list-unstyled d-flex flex-column gap-3 mb-4">
+                <li class="d-flex align-items-center gap-3">
+                  <span class="footer-icon-wrap"><i class="bi bi-telephone-fill"></i></span>
+                  <a href="tel:+966500518950" class="footer-link">+966 500 518 950</a>
+                  <span class="text-white-50 fs-small">&nbsp;|&nbsp;</span>
+                  <a href="https://wa.me/966500518950" target="_blank" class="footer-link"><i class="bi bi-whatsapp" style="color:#25D366;"></i></a>
+                </li>
+                <li class="d-flex align-items-center gap-3">
+                  <span class="footer-icon-wrap"><i class="bi bi-envelope-fill"></i></span>
+                  <a href="mailto:info@AirMenu.net" class="footer-link">info@AirMenu.net</a>
+                </li>
+                <li class="d-flex align-items-center gap-3">
+                  <span class="footer-icon-wrap"><i class="bi bi-geo-alt-fill"></i></span>
+                  <span class="text-white-50">Saudi Arabia</span>
+                </li>
+              </ul>
+
+              <h6 class="footer-heading">Follow Us</h6>
+              <div class="d-flex gap-2 flex-wrap">
+                <a href="https://www.instagram.com/GoAirMenu/" target="_blank" class="footer-social" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="https://x.com/goairmenu" target="_blank" class="footer-social" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+                <a href="https://www.linkedin.com/in/GoAirMenu" target="_blank" class="footer-social" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+
           </div>
         </div>
 
-        <!-- Service & Product Links -->
-        <div class="col-md-4 col-xl-3 mb-8 mb-xl-0 order-2">
-          <h5 class="text-white mb-4">Service Links</h5>
-          <ul class="list-unstyled text-white fs-5 mb-5">
-            <li class="d-flex align-items-center gap-2 mb-3">
-              <i class="bi bi-person-badge text-primary"></i>
-              <a href="index.html#services" class="text-white text-decoration-none link-hover">Digital Identity Design</a>
-            </li>
-            <li class="d-flex align-items-center gap-2 mb-3">
-              <i class="bi bi-easel2-fill text-primary"></i>
-              <a href="index.html#services" class="text-white text-decoration-none link-hover">Visual Branding Design</a>
-            </li>
-            <li class="d-flex align-items-center gap-2 mb-3">
-              <i class="bi bi-file-earmark-text-fill text-primary"></i>
-              <a href="index.html#services" class="text-white text-decoration-none link-hover">Company Profiles</a>
-            </li>
-          </ul>
-
-          <h5 class="text-white mb-4">Product Links</h5>
-          <ul class="list-unstyled text-white fs-5">
-            <li class="d-flex align-items-center gap-2 mb-3">
-              <i class="bi bi-ui-checks-grid text-primary"></i>
-              <a href="https://imenu.airmenu.net/" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none link-hover">Digital Menu System</a>
-            </li>
-            <li class="d-flex align-items-center gap-2">
-              <i class="bi bi-credit-card-2-front-fill text-primary"></i>
-              <a href="https://icard.airmenu.net/" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none link-hover">iCard System</a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Get in Touch -->
-        <div class="col-md-4 col-xl-3 mb-8 mb-xl-0 order-4">
-          <h5 class="text-white mb-4">Get in Touch</h5>
-          <ul class="list-unstyled text-white fs-5">
-            <li class="d-flex align-items-center gap-2 mb-3">
-              <i class="bi bi-telephone-fill text-primary"></i>
-              <a href="tel:+966500518950" class="text-white text-decoration-none link-hover">+966 500 518 950</a>
-            </li>
-            <li class="d-flex align-items-center gap-2 mb-3">
-              <i class="bi bi-whatsapp text-primary"></i>
-              <a href="https://wa.me/966500518950" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none link-hover">+966 500 518 950</a>
-            </li>
-            <li class="d-flex align-items-center gap-2 mb-3">
-              <i class="bi bi-envelope-fill text-primary"></i>
-              <a href="mailto:info@AirMenu.net" class="text-white text-decoration-none link-hover">info@AirMenu.net</a>
-            </li>
-          </ul>
-
-          <h5 class="text-white mb-4" style="margin-top: 50px;">Follow Us</h5>
-          <ul class="footer-menu list-unstyled d-flex gap-3 mb-0 fs-4" style="margin-top: 50px;">
-            <li>
-              <a class="social-icon" href="https://www.facebook.com/GoAirMenu" aria-label="Facebook" target="_blank" rel="noopener noreferrer" rel="noopener">
-                <i class="bi bi-facebook"></i>
-              </a>
-            </li>
-            <li>
-              <a class="social-icon" href="https://www.instagram.com/GoAirMenu/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" rel="noopener">
-                <i class="bi bi-instagram"></i>
-              </a>
-            </li>
-            <li>
-              <a class="social-icon" href="https://x.com/goairmenu" target="_blank" rel="noopener noreferrer" aria-label="Twitter" rel="noopener">
-                <i class="bi bi-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a class="social-icon" href="https://www.tiktok.com/@goairmenu" target="_blank" rel="noopener noreferrer" aria-label="TikTok" rel="noopener">
-                <i class="bi bi-tiktok"></i>
-              </a>
-            </li>
-            <li>
-              <a class="social-icon" href="https://www.linkedin.com/in/GoAirMenu" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" rel="noopener">
-                <i class="bi bi-linkedin"></i>
-              </a>
-            </li>
-            <li>
-              <a class="social-icon" href="https://www.youtube.com/@GoAirMenu" target="_blank" rel="noopener noreferrer" aria-label="YouTube" rel="noopener">
-                <i class="bi bi-youtube"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-
-      <!-- Copyright -->
-      <div class="row mt-5">
-        <div class="col-12 text-center text-md-center">
-          <p class="mb-0 text-white text-opacity-70 fs-6">&copy; Air Menu 2026 &ndash; All Rights Reserved</p>
+        <!-- Bottom Bar -->
+        <div class="row">
+          <div class="col-12">
+            <hr class="opacity-10 my-0">
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-between py-3 gap-2">
+              <p class="mb-0 text-white-50" style="font-size:0.88rem;">&copy; Air Menu 2020&ndash;<span id="footer-year"></span> &mdash; All Rights Reserved</p>
+              <div class="d-flex gap-3">
+                <a href="privacy-policy.html" class="footer-link" style="font-size:0.82rem;"><i class="bi bi-box-arrow-up-right" style="font-size:0.6rem;margin-right:2px;"></i> Privacy Policy</a>
+                <a href="terms-and-conditions.html" class="footer-link" style="font-size:0.82rem;"><i class="bi bi-box-arrow-up-right" style="font-size:0.6rem;margin-right:2px;"></i> Terms of Service</a>
+                <a href="support.html" class="footer-link" style="font-size:0.82rem;"><i class="bi bi-box-arrow-up-right" style="font-size:0.6rem;margin-right:2px;"></i> Support</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
+      <style>
+        .footer-arrow {
+          font-size: 0.65rem;
+          margin-right: 4px;
+          transition: margin 0.2s ease;
+          vertical-align: middle;
+        }
+        .footer-link:hover .footer-arrow {
+          margin-right: 8px;
+        }
+        .footer-heading {
+          color: #fff;
+          font-weight: 700;
+          margin-bottom: 1.25rem;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          font-size: 0.78rem;
+          background: linear-gradient(90deg, #60a5fa, #06b6d4);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+        }
+        .footer-link {
+          color: rgba(255,255,255,0.55);
+          text-decoration: none;
+          font-size: 0.95rem;
+          transition: color 0.3s ease, transform 0.2s ease;
+          display: inline-block;
+        }
+        .footer-link:hover {
+          color: #60a5fa !important;
+          transform: translateX(4px);
+        }
+        .footer-icon-wrap {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 36px;
+          height: 36px;
+          border-radius: 50%;
+          background: rgba(59,130,246,0.12);
+          color: #60a5fa;
+          font-size: 0.85rem;
+          flex-shrink: 0;
+          transition: background 0.3s ease;
+        }
+        .footer-icon-wrap:hover {
+          background: rgba(59,130,246,0.25);
+        }
+        .footer-social {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background: rgba(255,255,255,0.05);
+          color: #94a3b8;
+          font-size: 1.1rem;
+          text-decoration: none;
+          transition: all 0.3s ease;
+          border: 1px solid rgba(255,255,255,0.06);
+        }
+        .footer-social:hover {
+          background: linear-gradient(135deg, rgba(59,130,246,0.2), rgba(6,182,212,0.12));
+          color: #60a5fa;
+          border-color: rgba(59,130,246,0.25);
+          transform: translateY(-3px);
+          box-shadow: 0 6px 20px rgba(59,130,246,0.12);
+        }
+      </style>
+    </footer>
+
+    <div class="scroll-btn-wrapper">
+      <button class="btn bg-primary p-2 round-52 rounded-circle hstack justify-content-center flex-shrink-0"
+        id="scrollToTopBtn">
+        <iconify-icon id="scrollIcon" icon="lucide:arrow-up" class="fs-7 text-white"></iconify-icon>
+      </button>
+      <svg class="scroll-progress-ring" width="60" height="60" viewBox="0 0 60 60">
+        <circle cx="30" cy="30" r="26" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="3"/>
+        <circle id="scrollProgress" cx="30" cy="30" r="26" fill="none" stroke="#ffffff" stroke-width="3"
+          stroke-linecap="round" transform="rotate(-90 30 30)" stroke-dasharray="163.36" stroke-dashoffset="163.36"/>
+      </svg>
     </div>
 
-    <style>
-      .social-icon i { font-size: 1.6rem; color: white; transition: color 0.3s ease; }
-      .social-icon:hover i, .social-icon:focus i { color: var(--bs-primary); }
-      .social-icon { text-decoration: none; display: inline-block; }
-      .footer-paragraph { font-size: 1.1rem; line-height: 1.6; }
-    </style>
-  </footer>
-
-  <button class="btn bg-primary p-2 round-52 rounded-circle hstack justify-content-center flex-shrink-0"
-    id="scrollToTopBtn">
-    <iconify-icon icon="lucide:arrow-up" class="fs-7 text-dark"></iconify-icon>
-  </button>
+    <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
 
   <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
   <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

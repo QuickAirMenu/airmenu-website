@@ -1,9 +1,9 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net https://code.iconify.design https://cdnjs.cloudflare.com; style-src 'self' https://cdn.jsdelivr.net https://fonts.googleapis.com https://cdnjs.cloudflare.com 'unsafe-inline'; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net; frame-src 'self'; form-action 'self'; connect-src 'self';">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://code.iconify.design https://cdnjs.cloudflare.com; style-src 'self' https://cdn.jsdelivr.net https://fonts.googleapis.com https://cdnjs.cloudflare.com 'unsafe-inline'; img-src 'self' data:; media-src 'self'; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://cdn.jsdelivr.net; frame-src 'self'; form-action 'self'; connect-src 'self';">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <!-- Page Title -->
@@ -56,6 +56,20 @@
   <link rel="stylesheet" href="../assets/libs/owl.carousel/dist/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="../assets/libs/aos-master/dist/aos.css">
   <link rel="stylesheet" href="../assets/css/styles.css" />
+  <script>
+    let projectData = null;
+    fetch('data/projects.json')
+      .then(r => r.json())
+      .then(data => {
+        const params = new URLSearchParams(window.location.search);
+        const id = parseInt(params.get('id')) || 0;
+        projectData = data[id] || data[0];
+        renderProject();
+      })
+      .catch(() => {
+        document.body.innerHTML = '<div class="container py-11"><h2>Project not found</h2><a href="projects.html">Back to projects</a></div>';
+      });
+  </script>
 </head>
 
 <body>
@@ -66,14 +80,14 @@
       <div class="header-wrapper d-flex align-items-center justify-content-between">
         <div class="logo">
           <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-            <img class="logo-white" src="../assets/images/logos/logo-white.svg" alt="air-menu-logo" style="width: 150px">
-            <img class="logo-dark" src="../assets/images/logos/logo-dark.svg" alt="air-menu-logo" style="width: 150px">
+            <img class="logo-white w-150" src="../assets/images/logos/logo-white.svg" alt="air-menu-logo">
+            <img class="logo-dark w-150" src="../assets/images/logos/logo-dark.svg" alt="air-menu-logo">
           </a>
         </div>
 
         <!-- Desktop Nav -->
         <ul class="nav-desktop list-unstyled mb-0 d-none d-xl-flex align-items-center gap-1">
-          <li><a href="index.html" class="nav-desktop-link">Home</a></li>
+          <li><a href="index.html" class="nav-desktop-link active">Home</a></li>
           <li><a href="about-us.html" class="nav-desktop-link">About</a></li>
           <li class="dropdown position-relative">
             <a href="#" class="nav-desktop-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Services</a>
@@ -84,15 +98,20 @@
             </ul>
           </li>
           <li class="dropdown position-relative">
-            <a href="#" class="nav-desktop-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Digital Products</a>
+            <a href="#" class="nav-desktop-link dropdown-toggle" role="button" data-bs-toggle="dropdown">SaaS Products</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="https://imenu.airmenu.net/" target="_blank" rel="noopener noreferrer">i-Menu</a></li>
               <li><a class="dropdown-item" href="https://icard.airmenu.net/" target="_blank" rel="noopener noreferrer">i-Card</a></li>
+              <li><a class="dropdown-item" href="https://iblog.airmenu.net/" target="_blank" rel="noopener noreferrer">i-Blog</a></li>
+              <li><a class="dropdown-item" href="https://iprojects.airmenu.net/" target="_blank" rel="noopener noreferrer">i-Projects</a></li>
             </ul>
           </li>
           <li><a href="blog.html" class="nav-desktop-link">Blog</a></li>
           <li><a href="contact.html" class="nav-desktop-link">Contact</a></li>
         </ul>
+
+        <!-- Desktop CTA -->
+        <a href="contact.html" class="btn btn-primary text-white fw-semibold rounded-pill px-3 py-1 fs-2 d-none d-xl-inline-block navbar-cta border border-2 border-white"><iconify-icon icon="lucide:arrow-up-right" class="me-1"></iconify-icon>Get Started</a>
 
         <!-- Mobile Hamburger (hidden on desktop) -->
         <div class="d-flex align-items-center gap-4">
@@ -110,24 +129,26 @@
             <div class="dropdown-menu dropdown-menu-end p-4">
               <div class="d-flex flex-column gap-6">
                 <div class="hstack justify-content-between border-bottom pb-6">
-                  <p class="mb-0 fs-5">Menu</p>
+                  <p class="mb-0 fs-5 ">Menu</p>
                   <button type="button" class="btn-close opacity-75" aria-label="Close"></button>
                 </div>
                 <div class="d-flex flex-column gap-3">
                   <ul class="header-menu list-unstyled mb-0 d-flex flex-column gap-2">
                     <li class="header-item">
-                      <a href="index.html" class="header-link hstack gap-2 fs-7 fw-bold">
+                      <a href="index.html" aria-current="true" class="header-link active hstack gap-2 fs-7 fw-bold ">
                         <img src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin">Home
                       </a>
                     </li>
                     <li class="header-item">
-                      <a href="about-us.html" class="header-link hstack gap-2 fs-7 fw-bold">
-                        <img src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin">About
+                      <a href="about-us.html" class="header-link hstack gap-2 fs-7 fw-bold ">
+                        <img src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20"
+                         class="img-fluid animate-spin text-primary">About
                       </a>
                     </li>
                     <li class="header-item dropdown">
-                      <a href="#" class="header-link dropdown-toggle hstack gap-2 fs-7 fw-bold" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin">Services
+                      <a href="#" class="header-link dropdown-toggle hstack gap-2 fs-7 fw-bold  " role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin"> Services
                       </a>
                       <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="index.html#services">Brand Identity</a></li>
@@ -136,27 +157,31 @@
                       </ul>
                     </li>
                     <li class="header-item dropdown">
-                      <a href="#" class="header-link dropdown-toggle hstack gap-2 fs-7 fw-bold" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin">Digital Products
+                      <a href="#" class="header-link dropdown-toggle hstack gap-2 fs-7 fw-bold " role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin"> SaaS Products
                       </a>
                       <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="https://imenu.airmenu.net/" target="_blank" rel="noopener noreferrer">i-Menu</a></li>
                         <li><a class="dropdown-item" href="https://icard.airmenu.net/" target="_blank" rel="noopener noreferrer">i-Card</a></li>
+                        <li><a class="dropdown-item" href="https://iblog.airmenu.net/" target="_blank" rel="noopener noreferrer">i-Blog</a></li>
+                        <li><a class="dropdown-item" href="https://iprojects.airmenu.net/" target="_blank" rel="noopener noreferrer">i-Projects</a></li>
                       </ul>
                     </li>
                     <li class="header-item">
-                      <a href="blog.html" class="header-link hstack gap-2 fs-7 fw-bold">
+                      <a href="blog.html" class="header-link hstack gap-2 fs-7 fw-bold ">
                         <img src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin">Blog
                       </a>
                     </li>
                     <li class="header-item">
-                      <a href="contact.html" class="header-link hstack gap-2 fs-7 fw-bold">
+                      <a href="contact.html" class="header-link hstack gap-2 fs-7 fw-bold ">
                         <img src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin">Contact
                       </a>
                     </li>
                   </ul>
-                  <div class="hstack gap-3">
-                    <a href="index.html" class="btn btn-dark text-white fs-6 px-3 py-2 w-50 hstack justify-content-center text-bg-dark">عربي</a>
+                  <div class="hstack gap-3 ">
+                    <a href="contact.html"
+                      class="btn btn-primary text-white fw-semibold rounded-pill px-3 py-2 fs-3 flex-grow-1 hstack justify-content-center navbar-cta border border-2 border-white"><iconify-icon icon="lucide:arrow-up-right" class="me-1"></iconify-icon>Get Started</a>
+                                        
                   </div>
                 </div>
               </div>
@@ -172,7 +197,7 @@
   <div class="page-wrapper overflow-hidden">
 
     <!--  Banner Section -->
-    <section class="banner-section banner-inner-section position-relative overflow-hidden d-flex align-items-end"
+    <section id="project-banner" class="banner-section banner-inner-section position-relative overflow-hidden d-flex align-items-end"
       style="background-image: url(../assets/images/backgrounds/projects-detail-banner.jpg);">
       <div class="container">
         <div class="d-flex flex-column gap-4 pb-5 pb-xl-10 position-relative z-1">
@@ -181,19 +206,20 @@
               <div class="d-flex align-items-center gap-4" data-aos="fade-up" data-aos-delay="100"
                 data-aos-duration="1000">
                 <img src="../assets/images/svgs/primary-leaf.svg" alt="" class="img-fluid animate-spin">
-                <p class="mb-0 text-white fs-5 text-opacity-70">A <span class="text-primary">showcase of
+                <p class="mb-0 text-white fs-5 text-opacity-70" id="project-subtitle">A <span class="text-primary">showcase of
                     creativity</span>, strategy, and results explore the projects that define us.</p>
               </div>
             </div>
           </div>
           <div class="d-flex align-items-end gap-3" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-            <h1 class="mb-0 fs-16 text-white lh-1">BioTrack LIMS</h1>
+            <h1 class="mb-0 fs-16 text-white lh-1" id="project-title">BioTrack LIMS</h1>
             <a href="javascript:void(0)" class="p-1 ps-7 bg-primary rounded-pill">
               <span class="bg-white round-52 rounded-circle d-flex align-items-center justify-content-center">
                 <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-dark"></iconify-icon>
               </span>
             </a>
           </div>
+          <div id="project-tags" class="d-flex gap-1 flex-wrap"></div>
         </div>
       </div>
     </section>
@@ -213,19 +239,19 @@
               data-aos-duration="1000">
               <div class="d-flex flex-column gap-2 py-2 pe-4 pe-lg-8 border-end">
                 <p class="mb-0">Scope of work</p>
-                <p class="mb-0 text-dark fs-5 fw-medium">Brand identity, Digital design</p>
+                <p class="mb-0 text-dark fs-5 fw-medium" id="project-scope">Brand identity, Digital design</p>
               </div>
               <div class="d-flex flex-column gap-2 py-2 pe-4 pe-lg-8 border-end">
                 <p class="mb-0">Industry</p>
-                <p class="mb-0 text-dark fs-5 fw-medium">Bags</p>
+                <p class="mb-0 text-dark fs-5 fw-medium" id="project-industry">Bags</p>
               </div>
               <div class="d-flex flex-column gap-2 py-2 pe-4 pe-lg-8 border-end">
                 <p class="mb-0">Raised</p>
-                <p class="mb-0 text-dark fs-5 fw-medium">$1.1M</p>
+                <p class="mb-0 text-dark fs-5 fw-medium" id="project-raised">$1.1M</p>
               </div>
               <div class="d-flex flex-column gap-2 py-2">
                 <p class="mb-0">Website</p>
-                <p class="mb-0 text-dark fs-5 fw-medium">www.airmenu.net</p>
+                <p class="mb-0 text-dark fs-5 fw-medium" id="project-website">www.airmenu.net</p>
               </div>
             </div>
           </div>
@@ -236,10 +262,10 @@
             </div>
             <div class="col-lg-8">
               <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                <p class="fs-5 mb-6">
+                <div class="fs-5 mb-6" id="project-description">
                   exploring the world of handbags reveals a diverse array of blogs catering to various styles, trends,
                   and fashion insights. Here are some notable handbag blogs you might find engaging:
-                </p>
+                </div>
                 <h4>1. PurseBlog</h4>
                 <p class="fs-5 mb-6">
                   PurseBlog offers daily editorial content focusing on designer handbag news, reviews, and features.
@@ -255,150 +281,209 @@
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-12 mb-7" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-              <img src="../assets/images/portfolio/portfolio-img-4.jpg" alt="services" class="w-100 object-fit-cover">
-            </div>
-            <div class="col-lg-6 mb-7" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-              <img src="../assets/images/portfolio/portfolio-img-2.jpg" alt="services" class="w-100 object-fit-cover">
-            </div>
-            <div class="col-lg-6 mb-7" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-              <img src="../assets/images/portfolio/portfolio-img-3.jpg" alt="services" class="w-100 object-fit-cover">
-            </div>
-          </div>
+          <div class="row" id="project-gallery"></div>
         </div>
       </div>
     </section>
 
   </div>
 
-  <footer class="footer py-5 bg-dark py-lg-11 py-xl-12">
-    <div class="container">
-      <div class="row gy-6">
-        
-        <!-- About & Contact Info -->
-        <div class="col-xl-6 mb-8 mb-xl-5">
-          <div class="d-flex flex-column gap-4 pe-xl-4">
-            <div class="footer-info">
-              <img
-                src="../assets/images/logos/logo-white.svg"
-                style="width: 190px; margin-bottom: 30px;"
-                alt="air-menu-logo"
-              />
-              <p class="mb-3 text-white footer-paragraph" >
-                Take your business to new heights with Air Menu. We deliver cutting-edge digital
-                solutions that empower your brand and drive success.
-              </p>
+    <footer class="footer position-relative overflow-hidden" style="background:linear-gradient(135deg,#0b1a2e 0%,#143257 40%,#1a3f6a 70%,#0d2440 100%);">
+      <!-- Decorative top gradient line -->
+      <div class="position-absolute top-0 start-0 w-100" style="height:5px;background:linear-gradient(90deg,#3b82f6,#06b6d4,#8b5cf6,#3b82f6);"></div>
+      <!-- Glow orbs -->
+      <div class="position-absolute" style="top:-100px;right:-60px;width:350px;height:350px;border-radius:50%;background:radial-gradient(circle,rgba(59,130,246,0.12),transparent 70%);pointer-events:none;"></div>
+      <div class="position-absolute" style="bottom:-80px;left:-50px;width:250px;height:250px;border-radius:50%;background:radial-gradient(circle,rgba(6,182,212,0.08),transparent 70%);pointer-events:none;"></div>
+
+      <div class="container position-relative" style="z-index:1;">
+        <div class="py-6 py-xl-9">
+          <div class="row gy-6">
+
+            <!-- Column 1: Brand -->
+            <div class="col-xl-4 col-lg-6">
+              <div class="d-flex flex-column gap-3">
+                <img src="../assets/images/logos/logo-white.svg" style="width:175px;" alt="air-menu-logo">
+                <p class="text-white-50 mb-0 lh-lg" style="font-size:1rem;max-width:360px;">
+                  Take your business to new heights with Air Menu. We deliver cutting-edge digital solutions that empower your brand and drive success.
+                </p>
+                <!-- Mini stats -->
+                <div class="d-flex gap-4 mt-2 pt-2">
+                  <div><span class="text-white fw-bold fs-5">500+</span><br><span class="text-white-50 fs-small">Projects</span></div>
+                  <div class="vr opacity-25"></div>
+                  <div><span class="text-white fw-bold fs-5">350+</span><br><span class="text-white-50 fs-small">Clients</span></div>
+                  <div class="vr opacity-25"></div>
+                  <div><span class="text-white fw-bold fs-5">6+</span><br><span class="text-white-50 fs-small">Years</span></div>
+                </div>
+              </div>
             </div>
+
+            <!-- Column 2: Services + Company -->
+            <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+              <h6 class="footer-heading">Services</h6>
+              <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+                <li><a href="index.html#services" class="footer-link"><i class="bi bi-chevron-right footer-arrow"></i> Digital Identity</a></li>
+                <li><a href="index.html#services" class="footer-link"><i class="bi bi-chevron-right footer-arrow"></i> Visual Branding</a></li>
+                <li><a href="index.html#services" class="footer-link"><i class="bi bi-chevron-right footer-arrow"></i> Mobile Apps</a></li>
+                <li><a href="index.html#services" class="footer-link"><i class="bi bi-chevron-right footer-arrow"></i> Company Profiles</a></li>
+                <li><a href="index.html#services" class="footer-link"><i class="bi bi-chevron-right footer-arrow"></i> SEO &amp; Analytics</a></li>
+              </ul>
+              <h6 class="footer-heading mt-4">Company</h6>
+              <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+                <li><a href="about-us.html" class="footer-link"><i class="bi bi-chevron-right footer-arrow"></i> About Us</a></li>
+                <li><a href="projects.html" class="footer-link"><i class="bi bi-chevron-right footer-arrow"></i> Portfolio</a></li>
+                <li><a href="contact.html" class="footer-link"><i class="bi bi-chevron-right footer-arrow"></i> Contact</a></li>
+              </ul>
+            </div>
+
+            <!-- Column 3: SaaS Products + Tools -->
+            <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+              <h6 class="footer-heading">SaaS Products</h6>
+              <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+                <li><a href="https://imenu.airmenu.net/" target="_blank" class="footer-link"><i class="bi bi-chevron-right footer-arrow"></i> iMenu</a></li>
+                <li><a href="https://icard.airmenu.net/" target="_blank" class="footer-link"><i class="bi bi-chevron-right footer-arrow"></i> iCard</a></li>
+                <li><a href="https://iblog.airmenu.net/" target="_blank" class="footer-link"><i class="bi bi-chevron-right footer-arrow"></i> iBlog</a></li>
+                <li><a href="https://iprojects.airmenu.net/" target="_blank" class="footer-link"><i class="bi bi-chevron-right footer-arrow"></i> iProjects</a></li>
+              </ul>
+              <h6 class="footer-heading mt-4">Tools</h6>
+              <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+                <li><a href="https://tinypix.airmenu.net/" target="_blank" class="footer-link"><i class="bi bi-chevron-right footer-arrow"></i> TinyPix</a></li>
+                <li><a href="https://leadshub.airmenu.net/" target="_blank" class="footer-link"><i class="bi bi-chevron-right footer-arrow"></i> LeadsHub</a></li>
+              </ul>
+            </div>
+
+            <!-- Column 4: Contact + Social -->
+            <div class="col-xl-4 col-lg-6">
+              <h6 class="footer-heading">Get in Touch</h6>
+              <ul class="list-unstyled d-flex flex-column gap-3 mb-4">
+                <li class="d-flex align-items-center gap-3">
+                  <span class="footer-icon-wrap"><i class="bi bi-telephone-fill"></i></span>
+                  <a href="tel:+966500518950" class="footer-link">+966 500 518 950</a>
+                  <span class="text-white-50 fs-small">&nbsp;|&nbsp;</span>
+                  <a href="https://wa.me/966500518950" target="_blank" class="footer-link"><i class="bi bi-whatsapp" style="color:#25D366;"></i></a>
+                </li>
+                <li class="d-flex align-items-center gap-3">
+                  <span class="footer-icon-wrap"><i class="bi bi-envelope-fill"></i></span>
+                  <a href="mailto:info@AirMenu.net" class="footer-link">info@AirMenu.net</a>
+                </li>
+                <li class="d-flex align-items-center gap-3">
+                  <span class="footer-icon-wrap"><i class="bi bi-geo-alt-fill"></i></span>
+                  <span class="text-white-50">Saudi Arabia</span>
+                </li>
+              </ul>
+
+              <h6 class="footer-heading">Follow Us</h6>
+              <div class="d-flex gap-2 flex-wrap">
+                <a href="https://www.instagram.com/GoAirMenu/" target="_blank" class="footer-social" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="https://x.com/goairmenu" target="_blank" class="footer-social" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+                <a href="https://www.linkedin.com/in/GoAirMenu" target="_blank" class="footer-social" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+
           </div>
         </div>
 
-        <!-- Service & Product Links -->
-        <div class="col-md-4 col-xl-3 mb-8 mb-xl-0 order-2">
-          <h5 class="text-white mb-4">Service Links</h5>
-          <ul class="list-unstyled text-white fs-5 mb-5">
-            <li class="d-flex align-items-center gap-2 mb-3">
-              <i class="bi bi-person-badge text-primary"></i>
-              <a href="index.html#services" class="text-white text-decoration-none link-hover">Digital Identity Design</a>
-            </li>
-            <li class="d-flex align-items-center gap-2 mb-3">
-              <i class="bi bi-easel2-fill text-primary"></i>
-              <a href="index.html#services" class="text-white text-decoration-none link-hover">Visual Branding Design</a>
-            </li>
-            <li class="d-flex align-items-center gap-2 mb-3">
-              <i class="bi bi-file-earmark-text-fill text-primary"></i>
-              <a href="index.html#services" class="text-white text-decoration-none link-hover">Company Profiles</a>
-            </li>
-          </ul>
-
-          <h5 class="text-white mb-4">Product Links</h5>
-          <ul class="list-unstyled text-white fs-5">
-            <li class="d-flex align-items-center gap-2 mb-3">
-              <i class="bi bi-ui-checks-grid text-primary"></i>
-              <a href="https://imenu.airmenu.net/" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none link-hover">Digital Menu System</a>
-            </li>
-            <li class="d-flex align-items-center gap-2">
-              <i class="bi bi-credit-card-2-front-fill text-primary"></i>
-              <a href="https://icard.airmenu.net/" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none link-hover">iCard System</a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Get in Touch -->
-        <div class="col-md-4 col-xl-3 mb-8 mb-xl-0 order-4">
-          <h5 class="text-white mb-4">Get in Touch</h5>
-          <ul class="list-unstyled text-white fs-5">
-            <li class="d-flex align-items-center gap-2 mb-3">
-              <i class="bi bi-telephone-fill text-primary"></i>
-              <a href="tel:+966500518950" class="text-white text-decoration-none link-hover">+966 500 518 950</a>
-            </li>
-            <li class="d-flex align-items-center gap-2 mb-3">
-              <i class="bi bi-whatsapp text-primary"></i>
-              <a href="https://wa.me/966500518950" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none link-hover">+966 500 518 950</a>
-            </li>
-            <li class="d-flex align-items-center gap-2 mb-3">
-              <i class="bi bi-envelope-fill text-primary"></i>
-              <a href="mailto:info@AirMenu.net" class="text-white text-decoration-none link-hover">info@AirMenu.net</a>
-            </li>
-          </ul>
-
-          <h5 class="text-white mb-4" style="margin-top: 50px;">Follow Us</h5>
-          <ul class="footer-menu list-unstyled d-flex gap-3 mb-0 fs-4" style="margin-top: 50px;">
-            <li>
-              <a class="social-icon" href="https://www.facebook.com/GoAirMenu" aria-label="Facebook" target="_blank" rel="noopener noreferrer" rel="noopener">
-                <i class="bi bi-facebook"></i>
-              </a>
-            </li>
-            <li>
-              <a class="social-icon" href="https://www.instagram.com/GoAirMenu/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" rel="noopener">
-                <i class="bi bi-instagram"></i>
-              </a>
-            </li>
-            <li>
-              <a class="social-icon" href="https://x.com/goairmenu" target="_blank" rel="noopener noreferrer" aria-label="Twitter" rel="noopener">
-                <i class="bi bi-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a class="social-icon" href="https://www.tiktok.com/@goairmenu" target="_blank" rel="noopener noreferrer" aria-label="TikTok" rel="noopener">
-                <i class="bi bi-tiktok"></i>
-              </a>
-            </li>
-            <li>
-              <a class="social-icon" href="https://www.linkedin.com/in/GoAirMenu" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" rel="noopener">
-                <i class="bi bi-linkedin"></i>
-              </a>
-            </li>
-            <li>
-              <a class="social-icon" href="https://www.youtube.com/@GoAirMenu" target="_blank" rel="noopener noreferrer" aria-label="YouTube" rel="noopener">
-                <i class="bi bi-youtube"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-
-      <!-- Copyright -->
-      <div class="row mt-5">
-        <div class="col-12 text-center text-md-center">
-          <p class="mb-0 text-white text-opacity-70 fs-6">&copy; Air Menu 2026 &ndash; All Rights Reserved</p>
+        <!-- Bottom Bar -->
+        <div class="row">
+          <div class="col-12">
+            <hr class="opacity-10 my-0">
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-between py-3 gap-2">
+              <p class="mb-0 text-white-50" style="font-size:0.88rem;">&copy; Air Menu 2020&ndash;<span id="footer-year"></span> &mdash; All Rights Reserved</p>
+              <div class="d-flex gap-3">
+                <a href="privacy-policy.html" class="footer-link" style="font-size:0.82rem;"><i class="bi bi-box-arrow-up-right" style="font-size:0.6rem;margin-right:2px;"></i> Privacy Policy</a>
+                <a href="terms-and-conditions.html" class="footer-link" style="font-size:0.82rem;"><i class="bi bi-box-arrow-up-right" style="font-size:0.6rem;margin-right:2px;"></i> Terms of Service</a>
+                <a href="support.html" class="footer-link" style="font-size:0.82rem;"><i class="bi bi-box-arrow-up-right" style="font-size:0.6rem;margin-right:2px;"></i> Support</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
+      <style>
+        .footer-arrow {
+          font-size: 0.65rem;
+          margin-right: 4px;
+          transition: margin 0.2s ease;
+          vertical-align: middle;
+        }
+        .footer-link:hover .footer-arrow {
+          margin-right: 8px;
+        }
+        .footer-heading {
+          color: #fff;
+          font-weight: 700;
+          margin-bottom: 1.25rem;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          font-size: 0.78rem;
+          background: linear-gradient(90deg, #60a5fa, #06b6d4);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+        }
+        .footer-link {
+          color: rgba(255,255,255,0.55);
+          text-decoration: none;
+          font-size: 0.95rem;
+          transition: color 0.3s ease, transform 0.2s ease;
+          display: inline-block;
+        }
+        .footer-link:hover {
+          color: #60a5fa !important;
+          transform: translateX(4px);
+        }
+        .footer-icon-wrap {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 36px;
+          height: 36px;
+          border-radius: 50%;
+          background: rgba(59,130,246,0.12);
+          color: #60a5fa;
+          font-size: 0.85rem;
+          flex-shrink: 0;
+          transition: background 0.3s ease;
+        }
+        .footer-icon-wrap:hover {
+          background: rgba(59,130,246,0.25);
+        }
+        .footer-social {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background: rgba(255,255,255,0.05);
+          color: #94a3b8;
+          font-size: 1.1rem;
+          text-decoration: none;
+          transition: all 0.3s ease;
+          border: 1px solid rgba(255,255,255,0.06);
+        }
+        .footer-social:hover {
+          background: linear-gradient(135deg, rgba(59,130,246,0.2), rgba(6,182,212,0.12));
+          color: #60a5fa;
+          border-color: rgba(59,130,246,0.25);
+          transform: translateY(-3px);
+          box-shadow: 0 6px 20px rgba(59,130,246,0.12);
+        }
+      </style>
+    </footer>
+
+    <div class="scroll-btn-wrapper">
+      <button class="btn bg-primary p-2 round-52 rounded-circle hstack justify-content-center flex-shrink-0"
+        id="scrollToTopBtn">
+        <iconify-icon id="scrollIcon" icon="lucide:arrow-up" class="fs-7 text-white"></iconify-icon>
+      </button>
+      <svg class="scroll-progress-ring" width="60" height="60" viewBox="0 0 60 60">
+        <circle cx="30" cy="30" r="26" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="3"/>
+        <circle id="scrollProgress" cx="30" cy="30" r="26" fill="none" stroke="#ffffff" stroke-width="3"
+          stroke-linecap="round" transform="rotate(-90 30 30)" stroke-dasharray="163.36" stroke-dashoffset="163.36"/>
+      </svg>
     </div>
 
-    <style>
-      .social-icon i { font-size: 1.6rem; color: white; transition: color 0.3s ease; }
-      .social-icon:hover i, .social-icon:focus i { color: var(--bs-primary); }
-      .social-icon { text-decoration: none; display: inline-block; }
-      .footer-paragraph { font-size: 1.1rem; line-height: 1.6; }
-    </style>
-  </footer>
-
-  <button class="btn bg-primary p-2 round-52 rounded-circle hstack justify-content-center flex-shrink-0"
-    id="scrollToTopBtn">
-    <iconify-icon icon="lucide:arrow-up" class="fs-7 text-dark"></iconify-icon>
-  </button>
+    <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
 
 
   <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
@@ -408,6 +493,47 @@
   <script src="../assets/js/custom.js"></script>
   <!-- solar icons -->
   <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+  <script>
+    function renderProject() {
+      const p = projectData;
+      if (!p) return;
+
+      // Banner section
+      document.getElementById('project-banner').style.backgroundImage = `url(${p.banner})`;
+      document.getElementById('project-title').textContent = p.title;
+      document.getElementById('project-subtitle').innerHTML = p.subtitle;
+
+      // Details
+      document.getElementById('project-scope').textContent = p.scope;
+      document.getElementById('project-industry').textContent = p.industry;
+      document.getElementById('project-raised').textContent = p.raised;
+      document.getElementById('project-website').textContent = p.website;
+
+      // Description
+      document.getElementById('project-description').innerHTML = p.description;
+
+      // Tags
+      const tagsContainer = document.getElementById('project-tags');
+      tagsContainer.innerHTML = '';
+      p.tags.forEach(tag => {
+        const span = document.createElement('span');
+        span.className = 'badge bg-primary small fw-normal px-2 py-1';
+        span.textContent = tag;
+        tagsContainer.appendChild(span);
+      });
+
+      // Gallery
+      const gallery = document.getElementById('project-gallery');
+      gallery.innerHTML = '';
+      const cols = ['col-12 mb-7', 'col-lg-6 mb-7', 'col-lg-6 mb-7'];
+      p.gallery.forEach((img, i) => {
+        const col = document.createElement('div');
+        col.className = cols[i] || 'col-12 mb-7';
+        col.innerHTML = `<img src="${img}" alt="${p.title}" class="w-100 object-fit-cover">`;
+        gallery.appendChild(col);
+      });
+    }
+  </script>
 </body>
 
 </html>

@@ -1,0 +1,128 @@
+[
+  {
+    "id": 0,
+    "title": "Rowad Al-Ebtikar",
+    "subtitle": "Visual Identity & Branding",
+    "tags": ["Visual Identity"],
+    "image": "../assets/images/portfolio/portfolio-img-1.jpg",
+    "banner": "../assets/images/backgrounds/projects-detail-banner.jpg",
+    "scope": "Brand identity, Visual design",
+    "industry": "Advertising & Marketing",
+    "raised": "$500K",
+    "website": "www.rowadalebtikar.com",
+    "description": "A complete visual identity transformation for Rowad Al-Ebtikar, a rising advertising and marketing agency in Saudi Arabia. The project encompassed logo design, brand guidelines, stationery, and digital presence.",
+    "gallery": [
+      "../assets/images/portfolio/portfolio-img-1.jpg",
+      "../assets/images/portfolio/portfolio-img-4.jpg",
+      "../assets/images/portfolio/portfolio-img-2.jpg"
+    ]
+  },
+  {
+    "id": 1,
+    "title": "Al-Sheikh Holding Company",
+    "subtitle": "Digital Identity & Corporate Branding",
+    "tags": ["Digital Identity"],
+    "image": "../assets/images/portfolio/portfolio-img-2.jpg",
+    "banner": "../assets/images/backgrounds/projects-detail-banner.jpg",
+    "scope": "Digital identity, Corporate branding",
+    "industry": "Holding & Investment",
+    "raised": "$2M",
+    "website": "www.alsheikhholding.com",
+    "description": "A comprehensive digital identity for Al-Sheikh Holding Company, unifying their diverse portfolio of businesses under a cohesive brand umbrella with modern digital touchpoints.",
+    "gallery": [
+      "../assets/images/portfolio/portfolio-img-2.jpg",
+      "../assets/images/portfolio/portfolio-img-5.jpg",
+      "../assets/images/portfolio/portfolio-img-7.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Raj Indian Restaurant",
+    "subtitle": "Software & Visual Identity",
+    "tags": ["Software", "Visual Identity"],
+    "image": "../assets/images/portfolio/portfolio-img-3.jpg",
+    "banner": "../assets/images/backgrounds/projects-detail-banner.jpg",
+    "scope": "Software development, Visual identity",
+    "industry": "Food & Beverage",
+    "raised": "$300K",
+    "website": "www.rajrestaurant.com",
+    "description": "A full digital transformation for Raj Indian Restaurant including a custom digital menu system, brand refresh, and online ordering platform that streamlined their operations.",
+    "gallery": [
+      "../assets/images/portfolio/portfolio-img-3.jpg",
+      "../assets/images/portfolio/portfolio-img-6.jpg",
+      "../assets/images/portfolio/portfolio-img-1.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Naqsh Advertising & Marketing",
+    "subtitle": "Digital Identity",
+    "tags": ["Digital Identity"],
+    "image": "../assets/images/portfolio/portfolio-img-4.jpg",
+    "banner": "../assets/images/backgrounds/projects-detail-banner.jpg",
+    "scope": "Digital identity, Web design",
+    "industry": "Advertising",
+    "raised": "$750K",
+    "website": "www.naqshad.com",
+    "description": "A bold digital identity for Naqsh Advertising & Marketing, crafted to reflect their creative edge through a dynamic website, social media templates, and branded collateral.",
+    "gallery": [
+      "../assets/images/portfolio/portfolio-img-4.jpg",
+      "../assets/images/portfolio/portfolio-img-7.jpg",
+      "../assets/images/portfolio/portfolio-img-3.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Saudi RNA",
+    "subtitle": "Visual Identity & Scientific Branding",
+    "tags": ["Visual Identity"],
+    "image": "../assets/images/portfolio/portfolio-img-5.jpg",
+    "banner": "../assets/images/backgrounds/projects-detail-banner.jpg",
+    "scope": "Visual identity, Brand strategy",
+    "industry": "Biotechnology",
+    "raised": "$1.5M",
+    "website": "www.saudirna.com",
+    "description": "A scientific yet visually compelling brand identity for Saudi RNA, a biotechnology firm. The design balances professionalism with innovation across all touchpoints.",
+    "gallery": [
+      "../assets/images/portfolio/portfolio-img-5.jpg",
+      "../assets/images/portfolio/portfolio-img-2.jpg",
+      "../assets/images/portfolio/portfolio-img-4.jpg"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Ashbal Al-Fan Advertising Agency",
+    "subtitle": "Software Platform",
+    "tags": ["Software"],
+    "image": "../assets/images/portfolio/portfolio-img-6.jpg",
+    "banner": "../assets/images/backgrounds/projects-detail-banner.jpg",
+    "scope": "Software platform, CMS development",
+    "industry": "Advertising",
+    "raised": "$1.1M",
+    "website": "www.ashbalalfan.com",
+    "description": "A custom software platform for Ashbal Al-Fan Advertising Agency to manage client campaigns, creative workflows, and project delivery — all in one integrated system.",
+    "gallery": [
+      "../assets/images/portfolio/portfolio-img-6.jpg",
+      "../assets/images/portfolio/portfolio-img-3.jpg",
+      "../assets/images/portfolio/portfolio-img-1.jpg"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Emaar Al-Sahra",
+    "subtitle": "Digital Identity & Real Estate Branding",
+    "tags": ["Digital Identity"],
+    "image": "../assets/images/portfolio/portfolio-img-7.jpg",
+    "banner": "../assets/images/backgrounds/projects-detail-banner.jpg",
+    "scope": "Digital identity, Real estate branding",
+    "industry": "Real Estate",
+    "raised": "$5M",
+    "website": "www.emaaralsahra.com",
+    "description": "A prestigious digital identity for Emaar Al-Sahra, a luxury real estate developer. The project delivered an elegant brand system that communicates sophistication and trust.",
+    "gallery": [
+      "../assets/images/portfolio/portfolio-img-7.jpg",
+      "../assets/images/portfolio/portfolio-img-5.jpg",
+      "../assets/images/portfolio/portfolio-img-6.jpg"
+    ]
+  }
+]

@@ -1,30 +1,34 @@
 # ─────────────────────────────────────────────
-# 02_ Digital Identity (الهوية الرقمية)
+# Digital Identity (الهوية الرقمية)
 # ─────────────────────────────────────────────
-# برومت فيديو الهوية الرقمية
+# برومت الفيديو الثاني — الهوية الرقمية
 # مناسب لـ: Runway Gen-3 / Pika / Kling / Sora
 
-مشهد 1 — 3 ثوانٍ
-خلفية سوداء مع شبكة رقمية (digital grid) تمتد إلى الأفق بتأثير ثلاثي الأبعاد. أيقونات الهوية الرقمية تظهر: بصمة رقمية، بطاقة تعريف إلكترونية، رمز QR متحرك. الخطوط الرقمية تتصل وتنفصل. حركة كاميرا أمامية بطيئة.
+المشهد الأول — 3 ثوانٍ
+خلفية سوداء عميقة مع شبكة رقمية (digital grid) ثلاثية الأبعاد تمتد إلى الأفق. أيقونات الهوية الرقمية تظهر تباعاً: بصمة رقمية متوهجة، بطاقة تعريف إلكترونية شفافة، رمز QR متحرك. خطوط بيانات ضوئية تتصل بين الأيقونات. حركة كاميرا أمامية بطيئة.
 
-Opening shot — deep black background with a 3D digital perspective grid extending to the horizon. Digital identity icons materialize: fingerprint, electronic ID card, animated QR code. Connecting data lines pulse between them. Slow forward camera movement.
+Opening shot — deep black background with 3D digital perspective grid extending to infinity. Digital identity icons appear sequentially: glowing fingerprint, transparent electronic ID card, animated QR code. Data light lines connect between icons. Slow forward camera movement.
 
-مشهد 2 — 4 ثوانٍ
-بطاقة هوية رقمية عائمة بشفافية زجاجية تعرض اسم شركة وشعاراً وأيقونة توثيق (verified badge). تأثيرات ضوئية زرقاء وذهبية حول البطاقة. طبقات أمان رقمية (encryption layers, shield icons) تظهر كطبقات شفافة تغطي البطاقة ثم تختفي. الكاميرا تدور ببطء حول البطاقة.
+المشهد الثاني — 4 ثوانٍ
+بطاقة هوية رقمية عائمة بتأثير زجاجي شفاف (glassmorphism) في منتصف الإطار — تعرض اسم الشركة، الشعار، أيقونة توثيق موثقة (verified badge) متوهجة. طبقات أمان رقمية (درع تشفير، أيقونات حماية) تظهر كطبقات شفافة تغطي البطاقة ثم تختفي. إضاءة زرقاء سماوية مع لمسات ذهبية على أيقونة التوثيق. الكاميرا تدور ببطء حول البطاقة بزاوية 360 درجة.
 
-A transparent glassmorphism digital ID card floats at center — company name, logo, verified badge with glow. Digital security layers (encryption shields, verification stamps) fade in/out as translucent overlays. Slow orbit camera. Cyan-blue lighting with gold verification accents.
+A glassmorphism digital ID card floats at center — company name, logo, glowing verified badge. Digital security layers (encryption shield, protection icons) appear as transparent overlays covering the card then fading away. Cyan-blue lighting with gold highlights on the verification badge. Slow 360-degree orbit camera around the card.
 
-مشهد 3 — 3 ثوانٍ
-الهوية الرقمية تتكامل مع أجهزة مختلفة: هاتف ذكي يعرض البطاقة الرقمية، جهاز لوحي، شاشة متجر. رمز QR يظهر ويومض. إضاءة夜空 داكنة مع لمسات ضوئية ناعمة.
+المشهد الثالث — 3 ثوانٍ
+الهوية الرقمية تتكامل مع أجهزة مختلفة في مشهد واحد: هاتف ذكي يعرض البطاقة الرقمية على الشاشة، جهاز لوحي يعرض رمز QR، شاشة متجر تعرض اسم المستخدم الموثق. رمز NFC يومض في الزاوية السفلية. إضاءة ليلية داكنة مع توهجات شاشة ناعمة.
 
-Digital identity being used across devices: smartphone displaying the digital card, tablet, store terminal. QR code pulses with soft glow. Dark night-mode lighting, soft screen glows.
+Digital identity in use across devices in a single frame: smartphone displaying the digital card, tablet showing QR code, store terminal displaying verified user identity. NFC icon pulses in corner. Dark night-mode lighting with soft screen glow reflections.
 
-مشهد ختامي — ثانيتان
-شعار Air Menu مع نص: "Digital Identity — هوية رقمية" يظهر بتأثير تلاشي. اختفاء تدريجي في العمق الرقمي.
+المشهد الرابع — ثانيتان
+تلاشي إلى شعار Air Menu في منتصف الإطار مع نص سفلي: "Digital Identity — هوية رقمية" بخط عصري أنيق. البطاقة الرقمية تصغر وتتلاشى داخل الشعار. اختفاء تدريجي في العمق الرقمي مع نبض ضوئي.
 
-Air Menu logo with subtitle "Digital Identity — هوية رقمية". Fade into digital depth.
+Fade to Air Menu logo centered with subtitle "Digital Identity — هوية رقمية" in elegant typeface. The digital card shrinks and dissolves into the logo. Gradual fade into digital depth with a soft light pulse.
 
-# إرشادات
-- 4K — 24fps — 11-13 ثانية
-- ألوان: أسود — سماوي — ذهبي للأمان/التوثيق
-- أسلوب: glassmorphism, sleek, high-tech
+# إرشادات عامة
+- 4K (3840×2160) — 24fps — 11-13 ثانية
+- ألوان: أسود عميق — سماوي (#00D4FF) — ذهبي (#FFD700) للتوثيق والأمان
+- أسلوب: glassmorphism، عالي التقنية، sleek
+- إضاءة: حجمية ناعمة مع rim lights زرقاء
+- حركة كاميرا: بطيئة سلسة — لا مشاهد سريعة
+- موسيقى: إلكترونية تصويرية هادئة مع نبضات أمان خفيفة
+- لا وجوه بشرية — أيدي فقط عند الحاجة

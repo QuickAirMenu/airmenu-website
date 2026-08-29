@@ -1,15 +1,15 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net https://code.iconify.design https://cdnjs.cloudflare.com; style-src 'self' https://cdn.jsdelivr.net https://fonts.googleapis.com https://cdnjs.cloudflare.com 'unsafe-inline'; img-src 'self' data:; media-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net; frame-src 'self'; form-action 'self'; connect-src 'self';">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://code.iconify.design https://cdnjs.cloudflare.com; style-src 'self' https://cdn.jsdelivr.net https://fonts.googleapis.com https://cdnjs.cloudflare.com 'unsafe-inline'; img-src 'self' data: https://cdn.jsdelivr.net https://api.iconify.design https://images.unsplash.com; media-src 'self'; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; frame-src 'self'; form-action 'self'; connect-src 'self' https://api.iconify.design https://iconify.design https://cdn.jsdelivr.net;">
   <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.svg" />
   <link rel="stylesheet" href="../assets/libs/owl.carousel/dist/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="../assets/libs/aos-master/dist/aos.css">
   <link rel="stylesheet" href="../assets/css/styles.css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
   
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -19,6 +19,10 @@
 
   <!-- Meta Description -->
   <meta name="description" content="Air Menu provides innovative digital solutions including professional web design, corporate email setup, visual identity branding, digital menu and iCard services, with continuous technical support to grow your business.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Air Menu">
+  <meta name="theme-color" content="#143257">
+  <link rel="canonical" href="https://AirMenu.net/">
 
   <!-- Meta Keywords -->
   <meta name="keywords" content="Air Menu, digital solutions, web design, branding, digital transformation, e-menu, digital business card, corporate email, SEO services, social media management, Saudi Arabia">
@@ -26,7 +30,7 @@
   <!-- Open Graph Tags (Facebook / LinkedIn / WhatsApp) -->
   <meta property="og:title" content="Air Menu | Innovative Digital Solutions for Your Business">
   <meta property="og:description" content="Your strategic partner in digital transformation: web design, branding, corporate email, digital menu and iCard.">
-  <meta property="og:image" content="https://AirMenu.net/logo.png">
+  <meta property="og:image" content="https://AirMenu.net/assets/images/logos/logo-color.png">
   <meta property="og:url" content="https://AirMenu.net">
   <meta property="og:type" content="website">
 
@@ -34,7 +38,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Air Menu | Digital Solutions & Branding">
   <meta name="twitter:description" content="Web design, branding, corporate email, digital menu & iCard with 24/7 support.">
-  <meta name="twitter:image" content="https://AirMenu.net/logo.png">
+  <meta name="twitter:image" content="https://AirMenu.net/assets/images/logos/logo-color.png">
 
   <!-- Schema.org Structured Data (JSON-LD) -->
   <script type="application/ld+json">
@@ -68,11 +72,283 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
 
   <!-- Main CSS File -->
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+  <style>
+      .owl-dots {
+        display: flex !important;
+        justify-content: center !important;
+        margin-top: 15px;
+      }
+
+      .glass-card {
+        background: rgba(245, 245, 245, 0.8);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        border-radius: 16px;
+        transition: all 0.3s ease;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+      }
+
+      .glass-card:hover {
+        background: rgba(255, 255, 255, 0.95);
+        transform: translateY(-5px);
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+      }
+
+      .products-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        max-width: 1400px;
+        margin: auto;
+        padding: 0 15px;
+      }
+      @media (max-width: 1024px) {
+        .products-grid { grid-template-columns: repeat(2, 1fr); }
+      }
+      .product-card {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 12px;
+        position: relative;
+        color: white;
+        overflow: hidden;
+        min-height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+      }
+      .product-card:hover {
+        transform: translateY(-5px);
+        filter: brightness(1.1);
+      }
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.55);
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(3px);
+        z-index: 1;
+        transition: background-color 0.3s ease;
+      }
+      .product-card:hover .overlay {
+        background-color: rgba(0, 0, 0, 0.75);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+      }
+      .product-content {
+        position: relative;
+        z-index: 2;
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .product-icon {
+        font-size: 50px;
+        margin-bottom: 20px;
+        color: white;
+      }
+      .product-card h3 {
+        font-size: 22px;
+        margin-bottom: 10px;
+        color: #fff;
+      }
+      .product-card p {
+        font-size: 16px;
+        color: #e0e0e0;
+        line-height: 1.6;
+      }
+      @media (max-width: 576px) {
+        .products-grid { grid-template-columns: 1fr; gap: 20px; }
+        .product-card { min-height: 350px; padding: 15px; }
+      }
+
+      .avatar-circle {
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+
+      .partners-wrap {
+        padding: 4rem 0;
+        background: #F4F8FA;
+        border-top: 1px solid rgba(0,0,0,0.04);
+      }
+      .partners-track {
+        overflow: hidden;
+        white-space: nowrap;
+        width: 100%;
+        -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 8%, #000 92%, transparent 100%);
+        mask-image: linear-gradient(to right, transparent 0%, #000 8%, #000 92%, transparent 100%);
+      }
+      .partners-track-inner {
+        display: inline-block;
+        white-space: nowrap;
+        animation: partnersScroll 25s linear infinite;
+      }
+      .partners-track-inner > span {
+        display: inline-block;
+        width: 150px;
+        height: 70px;
+        vertical-align: middle;
+        text-align: center;
+        line-height: 70px;
+        margin: 0 10px;
+      }
+      .partners-track-inner > span img {
+        max-width: 100%;
+        max-height: 50px;
+        vertical-align: middle;
+        filter: grayscale(1) brightness(0);
+        transition: filter 0.3s ease;
+      }
+      .partners-track:hover .partners-track-inner { animation-play-state: paused; }
+      .partners-track-inner > span img:hover { filter: none; }
+      @keyframes partnersScroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+      }
+
+      .accordion-button::after {
+        content: '+';
+        font-weight: bold;
+        color: black;
+        font-size: 1.5rem;
+        transition: transform 0.3s ease;
+      }
+      .accordion-button:not(.collapsed)::after {
+        content: '+';
+        color: white;
+      }
+      .accordion-button::after {
+        background-image: none !important;
+      }
+
+      input.form-control,
+      textarea.form-control {
+        border-radius: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .form-control::placeholder {
+        color: #6c757d;
+        font-size: large;
+      }
+      .custom-btn-mail {
+        background-color: #143257;
+        color: white;
+        border: 1px solid #143257;
+        transition: 0.3s;
+        border-radius: 30px;
+      }
+      .custom-btn-mail:hover,
+      .custom-btn-mail:focus,
+      .custom-btn-mail:active {
+        background-color: white !important;
+        color: #143257 !important;
+        border-color: #143257 !important;
+        cursor: pointer;
+        text-decoration: none;
+      }
+      a.text-decoration-none {
+        color: #143257;
+        transition: color 0.3s, text-decoration 0.3s;
+        font-weight: 600;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      a.text-decoration-none:hover {
+        color: #143257;
+        text-decoration: underline;
+      }
+      .get-in-touch h2,
+      .get-in-touch h4 {
+        font-family: 'Segoe UI', Tahoma, Geneva
+      }
+
+      .footer-arrow {
+        font-size: 0.65rem;
+        margin-right: 4px;
+        transition: margin 0.2s ease;
+        vertical-align: middle;
+      }
+      .footer-link:hover .footer-arrow {
+        margin-right: 8px;
+      }
+      .footer-heading {
+        color: #fff;
+        font-weight: 700;
+        margin-bottom: 1.25rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-size: 0.78rem;
+        background: linear-gradient(90deg, #60a5fa, #06b6d4);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      .footer-link {
+        color: rgba(255,255,255,0.55);
+        text-decoration: none;
+        font-size: 0.95rem;
+        transition: color 0.3s ease, transform 0.2s ease;
+        display: inline-block;
+      }
+      .footer-link:hover {
+        color: #60a5fa !important;
+        transform: translateX(4px);
+      }
+      .footer-icon-wrap {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: rgba(59,130,246,0.12);
+        color: #60a5fa;
+        font-size: 0.85rem;
+        flex-shrink: 0;
+        transition: background 0.3s ease;
+      }
+      .footer-icon-wrap:hover {
+        background: rgba(59,130,246,0.25);
+      }
+      .footer-social {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.05);
+        color: #94a3b8;
+        font-size: 1.1rem;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        border: 1px solid rgba(255,255,255,0.06);
+      }
+      .footer-social:hover {
+        background: linear-gradient(135deg, rgba(59,130,246,0.2), rgba(6,182,212,0.12));
+        color: #60a5fa;
+        border-color: rgba(59,130,246,0.25);
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(59,130,246,0.12);
+      }
+  </style>
 
   <!-- =======================================================
   * Template Name: Strategy
@@ -91,8 +367,8 @@
       <div class="header-wrapper d-flex align-items-center justify-content-between">
         <div class="logo">
           <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-            <img class="logo-white" src="../assets/images/logos/logo-white.svg" alt="air-menu-logo" style="width: 150px">
-            <img class="logo-dark" src="../assets/images/logos/logo-dark.svg" alt="air-menu-logo" style="width: 150px">
+            <img class="logo-white w-150" src="../assets/images/logos/logo-white.svg" alt="air-menu-logo">
+            <img class="logo-dark w-150" src="../assets/images/logos/logo-dark.svg" alt="air-menu-logo">
           </a>
         </div>
 
@@ -109,15 +385,20 @@
             </ul>
           </li>
           <li class="dropdown position-relative">
-            <a href="#" class="nav-desktop-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Digital Products</a>
+            <a href="#" class="nav-desktop-link dropdown-toggle" role="button" data-bs-toggle="dropdown">SaaS Products</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="https://imenu.airmenu.net/" target="_blank" rel="noopener noreferrer">i-Menu</a></li>
               <li><a class="dropdown-item" href="https://icard.airmenu.net/" target="_blank" rel="noopener noreferrer">i-Card</a></li>
+              <li><a class="dropdown-item" href="https://iblog.airmenu.net/" target="_blank" rel="noopener noreferrer">i-Blog</a></li>
+              <li><a class="dropdown-item" href="https://iprojects.airmenu.net/" target="_blank" rel="noopener noreferrer">i-Projects</a></li>
             </ul>
           </li>
           <li><a href="blog.html" class="nav-desktop-link">Blog</a></li>
           <li><a href="contact.html" class="nav-desktop-link">Contact</a></li>
         </ul>
+
+        <!-- Desktop CTA -->
+        <a href="contact.html" class="btn btn-primary text-white fw-semibold rounded-pill px-3 py-1 fs-2 d-none d-xl-inline-block navbar-cta border border-2 border-white"><iconify-icon icon="lucide:arrow-up-right" class="me-1"></iconify-icon>Get Started</a>
 
         <!-- Mobile Hamburger (hidden on desktop) -->
         <div class="d-flex align-items-center gap-4">
@@ -164,11 +445,13 @@
                     </li>
                     <li class="header-item dropdown">
                       <a href="#" class="header-link dropdown-toggle hstack gap-2 fs-7 fw-bold " role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin"> Digital Products
+                        <img src="../assets/images/svgs/secondary-leaf.svg" alt="" width="20" height="20" class="img-fluid animate-spin"> SaaS Products
                       </a>
                       <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="https://imenu.airmenu.net/" target="_blank" rel="noopener noreferrer">i-Menu</a></li>
                         <li><a class="dropdown-item" href="https://icard.airmenu.net/" target="_blank" rel="noopener noreferrer">i-Card</a></li>
+                        <li><a class="dropdown-item" href="https://iblog.airmenu.net/" target="_blank" rel="noopener noreferrer">i-Blog</a></li>
+                        <li><a class="dropdown-item" href="https://iprojects.airmenu.net/" target="_blank" rel="noopener noreferrer">i-Projects</a></li>
                       </ul>
                     </li>
                     <li class="header-item">
@@ -183,10 +466,9 @@
                     </li>
                   </ul>
                   <div class="hstack gap-3 ">
-                    <a href="index.html"
-                      class="btn btn-dark text-white fs-6 px-3 py-2 w-50 hstack justify-content-center text-bg-dark" >عربي</a>
-                  </div>
-                  <div>
+                    <a href="contact.html"
+                      class="btn btn-primary text-white fw-semibold rounded-pill px-3 py-2 fs-3 flex-grow-1 hstack justify-content-center navbar-cta border border-2 border-white"><iconify-icon icon="lucide:arrow-up-right" class="me-1"></iconify-icon>Get Started</a>
+                                        
                   </div>
                 </div>
               </div>
@@ -203,21 +485,25 @@
   <div class="page-wrapper overflow-hidden">
 
     <!--  Hero Section -->
-    <section class="banner-section position-relative d-flex align-items-end min-vh-100 overflow-hidden" style="background:#143257">
-      <video id="hero-video" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" muted playsinline preload="auto"></video>
-      <div class="container">
-        <div class="d-flex flex-column gap-4 pb-8 position-relative z-1">
+    <section id="hero" class="banner-section position-relative d-flex align-items-end min-vh-100 overflow-hidden" style="background:#143257">
+      <div id="hero-wrap" style="position:absolute;top:0;left:0;width:100%;height:100%">
+        <video id="hero-video" autoplay muted playsinline style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover">
+          <source src="../assets/images/backgrounds/01_Brand-Identity-Visual-Design.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="container position-relative" style="z-index:1">
+        <div class="d-flex flex-column gap-4 pb-8">
           <div class="row align-items-center">
-            <div class="col-xl-6 d-flex align-items-center gap-3" 
-                 data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-              <p id="rotating-text" class="mb-0">
+            <div class="col-xl-6 d-flex align-items-center gap-3">
+              <p id="rotating-text" class="mb-0 text-white fw-bold" style="font-size:clamp(1.1rem, 3.5vw, 2.2rem);text-shadow:0 4px 40px rgba(0,0,0,0.7);line-height:1.3">
+                Your Brand Deserves a <span class="text-warning">Powerful Visual Identity.</span>
               </p>
             </div>
           </div>
-          <div class="d-flex align-items-end gap-3" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+          <div class="d-flex align-items-end gap-3">
             <h2 class="mb-0 fs-16 text-white lh-1">AirMenu</h2>
             <a href="contact.html" class="p-1 ps-7 bg-primary rounded-pill">
-              <span class="bg-white round-52 rounded-circle d-flex align-items-center justify-content-center text-primary ">
+              <span class="bg-white round-52 rounded-circle d-flex align-items-center justify-content-center text-primary">
                 <iconify-icon icon="lucide:arrow-up-right" class="fs-8"></iconify-icon>
               </span>
             </a>
@@ -225,39 +511,51 @@
         </div>
       </div>
       <script>
-        const vid = document.getElementById('hero-video');
-        const textEl = document.getElementById('rotating-text');
-        const heroContent = [
-          { video: '../assets/images/backgrounds/01_Brand-Identity-Visual-Design.mp4', text: 'Your Brand Deserves a <span class="text-warning">Powerful Visual Identity.</span>' },
-          { video: '../assets/images/backgrounds/02_digital-idenyity.mp4', text: 'Your Digital Identity Defines <span class="text-warning">Your Business Future.</span>' },
-          { video: '../assets/images/backgrounds/02-2_digital-idenyity.mp4', text: 'Secure Your Digital Presence with <span class="text-warning">A Trusted Identity.</span>' },
-          { video: '../assets/images/backgrounds/02-3_digital-idenyity.mp4', text: 'Build Your Global Brand with <span class="text-warning">A Powerful Digital Footprint.</span>' },
-          { video: '../assets/images/backgrounds/04_iMenu-Digital-Menu.mp4', text: 'Transform Your Restaurant with <span class="text-warning">A Smart Digital Menu.</span>' },
-          { video: '../assets/images/backgrounds/04-2_iMenu-Digital-Menu.mp4', text: 'Elevate Every Dining Experience with <span class="text-warning">An Interactive Digital Menu.</span>' },
-          { video: '../assets/images/backgrounds/05_digital-icard.mp4', text: 'Your Business Card, Reinvented <span class="text-warning">Digitally.</span>' }
+        var wrap = document.getElementById('hero-wrap');
+        var vid = document.getElementById('hero-video');
+        var txt = document.getElementById('rotating-text');
+        var sources = [
+          '../assets/images/backgrounds/01_Brand-Identity-Visual-Design.mp4',
+          '../assets/images/backgrounds/02_digital-idenyity.mp4',
+          '../assets/images/backgrounds/02-2_digital-idenyity.mp4',
+          '../assets/images/backgrounds/02-3_digital-idenyity.mp4',
+          '../assets/images/backgrounds/04_iMenu-Digital-Menu.mp4',
+          '../assets/images/backgrounds/04-2_iMenu-Digital-Menu.mp4',
+          '../assets/images/backgrounds/05_digital-icard.mp4'
         ];
-        let i = 0;
-        function playCurrent() {
-          vid.play().catch(function() {
-            vid.muted = true;
-            setTimeout(function() { vid.play(); }, 500);
-          });
+        var labels = [
+          'Your Brand Deserves a <span class="text-warning">Powerful Visual Identity.</span>',
+          'Your Digital Identity Defines <span class="text-warning">Your Business Future.</span>',
+          'Secure Your Digital Presence with <span class="text-warning">A Trusted Identity.</span>',
+          'Build Your Global Brand with <span class="text-warning">A Powerful Digital Footprint.</span>',
+          'Transform Your Restaurant with <span class="text-warning">A Smart Digital Menu.</span>',
+          'Elevate Every Dining Experience with <span class="text-warning">An Interactive Digital Menu.</span>',
+          'Your Business Card, Reinvented <span class="text-warning">Digitally.</span>'
+        ];
+        var idx = 0;
+        txt.innerHTML = labels[idx];
+        function playNextVideo() {
+          idx = (idx + 1) % sources.length;
+          txt.innerHTML = labels[idx];
+          var old = vid;
+          vid = document.createElement('video');
+          vid.autoplay = true;
+          vid.muted = true;
+          vid.playsinline = true;
+          vid.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover';
+          var src = document.createElement('source');
+          src.src = sources[idx];
+          src.type = 'video/mp4';
+          vid.appendChild(src);
+          old.parentNode.replaceChild(vid, old);
+          vid.addEventListener('ended', playNextVideo);
         }
-        function nextVideo() {
-          const item = heroContent[i];
-          vid.src = item.video;
-          vid.load();
-          textEl.innerHTML = item.text;
-          i = (i + 1) % heroContent.length;
-        }
-        vid.addEventListener('canplay', playCurrent);
-        vid.addEventListener('ended', nextVideo);
-        nextVideo();
+        vid.addEventListener('ended', playNextVideo);
       </script>
     </section>
       
     <!--  Stats & Facts Section -->
-    <section class="stats-facts py-5 py-lg-11 py-xl-12 position-relative overflow-hidden bg-light-gray">
+    <section id="stats-facts" class="stats-facts py-5 py-lg-11 py-xl-12 position-relative overflow-hidden bg-light-gray">
       <div class="container">
         <div class="row gap-7 gap-xl-0">
           <div class="col-xl-4 col-xxl-4">
@@ -266,49 +564,43 @@
               <span
                 class="round-36 flex-shrink-0 text-white rounded-circle hstack justify-content-center fw-medium bg-dark">01</span>
               <hr class="border-line">
-              <span class="badge text-bg-dark">Stats & facts</span>
+              <span class="badge text-white bg-dark">Stats & facts</span>
             </div>
           </div>
           <div class="col-xl-8 col-xxl-7">
             <div class="d-flex flex-column gap-9">
               <div class="row">
-                <div class="col-xxl-8">
+                <div class="col-xxl-10">
                   <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100"
                     data-aos-duration="1000">
-                    <h2 class="mb-0">High quality web design solutions you can trust.</h2>
-                    <p class="fs-5 mb-0">When selecting a web design agency, it's essential to consider its reputation,
-                      experience, and the specific needs of your project.</p>
+                    <h2 class="mb-0">Our achievements speak for themselves</h2>
+                    <p class="fs-5 mb-0">We are proud of the results we have delivered. Our commitment to excellence drives us to provide the best possible experience for our clients.</p>
                   </div>
                 </div>
               </div>
               <div class="row">
-                <div class="col-md-6 col-lg-4 mb-7 mb-lg-0">
+                <div class="col-md-4 mb-7 mb-lg-0">
                   <div class="d-flex flex-column gap-6 pt-9 border-top" data-aos="fade-up" data-aos-delay="200"
                     data-aos-duration="1000">
-                    <h2 class="mb-0 fs-14"><span class="count" data-target="40">40</span>K+</h2>
-                    <p class="mb-0">People who have launched their websites</p>
+                    <h2 class="mb-0 fs-14"><span class="count" data-target="350">350</span>+</h2>
+                    <p class="mb-0">Happy clients served</p>
                   </div>
                 </div>
-                <div class="col-md-6 col-lg-4 mb-7 mb-lg-0">
+                <div class="col-md-4 mb-7 mb-lg-0">
                   <div class="d-flex flex-column gap-6 pt-9 border-top" data-aos="fade-up" data-aos-delay="300"
                     data-aos-duration="1000">
-                    <h2 class="mb-0 fs-14"><span class="count" data-target="238">238</span>+</h2>
-                    <p class="mb-0">Experienced professionals ready to assist</p>
+                    <h2 class="mb-0 fs-14"><span class="count" data-target="500">500</span>+</h2>
+                    <p class="mb-0">Successful projects delivered</p>
                   </div>
                 </div>
-                <div class="col-md-6 col-lg-4 mb-7 mb-lg-0">
+                <div class="col-md-4 mb-7 mb-lg-0">
                   <div class="d-flex flex-column gap-6 pt-9 border-top" data-aos="fade-up" data-aos-delay="400"
                     data-aos-duration="1000">
-                    <h2 class="mb-0 fs-14"><span class="count" data-target="3">3</span>M+</h2>
-                    <p class="mb-0">Support through messages and live consultations</p>
+                    <h2 class="mb-0 fs-14"><span class="count" data-target="98">98</span>%</h2>
+                    <p class="mb-0">Clients satisfaction</p>
                   </div>
                 </div>
               </div>
-              <a href="about-us.html" class="btn" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
-                <span class="btn-text">Who we are</span>
-                <iconify-icon icon="lucide:arrow-up-right"
-                  class="btn-icon bg-white text-dark round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm"></iconify-icon>
-              </a>
             </div>
           </div>
         </div>
@@ -317,19 +609,17 @@
         <img src="../assets/images/backgrounds/stats-facts-bg.svg" alt="" class="img-fluid">
       </div>
     </section>
-  <!--about us-->>
+  <!--about us-->
       
          
   
-      <section class="stats-facts py-5 py-lg-11 py-xl-12 position-relative overflow-hidden">
+      <section id="about-us" class="stats-facts py-5 py-lg-11 py-xl-12 position-relative overflow-hidden">
         <div class="container">
           <div class="row gap-7 gap-xl-0">
             <div class="col-xl-4 col-xxl-4">
               <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100"
                 data-aos-duration="1000">
-                <span
-                  class="round-36 flex-shrink-0 text-white rounded-circle 
-                    bg-dark hstack justify-content-center fw-medium">02</span>
+                <span class="round-36 flex-shrink-0 text-white rounded-circle hstack justify-content-center fw-medium bg-dark">02</span>
                 <hr class="border-line">
                 <span class="badge text-white bg-dark">about us</span>
               </div>
@@ -340,46 +630,17 @@
                   <div class="col-xxl-8">
                     <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100"
                       data-aos-duration="1000">
-                      <h2 class="mb-0  " >about us</h2>
-                      <p class="fs-5 mb-0 "> <b>Your Strategic Partner in Digital Transformation</b> <br>
-                      at  <b>Air Menu</b> specializes in delivering fully integrated digital solutions for companies and organizations across the region.
-                        We believe success in today’s digital era begins with a strong and effective online presence.
-                        We design unique digital experiences that attract customers and turn them into loyal partners. That’s why our focus is on building corporate websites, activating official email systems, and creating complete visual brand identities.<br>
-                        Innovation and distinctiveness are at the heart of our designs, ensuring our clients enjoy a remarkable digital journey
-  
+                      <h2 class="mb-0">about us</h2>
+                      <p class="fs-5 mb-0">
+                        <b>Your Strategic Partner in Digital Transformation</b><br><br>
+                        At <b>Air Menu</b>, we turn digital ambitions into reality. We help companies and organizations build a powerful online presence and seamless systems through fully integrated solutions, from corporate websites and official email systems to complete visual brand identities and smart software applications.<br><br>
+                        Innovation, reliability, and attention to detail are at the core of everything we do, ensuring our clients enjoy a distinctive digital journey that reflects their brand and accelerates their growth.
                       </p>
                     </div>
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-md-6 col-lg-4 mb-7 mb-lg-0">
-                    <div class="d-flex flex-column gap-6 pt-9 border-top" data-aos="fade-up" data-aos-delay="200"
-                      data-aos-duration="1000">
-                      
-                      <h2 class="mb-0 fs-14 "><span class="count" data-target="40"> 534 </span></h2>
-                      <p class="mb-0 "> Happy clients</p>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-lg-4 mb-7 mb-lg-0">
-                    <div class="d-flex flex-column gap-6 pt-9 border-top" data-aos="fade-up" data-aos-delay="300"
-                      data-aos-duration="1000">
-                      <h2 class="mb-0 fs-14  "><span class="count " data-target="238">560</span>+</h2>
-                      <p class="mb-0 ">successful projects delivered</p>
-                    </div>
-                  </div>
-                 
-                  
-                  
-                    <div class="col-md-6 col-lg-4 mb-7 mb-lg-0">
-                      <div class="d-flex flex-column gap-6 pt-9 border-top" data-aos="fade-up" data-aos-delay="300"
-                        data-aos-duration="1000">
-                        <h2 class="mb-0 fs-14 "><span class="count" data-target="238">4200</span>+</h2>
-                        <p class="mb-0  ">hours of dedicated technical support</p>
-                      </div>
-                    </div>
-                  
-                </div>
-                <a href="about-us.html" class="btn" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" style="margin-top: 50px;">
+                <a href="about-us.html" class="btn mt-50" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
                   <span class="btn-text">Who we are</span>
                   <iconify-icon icon="lucide:arrow-up-right"
                     class="btn-icon bg-white text-primary round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm"></iconify-icon>
@@ -396,7 +657,7 @@
 
     <!--  Featured Projects Section -->
     <!--  Featured Projects Section -->
-    <section class="featured-projects py-5 py-lg-11 py-xl-12 bg-light-gray">
+    <section id="portfolio" class="featured-projects py-5 py-lg-11 py-xl-12 bg-light-gray">
       <div class="d-flex flex-column gap-5 gap-xl-11">
         <div class="container">
           <div class="row gap-7 gap-xl-0">
@@ -431,21 +692,18 @@
               <div class="portfolio d-flex flex-column gap-6">
                 <div class="portfolio-img position-relative overflow-hidden">
                   <img src="../assets/images/portfolio/portfolio-img-1.jpg" alt="" class="img-fluid">
+                  <div class="position-absolute bottom-0 start-0 p-2 d-flex gap-1 flex-wrap" style="z-index: 2;">
+                    <span class="badge bg-primary small fw-normal px-2 py-1">Visual Identity</span>
+                  </div>
                   <div class="portfolio-overlay">
-                    <a href="projects-detail.html"
-                      class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle 
-                       hstack justify-content-center">
+                    <a href="projects-detail.html?id=0"
+                      class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
                       <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-white"></iconify-icon>
                     </a>
                   </div>
                 </div>
                 <div class="portfolio-details d-flex flex-column gap-3">
-                  <h4 class="mb-0">Rowad Al-Ebtikar 
- </h4>
-                  <div class="hstack gap-2 align-items-stretch">
-                  <a href="">   <span class="badge text-dark border">Visual Identity </span></a>
-                    
-                  </div>
+                  <h4 class="mb-0">Rowad Al-Ebtikar</h4>
                 </div>
               </div>
             </div>
@@ -453,19 +711,18 @@
               <div class="portfolio d-flex flex-column gap-6">
                 <div class="portfolio-img position-relative overflow-hidden">
                   <img src="../assets/images/portfolio/portfolio-img-2.jpg" alt="" class="img-fluid">
+                  <div class="position-absolute bottom-0 start-0 p-2 d-flex gap-1 flex-wrap" style="z-index: 2;">
+                    <span class="badge bg-primary small fw-normal px-2 py-1">Digital Identity</span>
+                  </div>
                   <div class="portfolio-overlay">
-                    <a href="projects-detail.html"
+                    <a href="projects-detail.html?id=1"
                       class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
                       <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-white"></iconify-icon>
                     </a>
                   </div>
                 </div>
                 <div class="portfolio-details d-flex flex-column gap-3">
-                  <h4 class="mb-0 ">Al-Sheikh Holding Company
-                  </h4>
-                  <div class="hstack gap-2">
-                    <span class="badge text-dark border">Digital Identity</span>
-                  </div>
+                  <h4 class="mb-0">Al-Sheikh Holding Company</h4>
                 </div>
               </div>
             </div>
@@ -473,19 +730,19 @@
               <div class="portfolio d-flex flex-column gap-6">
                 <div class="portfolio-img position-relative overflow-hidden">
                   <img src="../assets/images/portfolio/portfolio-img-3.jpg" alt="" class="img-fluid">
+                  <div class="position-absolute bottom-0 start-0 p-2 d-flex gap-1 flex-wrap" style="z-index: 2;">
+                    <span class="badge bg-primary small fw-normal px-2 py-1">Software</span>
+                    <span class="badge bg-dark small fw-normal px-2 py-1">Visual Identity</span>
+                  </div>
                   <div class="portfolio-overlay">
-                    <a href="projects-detail.html"
+                    <a href="projects-detail.html?id=2"
                       class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
                       <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-white"></iconify-icon>
                     </a>
                   </div>
                 </div>
                 <div class="portfolio-details d-flex flex-column gap-3">
-                  <h4 class="mb-0"> Raj Indian Restaurant
-</h4>
-                  <div class="hstack gap-2">
-                    <span class="badge text-dark border">Integrated Software Solutions & Visual Identity</span>
-                  </div>
+                  <h4 class="mb-0">Raj Indian Restaurant</h4>
                 </div>
               </div>
             </div>
@@ -493,18 +750,18 @@
               <div class="portfolio d-flex flex-column gap-6">
                 <div class="portfolio-img position-relative overflow-hidden">
                   <img src="../assets/images/portfolio/portfolio-img-4.jpg" alt="" class="img-fluid">
+                  <div class="position-absolute bottom-0 start-0 p-2 d-flex gap-1 flex-wrap" style="z-index: 2;">
+                    <span class="badge bg-primary small fw-normal px-2 py-1">Digital Identity</span>
+                  </div>
                   <div class="portfolio-overlay">
-                    <a href="projects-detail.html"
+                    <a href="projects-detail.html?id=3"
                       class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
                       <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-white"></iconify-icon>
                     </a>
                   </div>
                 </div>
                 <div class="portfolio-details d-flex flex-column gap-3">
-                  <h4 class="mb-0"> Naqsh Advertising & Marketing</h4>
-                  <div class="hstack gap-2">
-                    <span class="badge text-dark border">Digital Identity</span>
-                  </div>
+                  <h4 class="mb-0">Naqsh Advertising & Marketing</h4>
                 </div>
               </div>
             </div>
@@ -512,60 +769,56 @@
               <div class="portfolio d-flex flex-column gap-6">
                 <div class="portfolio-img position-relative overflow-hidden">
                   <img src="../assets/images/portfolio/portfolio-img-5.jpg" alt="" class="img-fluid">
+                  <div class="position-absolute bottom-0 start-0 p-2 d-flex gap-1 flex-wrap" style="z-index: 2;">
+                    <span class="badge bg-primary small fw-normal px-2 py-1">Visual Identity</span>
+                  </div>
                   <div class="portfolio-overlay">
-                    <a href="projects-detail.html"
+                    <a href="projects-detail.html?id=4"
                       class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
                       <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-white"></iconify-icon>
                     </a>
                   </div>
                 </div>
                 <div class="portfolio-details d-flex flex-column gap-3">
-                  <h3 class="mb-0">Saudi RNA
-                  </h3>
-                  <div class="hstack gap-2">
-                    <span class="badge text-dark border">Visual Identity</span>
-                  </div>
+                  <h4 class="mb-0">Saudi RNA</h4>
                 </div>
               </div>
             </div>
-            <div class="item">
-              <div class="portfolio d-flex flex-column gap-6">
-                <div class="portfolio-img position-relative overflow-hidden">
-                  <img src="../assets/images/portfolio/portfolio-img-5.jpg" alt="" class="img-fluid">
-                  <div class="portfolio-overlay">
-                    <a href="projects-detail.html"
-                      class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
-                      <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-white"></iconify-icon>
-                    </a>
-                  </div>
-                </div>
-                <div class="portfolio-details d-flex flex-column gap-3">
-                  <h3 class="mb-0">Emaar Al-Sahra
-
-                  </h3>
-                  <div class="hstack gap-2">
-                    <span class="badge text-dark border">Digital Identity</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
             <div class="item">
               <div class="portfolio d-flex flex-column gap-6">
                 <div class="portfolio-img position-relative overflow-hidden">
                   <img src="../assets/images/portfolio/portfolio-img-6.jpg" alt="" class="img-fluid">
+                  <div class="position-absolute bottom-0 start-0 p-2 d-flex gap-1 flex-wrap" style="z-index: 2;">
+                    <span class="badge bg-primary small fw-normal px-2 py-1">Software</span>
+                  </div>
                   <div class="portfolio-overlay">
-                    <a href="projects-detail.html"
+                    <a href="projects-detail.html?id=5"
                       class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
                       <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-white"></iconify-icon>
                     </a>
                   </div>
                 </div>
                 <div class="portfolio-details d-flex flex-column gap-3">
-                  <h4 class="mb-0"> Ashbal Al-Fan Advertising Agency</h4>
-                  <div class="hstack gap-2">
-                    <span class="badge text-dark border"> Integrated Software Solutions </span>
+                  <h4 class="mb-0">Ashbal Al-Fan Advertising Agency</h4>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="portfolio d-flex flex-column gap-6">
+                <div class="portfolio-img position-relative overflow-hidden">
+                  <img src="../assets/images/portfolio/portfolio-img-7.jpg" alt="" class="img-fluid">
+                  <div class="position-absolute bottom-0 start-0 p-2 d-flex gap-1 flex-wrap" style="z-index: 2;">
+                    <span class="badge bg-primary small fw-normal px-2 py-1">Digital Identity</span>
                   </div>
+                  <div class="portfolio-overlay">
+                    <a href="projects-detail.html?id=6"
+                      class="position-absolute top-50 start-50 translate-middle bg-primary round-64 rounded-circle hstack justify-content-center">
+                      <iconify-icon icon="lucide:arrow-up-right" class="fs-8 text-white"></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+                <div class="portfolio-details d-flex flex-column gap-3">
+                  <h4 class="mb-0">Emaar Al-Sahra</h4>
                 </div>
               </div>
             </div>
@@ -573,26 +826,16 @@
         </div>
       </div>
     </section>
-    <style>
-      .owl-dots {
-        display: flex !important;
-        justify-content: center !important;
-        margin-top: 15px;
-      }
-    </style>
     <!--  Services Section -->
     <section class="services py-5 py-lg-11 py-xl-12 bg-dark" id="services">
       <div class="container">
-        <div class="d-flex flex-column gap-5 gap-xl-10">
+        <div class="d-flex flex-column gap-5 gap-xl-11">
           <div class="row gap-7 gap-xl-0">
             <div class="col-xl-4 col-xxl-4">
               <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
-                <span class="round-36 flex-shrink-0 text-primary rounded-circle bg-light-gray hstack 
-                justify-content-center fw-medium">05</span>
+                <span class="round-36 flex-shrink-0 text-primary rounded-circle bg-light-gray hstack justify-content-center fw-medium">04</span>
                 <hr class="border-line bg-white">
                 <span class="badge text-primary bg-white">Services</span>
-                
-
               </div>
             </div>
             <div class="col-xl-8 col-xxl-7">
@@ -608,7 +851,7 @@
               </div>
             </div>
           </div>
-    
+
           <!-- Services Tab -->
           <div class="services-tab">
             <div class="row gap-5 gap-xl-0">
@@ -616,22 +859,20 @@
               <div class="col-xl-4">
                 <div class="tab-content h-100" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
                   <div class="tab-pane active h-100" id="one" role="tabpanel" aria-labelledby="one-tab" tabindex="0">
-                    <img src="../assets/images/services/services-img-1.jpg" alt="services" class="img-fluid">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=750&fit=crop&q=80" alt="Integrated Digital Identity" class="img-fluid w-100 rounded-3" style="object-fit: cover; height: 320px;">
                   </div>
                   <div class="tab-pane h-100" id="two" role="tabpanel" aria-labelledby="two-tab" tabindex="0">
-                    <img src="../assets/images/services/services-img-2.jpg" alt="services" class="img-fluid">
+                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=750&fit=crop&q=80" alt="Brand Identity" class="img-fluid w-100 rounded-3" style="object-fit: cover; height: 320px;">
                   </div>
                   <div class="tab-pane h-100" id="three" role="tabpanel" aria-labelledby="three-tab" tabindex="0">
-                    <img src="../assets/images/services/services-img-3.jpg" alt="services" class="img-fluid">
+                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=750&fit=crop&q=80" alt="Mobile App Development" class="img-fluid w-100 rounded-3" style="object-fit: cover; height: 320px;">
                   </div>
                   <div class="tab-pane h-100" id="four" role="tabpanel" aria-labelledby="four-tab" tabindex="0">
-                    <img src="../assets/images/services/services-img-4.jpg" alt="services" class="img-fluid">
+                    <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&h=750&fit=crop&q=80" alt="Digital Strategy" class="img-fluid w-100 rounded-3" style="object-fit: cover; height: 320px;">
                   </div>
-
                 </div>
               </div>
-              
-    
+
               <!-- Tabs Content -->
               <div class="col-xl-8">
                 <div class="d-flex flex-column gap-5">
@@ -648,7 +889,7 @@
                           <p class="text-white text-opacity-70 mb-0">
                             A complete package that includes a professional website reflecting your brand, plus official emails under your domain, building trust with clients from the very first interaction.
                           </p>
-                          <a href="projects.html" class="btn" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" style="margin-top:20px;">
+                          <a href="projects.html" class="btn mt-20" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
                             <span class="btn-text">learn more</span>
                             <iconify-icon icon="lucide:arrow-up-right"
                               class="btn-icon bg-white text-primary round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm"></iconify-icon>
@@ -656,7 +897,7 @@
                         </div>
                       </div>
                     </li>
-    
+
                     <!-- Tab 2 -->
                     <li class="nav-item py-4 py-lg-8 border-top border-white border-opacity-10 d-flex align-items-center w-100" role="presentation">
                       <div class="row w-100 align-items-center gx-3">
@@ -669,7 +910,7 @@
                           <p class="text-white text-opacity-70 mb-0">
                             We design comprehensive brand identities tailored to your values and target audience, from logos to full marketing materials, ensuring your brand leaves a lasting impression.
                           </p>
-                          <a href="projects.html" class="btn" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" style="margin-top: 20px;">
+                          <a href="projects.html" class="btn mt-20" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
                             <span class="btn-text">learn more</span>
                             <iconify-icon icon="lucide:arrow-up-right"
                               class="btn-icon bg-white text-primary round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm"></iconify-icon>
@@ -677,7 +918,7 @@
                         </div>
                       </div>
                     </li>
-    
+
                     <!-- Tab 3 -->
                     <li class="nav-item py-4 py-lg-8 border-top border-white border-opacity-10 d-flex align-items-center w-100" role="presentation">
                       <div class="row w-100 align-items-center gx-3">
@@ -688,9 +929,9 @@
                         </div>
                         <div class="col-lg-6 col-xxl-7">
                           <p class="text-white text-opacity-70 mb-0">
-                            We turn your ideas into innovative mobile apps that meet your company’s needs and achieve your digital goals
+                            We turn your ideas into innovative mobile apps that meet your company's needs and achieve your digital goals
                           </p>
-                          <a href="projects.html" class="btn" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" style="margin-top: 20px;">
+                          <a href="projects.html" class="btn mt-20" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
                             <span class="btn-text">learn more</span>
                             <iconify-icon icon="lucide:arrow-up-right"
                               class="btn-icon bg-white text-primary round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm"></iconify-icon>
@@ -698,7 +939,28 @@
                         </div>
                       </div>
                     </li>
-    
+
+                    <!-- Tab 4 -->
+                    <li class="nav-item py-4 py-lg-8 border-top border-white border-opacity-10 d-flex align-items-center w-100" role="presentation">
+                      <div class="row w-100 align-items-center gx-3">
+                        <div class="col-lg-6 col-xxl-5">
+                          <button class="nav-link fs-10 fw-bold py-1 px-0 border-0 rounded-0 flex-shrink-0"
+                            id="four-tab" data-bs-toggle="tab" data-bs-target="#four" type="button" role="tab"
+                            aria-controls="four" aria-selected="false">Digital Strategy</button>
+                        </div>
+                        <div class="col-lg-6 col-xxl-7">
+                          <p class="text-white text-opacity-70 mb-0">
+                            Strategic planning and consulting to drive your digital transformation and achieve long-term business growth.
+                          </p>
+                          <a href="projects.html" class="btn mt-20" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                            <span class="btn-text">learn more</span>
+                            <iconify-icon icon="lucide:arrow-up-right"
+                              class="btn-icon bg-white text-primary round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm"></iconify-icon>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+
                   </ul>
                 </div>
               </div>
@@ -712,21 +974,34 @@
 <!-- additional services-->
 <section class="additional-services py-5 py-lg-11 py-xl-12 bg-white" id="additional-services">
   <div class="container">
-    <!-- العنوان الرئيسي -->
-    <div class="row justify-content-center mb-5" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-      <div class="col-xl-8 text-center">
-        <h2 class="display-5 fw-bold text-dark mb-3"> Additional Services</h2>
-        <p class="fs-5 text-dark">
-          <b>Expand Your Digital Advantage </b> <br>
-          We offer tailored services to strengthen your brand, enhance your presence, and drive real results.
-        </p>
+    <div class="d-flex flex-column gap-5 gap-xl-11">
+      <div class="row gap-7 gap-xl-0">
+        <div class="col-xl-4 col-xxl-4">
+          <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+            <span class="round-36 flex-shrink-0 text-white rounded-circle hstack justify-content-center fw-medium bg-dark">05</span>
+            <hr class="border-line">
+            <span class="badge text-white bg-dark">Additional</span>
+          </div>
+        </div>
+        <div class="col-xl-8 col-xxl-7">
+          <div class="row">
+            <div class="col-xxl-8">
+              <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                <h2 class="mb-0">Additional Services</h2>
+                <p class="fs-5 mb-0">
+                  <b>Expand Your Digital Advantage</b><br>
+                  We offer tailored services to strengthen your brand, enhance your presence, and drive real results.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <!-- كروت الخدمات -->
-    <div class="row row-cols-1 row-cols-md-2 g-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+    <!-- ÙƒØ±ÙˆØª Ø§Ù„Ø®Ø¯Ù…Ø§Øª -->
+    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
       
-      <!-- خدمة 1 -->
+      <!-- Ø®Ø¯Ù…Ø© 1 -->
       <div class="col">
         <div class="glass-card p-5 rounded-4 h-100 text-dark shadow-lg text-center">
           <i class="fas fa-globe fa-4x mb-4 d-block text-primary"></i>
@@ -734,7 +1009,7 @@
           <p>
             Secure your online identity with domain names tailored to your brand and region.
           </p>
-          <a href="projects.html" class="btn" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" style="margin-top: 20px;">
+          <a href="projects.html" class="btn mt-20" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
             <span class="btn-text">learn more</span>
             <iconify-icon icon="lucide:arrow-up-right"
               class="btn-icon bg-white text-primary round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm"></iconify-icon>
@@ -743,15 +1018,15 @@
   
       </div>
 
-      <!-- خدمة 2 -->
+      <!-- Ø®Ø¯Ù…Ø© 2 -->
       <div class="col">
         <div class="glass-card p-5 rounded-4 h-100 text-dark shadow-lg text-center">
-          <i class="fas fa-chart-line fa-4x mb-4 d-block text-primary"></i>
-          <h5 class="fw-bold mb-2">Website Analytics & SEO Optimization</h5>
+          <i class="fas fa-envelope-open-text fa-4x mb-4 d-block text-primary"></i>
+          <h5 class="fw-bold mb-2">Email Marketing & Automation</h5>
           <p>
-            Get insights into visitor behavior and improve your search engine rankings.
+            Build targeted campaigns and automate customer journeys to boost engagement and drive measurable conversions.
           </p>
-          <a href="projects.html" class="btn" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" style="margin-top: 20px;">
+          <a href="projects.html" class="btn mt-20" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
             <span class="btn-text">learn more</span>
             <iconify-icon icon="lucide:arrow-up-right"
               class="btn-icon bg-white text-primary round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm"></iconify-icon>
@@ -759,7 +1034,7 @@
         </div>
       </div>
 
-      <!-- خدمة 3 -->
+      <!-- Ø®Ø¯Ù…Ø© 3 -->
       <div class="col">
         <div class="glass-card p-5 rounded-4 h-100 text-dark shadow-lg text-center">
           <i class="fas fa-share-alt fa-4x mb-4 d-block text-primary"></i>
@@ -767,7 +1042,7 @@
           <p>
             Build engagement and reach your audience with smart strategies and consistent content.
           </p>
-          <a href="projects.html" class="btn" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" style="margin-top: 20px;">
+          <a href="projects.html" class="btn mt-20" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
             <span class="btn-text">learn more</span>
             <iconify-icon icon="lucide:arrow-up-right"
               class="btn-icon bg-white text-primary round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm"></iconify-icon>
@@ -775,15 +1050,15 @@
         </div>
       </div>
 
-      <!-- خدمة 4 -->
+      <!-- Ø®Ø¯Ù…Ø© 4 -->
       <div class="col">
         <div class="glass-card p-5 rounded-4 h-100 text-dark shadow-lg text-center">
           <i class="fas fa-pen-nib fa-4x mb-4 d-block text-primary"></i>
           <h5 class="fw-bold mb-2">Creative Content & Copywriting</h5>
           <p>
-            Compelling content tailored to your tone — from websites to marketing campaigns.
+            Compelling content tailored to your tone â€” from websites to marketing campaigns.
           </p>
-          <a href="projects.html" class="btn" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" style="margin-top: 20px;">
+          <a href="projects.html" class="btn mt-20" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
             <span class="btn-text">learn more</span>
             <iconify-icon icon="lucide:arrow-up-right"
               class="btn-icon bg-white text-primary round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm"></iconify-icon>
@@ -793,28 +1068,9 @@
 
     </div>
   </div>
+  </div>
 </section>
-<style>
-  .glass-card {
-  background: rgba(245, 245, 245, 0.8); /* رمادي فاتح شفاف */
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
-}
-
-.glass-card:hover {
-  background: rgba(255, 255, 255, 0.95);
-  transform: translateY(-5px);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
-}
-
-</style>
-
-
-  
- <!-- Digital Products Section -->
+ <!-- SaaS Products Section -->
 
  <section class="our-digital-products py-5 bg-light-gray" id="our-digital-products">
   <div class="container">
@@ -825,10 +1081,9 @@
         <div class="col-xl-4 col-xxl-4">
           <div class="d-flex align-items-center gap-7 py-2"
            data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
-            <span class="round-36 flex-shrink-0 text-white rounded-circle  
-            hstack justify-content-center fw-medium bg-dark ">05</span>
-            <hr class="border-line bg-white">
-            <span class="badge bg-dark ">Our Digital Products</span>
+<span class="round-36 flex-shrink-0 text-white rounded-circle hstack justify-content-center fw-medium bg-dark">06</span>
+             <hr class="border-line">
+             <span class="badge text-white bg-dark">SaaS Products</span>
             
           </div>
 
@@ -837,7 +1092,8 @@
           <div class="row">
             <div class="col-xxl-8">
               <div class="d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-                <h2 class="mb-0 text-dark">Digital Products</h2>
+                <h2 class="mb-0 text-dark">SaaS Products</h2>
+                <p class="fs-5 mb-0 mt-2">Cloud-based subscription solutions designed to streamline your business operations</p>
               </div>
             </div>
           </div>
@@ -847,14 +1103,13 @@
       <!-- Products Grid -->
       <div class="products-grid">
         <!-- Product 1 -->
-        <div class="product-card" style="background-image: url('../assets/images/services/services-img-1.jpg');">
+        <div class="product-card" style="background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80');">
           <div class="overlay"></div>
           <div class="product-content">
-            <i class="bi bi-building product-icon"></i>
+            <i class="bi bi-ui-checks-grid product-icon"></i>
             <h3 class="mb-3 text-white">iMenu</h3>
             <p class="fs-3">
-              Worker Housing | Field Offices | Guard Cabins<br>
-              Ready buildings – mobile or fixed – designed for immediate delivery and efficiently adapted to the requirements of various project sites.
+              A powerful system that gives you full control over your restaurant's menu. Add or remove items, update prices, or change images instantly. All updates reflect immediately with a shareable professional design.
             </p>
             <a href="https://imenu.airmenu.net/" class="btn mt-4" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
               <span class="btn-text">Learn more</span>
@@ -864,15 +1119,49 @@
         </div>
 
         <!-- Product 2 -->
-        <div class="product-card" style="background-image: url('../assets/images/services/services-img-2.jpg');">
+        <div class="product-card" style="background-image: url('https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=600&q=80');">
           <div class="overlay"></div>
           <div class="product-content">
             <i class="bi bi-person-badge product-icon"></i>
-            <h3 class="mb-3 text-white">iCard </h3 >
+            <h3 class="mb-3 text-white">iCard</h3>
             <p class="fs-3">
-              Your smart, secure, and convenient way to share information anytime, anywhere. Expand your network and discover new opportunities with just one tap.
+              Your smart, secure, and convenient way to share information anytime, anywhere. Share your info and discover new opportunities with just one tap.
             </p>
             <a href="https://icard.airmenu.net/" class="btn mt-4" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+              <span class="btn-text">Learn more</span>
+              <i class="bi bi-arrow-up-right btn-icon bg-white text-primary round-52 
+              rounded-circle hstack justify-content-center fs-7 shadow-sm"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Product 3 - iBlog -->
+        <div class="product-card" style="background-image: url('https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=600&q=80');">
+          <div class="overlay"></div>
+          <div class="product-content">
+            <i class="bi bi-journal-text product-icon"></i>
+            <h3 class="mb-3 text-white">iBlog</h3>
+            <p class="fs-3">
+              Your platform for sharing insights, stories, and expertise. Build your brand voice and engage your audience with powerful content.
+            </p>
+            <a href="https://iblog.airmenu.net/" class="btn mt-4" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+              <span class="btn-text">Learn more</span>
+              <i class="bi bi-arrow-up-right btn-icon bg-white text-primary round-52 
+              rounded-circle hstack justify-content-center fs-7 shadow-sm"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Product 4 - iProjects -->
+        <div class="product-card" style="background-image: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80');">
+          <div class="overlay"></div>
+          <div class="product-content">
+            <i class="bi bi-kanban product-icon"></i>
+            <h3 class="mb-3 text-white">iProjects</h3>
+            <p class="fs-3">
+              Streamline your project management with smart tools for planning, tracking, and delivering results on time and within budget.
+            </p>
+            <a href="https://iprojects.airmenu.net/" class="btn mt-4" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
               <span class="btn-text">Learn more</span>
               <i class="bi bi-arrow-up-right btn-icon bg-white text-primary round-52 
               rounded-circle hstack justify-content-center fs-7 shadow-sm"></i>
@@ -884,112 +1173,17 @@
     </div> 
   </div>
 </section>
- <style> 
-  .products-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
-  max-width: 1000px;
-  margin: auto;
-  padding: 0 15px;
-}
-
-.product-card {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 12px;
-  position: relative;
-  color: white;
-  overflow: hidden;
-  min-height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
-}
-
-.product-card:hover {
-  transform: translateY(-5px);
-  filter: brightness(1.1);
-}
-
-.product-card:hover .overlay {
-  background-color: rgba(0, 0, 0, 0.7); /* زيادة التعتيم عند hover */
-}
-
-/* Overlay Layer */
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* زوّدنا التعتيم */
-  z-index: 1;
-  transition: background-color 0.3s ease;
-}
-
-.product-content {
-  position: relative;
-  z-index: 2;
-  max-width: 90%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Icon */
-.product-icon {
-  font-size: 50px;
-  margin-bottom: 20px;
-  color: white;
-}
-
-/* Title */
-.product-card h3 {
-  font-size: 22px;
-  margin-bottom: 10px;
-  color: #fff;
-}
-
-/* Description */
-.product-card p {
-  font-size: 16px;
-  color: #e0e0e0;
-  line-height: 1.6;
-}
-
-@media (max-width: 576px) {
-  .products-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .product-card {
-    min-height: 350px;
-    padding: 15px;
-  }
-}
-
- </style>
-
       <!--  Why choose us Section -->
-      <section class="why-choose-us py-5 py-lg-11 py-xl-12">
+      <section id="why-choose-us" class="why-choose-us py-5 py-lg-11 py-xl-12">
         <div class="container">
           <div class="row justify-content-between gap-5 gap-xl-0">
             <div class="col-xl-3 col-xxl-3">
               <div class="d-flex flex-column gap-7">
                 <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100"
                  data-aos-duration="1000">
-                  <span class="round-36 flex-shrink-0 text-white rounded-circle  hstack justify-content-center 
-                  fw-medium bg-dark">06</span>
-                  <hr class="border-line bg-primary">
-                  <span class="badge bg-dark">Why choose us</span>
+                  <span class="round-36 flex-shrink-0 text-white rounded-circle hstack justify-content-center fw-medium bg-dark">07</span>
+                  <hr class="border-line">
+                  <span class="badge text-white bg-dark">Why choose us</span>
                 </div>
                 <h2 class="mb-5 text-dark" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
                    Why Choose US?</h2>
@@ -1027,11 +1221,11 @@
                           <p class="mb-0 text-white">Clients satisfaction</p>
                         </div>
                         <div class="hstack gap-6 pt-6">
-                          <img src="../assets/images/testimonial/hijab.avif" alt=""
-                            class="img-fluid rounded-circle overflow-hidden flex-shrink-0" width="64" height="64">
+<img src="../assets/images/testimonial/hijab.avif" alt="Amal Elsaher"
+             class="img-fluid rounded-circle overflow-hidden flex-shrink-0" width="64" height="64">
                           <div> 
-                            <h5 class="mb-0 text-white">Amal elsaher</h5>
-                            <p class="mb-0 text-white">Bank of egypt</p>
+                            <h5 class="mb-0 text-white">Amal Elsaher</h5>
+                            <p class="mb-0 text-white">Manarat Holding</p>
                           </div>
                         </div>
                       </div>
@@ -1093,8 +1287,8 @@
                  class="border rounded-circle round-490 d-block position-absolute top-0 start-50 translate-middle"></span>
          <div class="card-body d-flex flex-column justify-content-between">
                       <div>
-                        <h2 class="mb-0 text-dark"> +200</h2>
-                 <p class="mb-0 text-dark ">Businesses served worldwide
+                         <h2 class="mb-0 text-dark"> 350+</h2>
+                  <p class="mb-0 text-dark ">Happy clients served
                         </p>
                       </div>
                       <div class="d-flex flex-column gap-3  ">
@@ -1113,6 +1307,23 @@
                   </div>
                 </div>
               </div>
+              <!-- 4th row: Ongoing Support -->
+              <div class="row mt-5">
+                <div class="col-12">
+                  <div class="card bg-primary border-0" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                    <div class="card-body p-5 d-flex flex-column flex-md-row align-items-center justify-content-between gap-4">
+                      <div>
+                        <h4 class="text-white mb-2 fw-bold">Ongoing Support</h4>
+                        <p class="text-white text-opacity-75 mb-0 fs-5">Dedicated year-round technical support to ensure smooth and reliable operations.</p>
+                      </div>
+                      <div class="text-nowrap">
+                        <span class="text-white fw-bold fs-3">24/7</span>
+                        <span class="text-white text-opacity-75 ms-2">Support</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -1120,7 +1331,7 @@
       </section>
 
     <!--  Testimonial Section -->
-    <section class="testimonial py-5 py-lg-11 py-xl-12 bg-light-gray">
+    <section id="testimonials" class="testimonial py-5 py-lg-11 py-xl-12 bg-light-gray">
       <div class="container">
         <div class="d-flex flex-column gap-5 gap-xl-11">
     
@@ -1128,10 +1339,9 @@
           <div class="row gap-7 gap-xl-0">
             <div class="col-xl-4 col-xxl-4">
               <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
-                <span class="round-36 flex-shrink-0 text-white rounded-circle hstack 
-                justify-content-center fw-medium bg-dark">07</span>
-                <hr class="border-line bg-white">
-                <span class="badge text-white bg-dark ">After Sales Support</span>
+                <span class="round-36 flex-shrink-0 text-white rounded-circle hstack justify-content-center fw-medium bg-dark">08</span>
+                <hr class="border-line">
+                <span class="badge text-white bg-dark">After Sales Support</span>
               </div>
             </div>
             <div class="col-xl-8 col-xxl-7">
@@ -1148,17 +1358,7 @@
             </div>
           </div>
     
-<!-- Avatar Styling -->
-<style>
-  .avatar-circle {
-    width: 70px;
-    height: 70px;
-    object-fit: cover;
-    border-radius: 50%;
-  }
-</style>
-
-<!-- ROW يحتوي على الأعمدة -->
+<!-- ROW ÙŠØ­ØªÙˆÙŠ Ø¹Ù„Ù‰ Ø§Ù„Ø£Ø¹Ù…Ø¯Ø© -->
 <div class="row gap-5 gap-lg-0">
 
   <!-- Testimonial 1 (Secondary Card) -->
@@ -1167,7 +1367,7 @@
       <div class="card-body d-flex flex-column gap-5 justify-content-between text-dark bg-w">
         <div class="d-flex flex-column gap-3">
           <p class="mb-0 text-white">Hear from them</p>
-          <h4 class="mb-0 text-white ">“Air Menu gave us a complete solution for our website and email setup. It truly improved our customer communication and trust.”</h4>
+          <h4 class="mb-0 text-white ">â€œAir Menu gave us a complete solution for our website and email setup. It truly improved our customer communication and trust.â€</h4>
         </div>
         <div class="hstack gap-3 mt-3  ">
           <img src="../assets/images/testimonial/testimonial-2.jpg " alt="" class="avatar-circle ;" style="border-right-color: #143257;">
@@ -1179,7 +1379,7 @@
     </div>
   </div>
 
-  <!-- Testimonial 2 & 3 (كارتين فوق بعض داخل عمود) -->
+  <!-- Testimonial 2 & 3 (ÙƒØ§Ø±ØªÙŠÙ† ÙÙˆÙ‚ Ø¨Ø¹Ø¶ Ø¯Ø§Ø®Ù„ Ø¹Ù…ÙˆØ¯) -->
   <div class="col-lg-5 col-xxl-5 d-flex align-items-stretch text-dark">
     <div class="d-flex flex-column w-100 h-100" style="gap: 20px;">
 
@@ -1189,7 +1389,7 @@
         <div class="card-body d-flex flex-column justify-content-between bg-white">
           <div class="d-flex flex-column gap-3">
             <p class="mb-0 text-d">Hear from them</p>
-            <h4 class="mb-0 text-dark">“The support team was extremely responsive and helpful, even after setup.”</h4>
+            <h4 class="mb-0 text-dark">â€œThe support team was extremely responsive and helpful, even after setup.â€</h4>
           </div>
           <div class="hstack gap-3 mt-4">
             <img src="../assets/images/testimonial/testimonial-4.avif" alt="Mohammed" class="avatar-circle " style="
@@ -1209,12 +1409,13 @@ border-radius: 50%;
         <div class="card-body d-flex flex-column justify-content-between ">
           <div class="d-flex flex-column gap-3">
             <p class="mb-0 text-white">Hear from them</p>
-            <h4 class="mb-0 text-white">“Your creative content exceeded our marketing expectations. Brilliant work!” ⭐ 5.0</h4>
+            <h4 class="mb-0 text-white">â€œYour creative content exceeded our marketing expectations. Brilliant work!â€</h4>
           </div>
           <div class="hstack gap-3 mt-4">
-            <img src="../assets/images/testimonial/images.jpg" alt="Ahmed" class="avatar-circle">
+            <img src="../assets/images/testimonial/hijab.avif" alt="Amal Elsaher" class="avatar-circle">
             <div>
-              <h5 class="mb-1 fw-normal text-white">Ahmed Al Saeed</h5>
+              <h5 class="mb-1 fw-normal text-white">Amal Elsaher</h5>
+              <p class="mb-0 text-white-50 fs-small">Manarat Holding</p>
             </div>
           </div>
         </div>
@@ -1229,7 +1430,7 @@ border-radius: 50%;
       <div class="card-body d-flex flex-column gap-5 justify-content-between">
         <div class="d-flex flex-column gap-3">
           <p class="mb-0">Hear from them</p>
-          <h4 class="mb-0">“Thanks to Air Menu for designing our corporate identity. Elegant, professional, and exactly what we needed.”</h4>
+          <h4 class="mb-0">â€œThanks to Air Menu for designing our corporate identity. Elegant, professional, and exactly what we needed.â€</h4>
         </div>
         <div class="hstack gap-3 mt-3">
           <img src="../assets/images/testimonial/hijab.avif" alt="Noura" class="avatar-circle" style="border: 1px solid black;
@@ -1247,75 +1448,56 @@ border-radius: 50%;">
         
       </div> <!-- /container -->
     </section>
-    
-   
 
-    <section class="partners py-5 py-lg-11 py-xl-12">
-      <div class="container">
-          <div class="d-flex flex-column gap-8" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-            <p class="fs-5 mb-0 text-center text-dark">More than 320 trusted partners & clients</p>
-            <div class="marquee w-100 d-flex align-items-center overflow-hidden">
-              <div class="marquee-content">
-                <div class="marquee-tag"><img src="../assets/images/pricing/1.png" alt="partner"></div>
-                <div class="marquee-tag"><img src="../assets/images/pricing/2.png" alt="partner"></div>
-                <div class="marquee-tag"><img src="../assets/images/pricing/3.png" alt="partner"></div>
-                <div class="marquee-tag"><img src="../assets/images/pricing/4.png" alt="partner"></div>
-                <div class="marquee-tag"><img src="../assets/images/pricing/5.png" alt="partner"></div>
-                <div class="marquee-tag"><img src="../assets/images/pricing/6.png" alt="partner"></div>
-                <div class="marquee-tag"><img src="../assets/images/pricing/7.png" alt="partner"></div>
-                <div class="marquee-tag"><img src="../assets/images/pricing/8.png" alt="partner"></div>
-                <div class="marquee-tag"><img src="../assets/images/pricing/9.png" alt="partner"></div>
-                <div class="marquee-tag"><img src="../assets/images/pricing/10.png" alt="partner"></div>
-                <div class="marquee-tag"><img src="../assets/images/pricing/11.png" alt="partner"></div>
-                <div class="marquee-tag"><img src="../assets/images/pricing/12.png" alt="partner"></div>
-                <div class="marquee-tag"><img src="../assets/images/pricing/13.png" alt="partner"></div>
-                <div class="marquee-tag"><img src="../assets/images/pricing/14.png" alt="partner"></div>
-                <div class="marquee-tag"><img src="../assets/images/pricing/15.png" alt="partner"></div>
-                <div class="marquee-tag"><img src="../assets/images/pricing/16.png" alt="partner"></div>
-                <div class="marquee-tag"><img src="../assets/images/pricing/17.png" alt="partner"></div>
-                <div class="marquee-tag"><img src="../assets/images/pricing/18.png" alt="partner"></div>
-                <div class="marquee-tag"><img src="../assets/images/pricing/19.png" alt="partner"></div>
-                <div class="marquee-tag"><img src="../assets/images/pricing/20.png" alt="partner"></div>
-              </div>
-              <div class="marquee-content">
-                <div class="marquee-tag"><img src="../assets/images/pricing/1.png" alt="partner"></div>
-                <div class="marquee-tag"><img src="../assets/images/pricing/2.png" alt="partner"></div>
-                <div class="marquee-tag"><img src="../assets/images/pricing/3.png" alt="partner"></div>
-                <div class="marquee-tag"><img src="../assets/images/pricing/4.png" alt="partner"></div>
-                <div class="marquee-tag"><img src="../assets/images/pricing/5.png" alt="partner"></div>
-                <div class="marquee-tag"><img src="../assets/images/pricing/6.png" alt="partner"></div>
-                <div class="marquee-tag"><img src="../assets/images/pricing/7.png" alt="partner"></div>
-                <div class="marquee-tag"><img src="../assets/images/pricing/8.png" alt="partner"></div>
-                <div class="marquee-tag"><img src="../assets/images/pricing/9.png" alt="partner"></div>
-                <div class="marquee-tag"><img src="../assets/images/pricing/10.png" alt="partner"></div>
-                <div class="marquee-tag"><img src="../assets/images/pricing/11.png" alt="partner"></div>
-                <div class="marquee-tag"><img src="../assets/images/pricing/12.png" alt="partner"></div>
-                <div class="marquee-tag"><img src="../assets/images/pricing/13.png" alt="partner"></div>
-                <div class="marquee-tag"><img src="../assets/images/pricing/14.png" alt="partner"></div>
-                <div class="marquee-tag"><img src="../assets/images/pricing/15.png" alt="partner"></div>
-                <div class="marquee-tag"><img src="../assets/images/pricing/16.png" alt="partner"></div>
-                <div class="marquee-tag"><img src="../assets/images/pricing/17.png" alt="partner"></div>
-                <div class="marquee-tag"><img src="../assets/images/pricing/18.png" alt="partner"></div>
-                <div class="marquee-tag"><img src="../assets/images/pricing/19.png" alt="partner"></div>
-                <div class="marquee-tag"><img src="../assets/images/pricing/20.png" alt="partner"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-    </section>
+<section class="partners-wrap">
+  <div class="container">
+    <div class="text-center mb-4">
+      <span class="badge bg-dark bg-opacity-10 text-dark px-4 py-2 mb-3 fw-semibold">Our Network</span>
+      <h2 class="display-5 fw-bold mb-2 text-dark">More than <span class="text-primary" style="display:inline-block;animation:pulse-count 2s ease-in-out infinite">350</span> trusted partners & clients</h2>
+      <p class="text-muted fs-6 mb-0">Proudly serving businesses across Saudi Arabia and beyond</p>
+    </div>
+    <div class="partners-track">
+      <div class="partners-track-inner">
+        <span><img loading="lazy" src="../assets/images/pricing/2.png" alt="Client"></span>
+        <span><img loading="lazy" src="../assets/images/pricing/5.png" alt="Client"></span>
+        <span><img loading="lazy" src="../assets/images/pricing/6.png" alt="Client"></span>
+        <span><img loading="lazy" src="../assets/images/pricing/10.png" alt="Client"></span>
+        <span><img loading="lazy" src="../assets/images/pricing/13.png" alt="Client"></span>
+        <span><img loading="lazy" src="../assets/images/pricing/14.png" alt="Client"></span>
+        <span><img loading="lazy" src="../assets/images/pricing/15.png" alt="Client"></span>
+        <span><img loading="lazy" src="../assets/images/pricing/18.png" alt="Client"></span>
+        <span><img loading="lazy" src="../assets/images/pricing/20.png" alt="Client"></span>
+        <span><img loading="lazy" src="../assets/images/pricing/22.png" alt="Client"></span>
+        <span><img loading="lazy" src="../assets/images/pricing/seal-logo.png" alt="Client"></span>
+        <span><img loading="lazy" src="../assets/images/pricing/TAS-Logo.png" alt="Client"></span>
+        <span><img loading="lazy" src="../assets/images/pricing/2.png" alt="Client"></span>
+        <span><img loading="lazy" src="../assets/images/pricing/5.png" alt="Client"></span>
+        <span><img loading="lazy" src="../assets/images/pricing/6.png" alt="Client"></span>
+        <span><img loading="lazy" src="../assets/images/pricing/10.png" alt="Client"></span>
+        <span><img loading="lazy" src="../assets/images/pricing/13.png" alt="Client"></span>
+        <span><img loading="lazy" src="../assets/images/pricing/14.png" alt="Client"></span>
+        <span><img loading="lazy" src="../assets/images/pricing/15.png" alt="Client"></span>
+        <span><img loading="lazy" src="../assets/images/pricing/18.png" alt="Client"></span>
+        <span><img loading="lazy" src="../assets/images/pricing/20.png" alt="Client"></span>
+        <span><img loading="lazy" src="../assets/images/pricing/22.png" alt="Client"></span>
+        <span><img loading="lazy" src="../assets/images/pricing/seal-logo.png" alt="Client"></span>
+        <span><img loading="lazy" src="../assets/images/pricing/TAS-Logo.png" alt="Client"></span>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!--  FAQ Section -->
-    <section class="faq py-5 py-lg-11 py-xl-12">
+    <section id="faq" class="faq py-5 py-lg-11 py-xl-12">
       <div class="container">
         <div class="d-flex flex-column gap-5 gap-xl-11">
           <div class="row gap-7 gap-xl-0">
             <div class="col-xl-4 col-xxl-4">
               <div class="d-flex align-items-center gap-7 py-2  " data-aos="fade-right" data-aos-delay="100"
                 data-aos-duration="1000">
-                <span
-                  class="round-36 flex-shrink-0 text-white rounded-circle  hstack justify-content-center fw-medium bg-dark">08</span>
-                <hr class="border-line bg-white">
-                <span class="badge bg-dark">FAQs</span>
+                <span class="round-36 flex-shrink-0 text-white rounded-circle hstack justify-content-center fw-medium bg-dark">09</span>
+                <hr class="border-line">
+                <span class="badge text-white bg-dark">FAQs</span>
               </div>
             </div>
             <div class="col-xl-8 col-xxl-7">
@@ -1411,40 +1593,16 @@ border-radius: 50%;">
     
     </section>
 
-    <style>
-      /* شكل علامة + افتراضيًا */
-      .accordion-button::after {
-        content: '+';
-        font-weight: bold;
-        color: black;
-        font-size: 1.5rem;
-        transition: transform 0.3s ease;
-      }
-    
-      /* لما الأكوردين يتفتح (active)، تتغير لـ - واللون أبيض */
-      .accordion-button:not(.collapsed)::after {
-        content: '+';
-        color: white;
-      }
-    
-      /* شيل السهم الافتراضي الخاص بـ Bootstrap */
-      .accordion-button::after {
-        background-image: none !important;
-      }
-    </style>
-    
-
     <!--  Recent news Section -->
-    <section class="Recent-news bg-light-gray py-5 py-lg-11 py-xl-12">
+    <section id="resources" class="Recent-news bg-light-gray py-5 py-lg-11 py-xl-12">
       <div class="container">
         <div class="d-flex flex-column gap-5 gap-xl-11">
           <div class="row gap-7 gap-xl-0">
             <div class="col-xl-4 col-xxl-4">
               <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100"
               data-aos-duration="1000">
-              <span
-                  class="round-36 flex-shrink-0 text-white rounded-circle  hstack justify-content-center fw-medium text-white bg-dark">09</span>
-              <hr class="border-line bg-white">
+              <span class="round-36 flex-shrink-0 text-white rounded-circle hstack justify-content-center fw-medium bg-dark">10</span>
+              <hr class="border-line">
               <span class="badge text-white bg-dark">Resources</span>
             </div>
             </div>
@@ -1466,7 +1624,7 @@ border-radius: 50%;">
                 data-aos-duration="1000">
                 <a href="blog-detail.html"
                   class="resources-img resources-img-first position-relative overflow-hidden d-block">
-                  <img src="../assets/images/resources/resources-1.jpg" alt="resources" class="img-fluid">
+                  <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80" alt="resources" class="img-fluid">
                 </a>
                 <div class="resources-details">
                   <p class="mb-0 text-dark">Dec 24, 2025</p>
@@ -1478,7 +1636,7 @@ border-radius: 50%;">
               <div class="resources d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="200"
                 data-aos-duration="1000">
                 <a href="blog-detail.html" class="resources-img position-relative overflow-hidden d-block">
-                  <img src="../assets/images/resources/resources-2.jpg" alt="resources" class="img-fluid">
+                  <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=400&q=80" alt="resources" class="img-fluid">
                 </a>
                 <div class="resources-details">
                   <p class="mb-0 text-dark">Dec 24, 2025</p>
@@ -1490,7 +1648,7 @@ border-radius: 50%;">
               <div class="resources d-flex flex-column gap-6" data-aos="fade-up" data-aos-delay="300"
                 data-aos-duration="1000">
                 <a href="blog-detail.html" class="resources-img position-relative overflow-hidden d-block">
-                  <img src="../assets/images/resources/resources-3.jpg" alt="resources" class="img-fluid">
+                  <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&q=80" alt="resources" class="img-fluid">
                 </a>
                 <div class="resources-details">
                   <p class="mb-0 text-dark ">Dec 24, 2025</p>
@@ -1505,16 +1663,16 @@ border-radius: 50%;">
 
     <!--  Get in Touch Section -->
 
-<section class="get-in-touch py-5 py-lg-11 py-xl-12">
+<section id="contact" class="get-in-touch py-5 py-lg-11 py-xl-12">
   <div class="container">
-    <div class="d-flex flex-column gap-5 gap-xl-10">
+    <div class="d-flex flex-column gap-5 gap-xl-11">
 
-      <!-- عنوان القسم -->
+      <!-- Ø¹Ù†ÙˆØ§Ù† Ø§Ù„Ù‚Ø³Ù… -->
       <div class="row gap-7 gap-xl-0">
         <div class="col-xl-4 col-xxl-4">
           <div class="d-flex align-items-center gap-7 py-2" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
-            <span class="round-36 flex-shrink-0 text-white rounded-circle  hstack justify-content-center fw-mediumtext bg-dark">10</span>
-            <hr class="border-line bg-white">
+            <span class="round-36 flex-shrink-0 text-white rounded-circle hstack justify-content-center fw-medium bg-dark">11</span>
+            <hr class="border-line">
             <span class="badge text-white bg-dark">Contact us</span>
           </div>
         </div>
@@ -1525,50 +1683,53 @@ border-radius: 50%;">
         </div>
       </div>
 
-      <!-- المحتوى -->
+      <!-- Ø§Ù„Ù…Ø­ØªÙˆÙ‰ -->
       <div class="row justify-content-between gap-7 gap-xl-0">
 
-        <!-- اليسار: نص + معلومات التواصل -->
+        <!-- Ø§Ù„ÙŠØ³Ø§Ø±: Ù†Øµ + Ù…Ø¹Ù„ÙˆÙ…Ø§Øª Ø§Ù„ØªÙˆØ§ØµÙ„ -->
         <div class="col-xl-5">
           <p class="mb-2 fs-6 text-dark " data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000" style="font-weight: 600;">
             Looking for tailor-made digital solutions?
           </p>
           <p class="mb-4 fs-4 text-dark" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
-            Fill out the form and we’ll get in touch shortly.
+            Fill out the form and weâ€™ll get in touch shortly.
           </p>
 
-          <div class="d-flex flex-column gap-3 p-4 rounded-4 glass-effect" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000" style="font-size: 1rem;">
+          <div class="d-flex flex-column gap-3 p-4 rounded-4 glass-card" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000" style="font-size: 1rem;">
             <h4 class="mb-3 text-dark ">Direct Contact Information</h4>
             <p class="mb-1 d-flex align-items-center gap-2">
-              <span class="iconify" data-icon="bi:telephone-fill" data-inline="false" style="font-size: 1.2rem;"></span>
+              <iconify-icon icon="bi:telephone-fill" style="font-size: 1.2rem;"></iconify-icon>
               <strong>Phone:</strong>
               <a href="tel:+966500518950" class="text-decoration-none text-dark">+966 500 518 950</a>
             </p>
             <p class="mb-1 d-flex align-items-center gap-2">
-              <span class="iconify" data-icon="bi:envelope-fill" data-inline="false" style="font-size: 1.2rem;"></span>
+              <iconify-icon icon="bi:envelope-fill" style="font-size: 1.2rem;"></iconify-icon>
               <strong>Email:</strong>
               <a href="mailto:info@AirMenu.net" class="text-decoration-none">info@AirMenu.net</a>
             </p>
             <p class="mb-0 d-flex align-items-start gap-2 ">
-              <span class="iconify" data-icon="bi:clock-fill" data-inline="false" style=" font-size: 1.2rem; margin-top: 3px;"></span>
+              <iconify-icon icon="bi:clock-fill" style="font-size: 1.2rem; margin-top: 3px;"></iconify-icon>
               <div class="text-dark">
                 <strong>Working Hours:</strong><br>
-                Saturday – Thursday, 9 AM – 5 PM
+                Saturday â€“ Thursday, 9 AM â€“ 5 PM
               </div>
             </p>
           </div>
         </div>
 
-        <!-- اليمين: نموذج التواصل -->
+        <!-- Ø§Ù„ÙŠÙ…ÙŠÙ†: Ù†Ù…ÙˆØ°Ø¬ Ø§Ù„ØªÙˆØ§ØµÙ„ -->
      
         <div class="col-xl-7">
           <form
-            class="d-flex flex-column gap-8 p-4 rounded-4 glass-effect"
+            action="/api/contact"
+            method="POST"
+            novalidate
+            class="d-flex flex-column gap-8 p-4 rounded-4 glass-card"
             data-aos="fade-up"
             data-aos-delay="200"
             data-aos-duration="1000"
           >
-            <!-- الاسم + رقم الهاتف -->
+            <!-- Ø§Ù„Ø§Ø³Ù… + Ø±Ù‚Ù… Ø§Ù„Ù‡Ø§ØªÙ -->
             <div class="row">
               <div class="col-md-6 mb-3 mb-md-0">
                 <input
@@ -1590,7 +1751,7 @@ border-radius: 50%;">
               </div>
             </div>
         
-            <!-- البريد الإلكتروني + القائمة المنسدلة -->
+            <!-- Ø§Ù„Ø¨Ø±ÙŠØ¯ Ø§Ù„Ø¥Ù„ÙƒØªØ±ÙˆÙ†ÙŠ + Ø§Ù„Ù‚Ø§Ø¦Ù…Ø© Ø§Ù„Ù…Ù†Ø³Ø¯Ù„Ø© -->
             <div class="row">
               <div class="col-md-6 mb-3 mb-md-0">
                 <input
@@ -1615,7 +1776,7 @@ border-radius: 50%;">
               </div>
             </div>
         
-            <!-- الرسالة -->
+            <!-- Ø§Ù„Ø±Ø³Ø§Ù„Ø© -->
             <div>
               <textarea
                 class="form-control border-bottom border-dark bg-transparent text-secondary"
@@ -1626,18 +1787,48 @@ border-radius: 50%;">
               ></textarea>
             </div>
         
-            <!-- زر الإرسال -->
+            <!-- Ø²Ø± Ø§Ù„Ø¥Ø±Ø³Ø§Ù„ -->
             
-            <a href="mailto:info@AirMenu.net?subject=Message%20from%20Website&body=Hi%20AirMenu%2C%0A"
+            <button type="submit"
             class="btn w-100 justify-content-center d-flex align-items-center gap-2 bg-primary text-white custom-btn-mail"
             style="transition: 0.3s;">
            Submit message
-           <span class="btn-icon bg-white text-primary round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm icon-wrapper">
-             <iconify-icon icon="lucide:arrow-up-right"></iconify-icon>
-           </span>
-         </a>
-         
+            <span class="btn-icon bg-white text-primary round-52 rounded-circle hstack justify-content-center fs-7 shadow-sm icon-wrapper">
+              <iconify-icon icon="lucide:arrow-up-right"></iconify-icon>
+            </span>
+          </button>
+          
           </form>
+          <script>
+            (function() {
+              var form = document.querySelector('form[novalidate]');
+              if (form) {
+                form.addEventListener('submit', function(e) {
+                  var valid = true;
+                  var inputs = form.querySelectorAll('input[required], textarea[required], select[required]');
+                  for (var i = 0; i < inputs.length; i++) {
+                    var input = inputs[i];
+                    if (!input.value.trim()) {
+                      input.style.borderColor = '#dc3545';
+                      valid = false;
+                    } else {
+                      input.style.borderColor = '';
+                    }
+                    if (input.type === 'email' && input.value.trim()) {
+                      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value.trim())) {
+                        input.style.borderColor = '#dc3545';
+                        valid = false;
+                      }
+                    }
+                  }
+                  if (!valid) {
+                    e.preventDefault();
+                    alert('Please fill in all required fields correctly.');
+                  }
+                });
+              }
+            })();
+          </script>
         </div>
         
 
@@ -1645,212 +1836,129 @@ border-radius: 50%;">
     </div>
   </div>
 </section>
-<style>
-  .glass-effect {
-    background: rgba(255, 255, 255, 0.15);
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
-  }
+<footer class="footer position-relative overflow-hidden" style="background:linear-gradient(135deg,#0b1a2e 0%,#143257 40%,#1a3f6a 70%,#0d2440 100%);">
+  <!-- Decorative top gradient line -->
+  <div class="position-absolute top-0 start-0 w-100" style="height:5px;background:linear-gradient(90deg,#3b82f6,#06b6d4,#8b5cf6,#3b82f6);"></div>
+  <!-- Glow orbs -->
+  <div class="position-absolute" style="top:-100px;right:-60px;width:350px;height:350px;border-radius:50%;background:radial-gradient(circle,rgba(59,130,246,0.12),transparent 70%);pointer-events:none;"></div>
+  <div class="position-absolute" style="bottom:-80px;left:-50px;width:250px;height:250px;border-radius:50%;background:radial-gradient(circle,rgba(6,182,212,0.08),transparent 70%);pointer-events:none;"></div>
 
-  /* تحسين شكل الفورم */
-  input.form-control,
-  textarea.form-control {
-    border-radius: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
+  <div class="container position-relative" style="z-index:1;">
+    <div class="py-6 py-xl-9">
+      <div class="row gy-6">
 
-  /* لون النص داخل الحقول */
-  .form-control::placeholder {
-    color: #6c757d; /* لون ثانوي Bootstrap */
-    font-size: large;
-  }
-
-  /* تأثير hover و active للزر */
-  .custom-btn-mail {
-    background-color: #143257; /* لون الخط الرئيسي */
-    color: white;
-    border: 1px solid #143257;
-    transition: 0.3s;
-    border: radius 30px;* أو عطلها لو تحب */
-  }
-
-  .custom-btn-mail:hover,
-  .custom-btn-mail:focus,
-  .custom-btn-mail:active {
-    background-color: white !important;
-    color: #143257 !important;
-    border-color: #143257 !important;
-    cursor: pointer;
-    text-decoration: none; /* إزالة underline في حالة الرابط */
-  }
-
-  /* روابط التواصل */
-  a.text-decoration-none {
-    color: #143257;
-    transition: color 0.3s, text-decoration 0.3s;
-    font-weight: 600;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-
-  a.text-decoration-none:hover {
-    color: #143257;
-    text-decoration: underline;
-  }
-
-  /* خطوط عناوين النص */
-  .get-in-touch h2,
-  .get-in-touch h4 {
-    font-family: 'Segoe UI', Tahoma, Geneva}
-
-
- </style>
-
-
-<footer class="footer py-5 bg-dark py-lg-11 py-xl-12">
-  <div class="container">
-    <div class="row gy-6">
-      
-      <!-- About & Contact Info -->
-      <div class="col-xl-6 mb-8 mb-xl-5">
-        <div class="d-flex flex-column gap-4 pe-xl-4">
-          <div class="footer-info">
-            <img
-              src="../assets/images/logos/logo-white.svg"
-              style="width: 190px; margin-bottom: 30px;"
-              alt="air-menu-logo"
-            />
-            <p class="mb-3 text-white footer-paragraph" >
-              Take your business to new heights with Air Menu. We deliver cutting-edge digital
-              solutions that empower your brand and drive success.
+        <!-- Column 1: Brand -->
+        <div class="col-xl-4 col-lg-6">
+          <div class="d-flex flex-column gap-3">
+            <img src="../assets/images/logos/logo-white.svg" style="width:175px;" alt="air-menu-logo">
+            <p class="text-white-50 mb-0 lh-lg" style="font-size:1rem;max-width:360px;">
+              Take your business to new heights with Air Menu. We deliver cutting-edge digital solutions that empower your brand and drive success.
             </p>
+            <!-- Mini stats -->
+            <div class="d-flex gap-4 mt-2 pt-2">
+              <div><span class="text-white fw-bold fs-5">500+</span><br><span class="text-white-50 fs-small">Projects</span></div>
+              <div class="vr opacity-25"></div>
+              <div><span class="text-white fw-bold fs-5">350+</span><br><span class="text-white-50 fs-small">Clients</span></div>
+              <div class="vr opacity-25"></div>
+              <div><span class="text-white fw-bold fs-5">6+</span><br><span class="text-white-50 fs-small">Years</span></div>
+            </div>
           </div>
         </div>
+
+        <!-- Column 2: Services + Company -->
+        <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+          <h6 class="footer-heading">Services</h6>
+          <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+            <li><a href="index.html#services" class="footer-link"><i class="bi bi-chevron-right footer-arrow"></i> Digital Identity</a></li>
+            <li><a href="index.html#services" class="footer-link"><i class="bi bi-chevron-right footer-arrow"></i> Visual Branding</a></li>
+            <li><a href="index.html#services" class="footer-link"><i class="bi bi-chevron-right footer-arrow"></i> Mobile Apps</a></li>
+            <li><a href="index.html#services" class="footer-link"><i class="bi bi-chevron-right footer-arrow"></i> Company Profiles</a></li>
+            <li><a href="index.html#services" class="footer-link"><i class="bi bi-chevron-right footer-arrow"></i> SEO & Analytics</a></li>
+          </ul>
+          <h6 class="footer-heading mt-4">Company</h6>
+          <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+            <li><a href="about-us.html" class="footer-link"><i class="bi bi-chevron-right footer-arrow"></i> About Us</a></li>
+            <li><a href="projects.html" class="footer-link"><i class="bi bi-chevron-right footer-arrow"></i> Portfolio</a></li>
+            <li><a href="contact.html" class="footer-link"><i class="bi bi-chevron-right footer-arrow"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Products + Tools -->
+        <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+          <h6 class="footer-heading">SaaS Products</h6>
+          <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+            <li><a href="https://imenu.airmenu.net/" target="_blank" class="footer-link"><i class="bi bi-chevron-right footer-arrow"></i> iMenu</a></li>
+            <li><a href="https://icard.airmenu.net/" target="_blank" class="footer-link"><i class="bi bi-chevron-right footer-arrow"></i> iCard</a></li>
+            <li><a href="https://iblog.airmenu.net/" target="_blank" class="footer-link"><i class="bi bi-chevron-right footer-arrow"></i> iBlog</a></li>
+            <li><a href="https://iprojects.airmenu.net/" target="_blank" class="footer-link"><i class="bi bi-chevron-right footer-arrow"></i> iProjects</a></li>
+          </ul>
+          <h6 class="footer-heading mt-4">Tools</h6>
+          <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+            <li><a href="https://tinypix.airmenu.net/" target="_blank" class="footer-link"><i class="bi bi-chevron-right footer-arrow"></i> TinyPix</a></li>
+            <li><a href="https://leadshub.airmenu.net/" target="_blank" class="footer-link"><i class="bi bi-chevron-right footer-arrow"></i> LeadsHub</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact + Social -->
+        <div class="col-xl-4 col-lg-6">
+          <h6 class="footer-heading">Get in Touch</h6>
+          <ul class="list-unstyled d-flex flex-column gap-3 mb-4">
+            <li class="d-flex align-items-center gap-3">
+              <span class="footer-icon-wrap"><i class="bi bi-telephone-fill"></i></span>
+              <a href="tel:+966500518950" class="footer-link">+966 500 518 950</a>
+              <span class="text-white-50 fs-small">&nbsp;|&nbsp;</span>
+              <a href="https://wa.me/966500518950" target="_blank" class="footer-link"><i class="bi bi-whatsapp" style="color:#25D366;"></i></a>
+            </li>
+            <li class="d-flex align-items-center gap-3">
+              <span class="footer-icon-wrap"><i class="bi bi-envelope-fill"></i></span>
+              <a href="mailto:info@AirMenu.net" class="footer-link">info@AirMenu.net</a>
+            </li>
+            <li class="d-flex align-items-center gap-3">
+              <span class="footer-icon-wrap"><i class="bi bi-geo-alt-fill"></i></span>
+              <span class="text-white-50">Saudi Arabia</span>
+            </li>
+          </ul>
+
+          <h6 class="footer-heading">Follow Us</h6>
+          <div class="d-flex gap-2 flex-wrap">
+            <a href="https://www.instagram.com/GoAirMenu/" target="_blank" class="footer-social" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://x.com/goairmenu" target="_blank" class="footer-social" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.linkedin.com/in/GoAirMenu" target="_blank" class="footer-social" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
       </div>
-
-      <!-- Service & Product Links -->
-      <div class="col-md-4 col-xl-3 mb-8 mb-xl-0 order-2">
-        <h5 class="text-white mb-4">Service Links</h5>
-        <ul class="list-unstyled text-white fs-5 mb-5">
-          <li class="d-flex align-items-center gap-2 mb-3">
-            <i class="bi bi-person-badge text-primary"></i>
-            <a href="index.html#services" class="text-white text-decoration-none link-hover">Digital Identity Design</a>
-          </li>
-          <li class="d-flex align-items-center gap-2 mb-3">
-            <i class="bi bi-easel2-fill text-primary"></i>
-            <a href="index.html#services" class="text-white text-decoration-none link-hover">Visual Branding Design</a>
-          </li>
-          <li class="d-flex align-items-center gap-2 mb-3">
-            <i class="bi bi-file-earmark-text-fill text-primary"></i>
-            <a href="index.html#services" class="text-white text-decoration-none link-hover">Company Profiles</a>
-          </li>
-        </ul>
-
-        <h5 class="text-white mb-4">Product Links</h5>
-        <ul class="list-unstyled text-white fs-5">
-          <li class="d-flex align-items-center gap-2 mb-3">
-            <i class="bi bi-ui-checks-grid text-primary"></i>
-            <a href="https://imenu.airmenu.net/" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none link-hover">Digital Menu System</a>
-          </li>
-          <li class="d-flex align-items-center gap-2">
-            <i class="bi bi-credit-card-2-front-fill text-primary"></i>
-            <a href="https://icard.airmenu.net/" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none link-hover">iCard System</a>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Get in Touch (moved to last column for all screens) -->
-      <div class="col-md-4 col-xl-3 mb-8 mb-xl-0 order-4">
-        <h5 class="text-white mb-4">Get in Touch</h5>
-        <ul class="list-unstyled text-white fs-5">
-          <li class="d-flex align-items-center gap-2 mb-3">
-            <i class="bi bi-telephone-fill text-primary"></i>
-            <a href="tel:+966500518950" class="text-white text-decoration-none link-hover">+966 500 518 950</a>
-          </li>
-          <li class="d-flex align-items-center gap-2 mb-3">
-            <i class="bi bi-whatsapp text-primary"></i>
-            <a href="https://wa.me/966500518950" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none link-hover">+966 500 518 950</a>
-          </li>
-          <li class="d-flex align-items-center gap-2 mb-3">
-            <i class="bi bi-envelope-fill text-primary"></i>
-            <a href="mailto:info@AirMenu.net" class="text-white text-decoration-none link-hover">info@AirMenu.net</a>
-          </li>
-        </ul>
-
-        <h5 class="text-white mb-4" style="margin-top: 50px;">Follow Us</h5>
-        <ul class="footer-menu list-unstyled d-flex gap-3 mb-0 fs-4" style="margin-top: 50px;">
-          <li>
-            <a class="social-icon" href="https://www.facebook.com/GoAirMenu" aria-label="Facebook" target="_blank" rel="noopener noreferrer" rel="noopener">
-              <i class="bi bi-facebook"></i>
-            </a>
-          </li>
-          <li>
-            <a class="social-icon" href="https://www.instagram.com/GoAirMenu/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" rel="noopener">
-              <i class="bi bi-instagram"></i>
-            </a>
-          </li>
-          <li>
-            <a class="social-icon" href="https://x.com/goairmenu" target="_blank" rel="noopener noreferrer" aria-label="Twitter" rel="noopener">
-              <i class="bi bi-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a class="social-icon" href="https://www.tiktok.com/@goairmenu" target="_blank" rel="noopener noreferrer" aria-label="TikTok" rel="noopener">
-              <i class="bi bi-tiktok"></i>
-            </a>
-          </li>
-          <li>
-            <a class="social-icon" href="https://www.linkedin.com/in/GoAirMenu" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" rel="noopener">
-              <i class="bi bi-linkedin"></i>
-            </a>
-          </li>
-          <li>
-            <a class="social-icon" href="https://www.youtube.com/@GoAirMenu" target="_blank" rel="noopener noreferrer" aria-label="YouTube" rel="noopener">
-              <i class="bi bi-youtube"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-
     </div>
 
-    <!-- Copyright -->
-    <div class="row mt-5">
-      <div class="col-12 text-center text-md-center">
-        <p class="mb-0 text-white text-opacity-70 fs-6">© Air Menu 2026 – All Rights Reserved</p>
+    <!-- Bottom Bar -->
+    <div class="row">
+      <div class="col-12">
+        <hr class="opacity-10 my-0">
+        <div class="d-flex flex-column flex-md-row align-items-center justify-content-between py-3 gap-2">
+          <p class="mb-0 text-white-50" style="font-size:0.88rem;">&copy; Air Menu 2020â€“<span id="footer-year"></span> &mdash; All Rights Reserved</p>
+          <div class="d-flex gap-3">
+            <a href="privacy-policy.html" class="footer-link" style="font-size:0.82rem;"><i class="bi bi-box-arrow-up-right" style="font-size:0.6rem;margin-right:2px;"></i> Privacy Policy</a>
+            <a href="terms-and-conditions.html" class="footer-link" style="font-size:0.82rem;"><i class="bi bi-box-arrow-up-right" style="font-size:0.6rem;margin-right:2px;"></i> Terms of Service</a>
+            <a href="support.html" class="footer-link" style="font-size:0.82rem;"><i class="bi bi-box-arrow-up-right" style="font-size:0.6rem;margin-right:2px;"></i> Support</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-  <style>
-    /* Social Icons */
-    .social-icon i {
-      font-size: 1.6rem;
-      color: white;
-      transition: color 0.3s ease;
-    }
-    .social-icon:hover i,
-    .social-icon:focus i {
-      color: var(--bs-primary);
-    }
-    .social-icon {
-      text-decoration: none;
-      display: inline-block;
-    }
-
-    /* زيادة حجم الخط للباراجراف */
-    .footer-paragraph {
-      font-size: 1.1rem;
-      line-height: 1.6;
-    }
-  </style>
 </footer>
 
-  <button class="btn bg-primary p-2 round-52 rounded-circle hstack justify-content-center flex-shrink-0"
-    id="scrollToTopBtn">
-    <iconify-icon icon="lucide:arrow-up" class="fs-7 text-dark"></iconify-icon>
-  </button>
+  <div class="scroll-btn-wrapper">
+    <button class="btn bg-primary p-2 round-52 rounded-circle hstack justify-content-center flex-shrink-0"
+      id="scrollToTopBtn">
+      <iconify-icon id="scrollIcon" icon="lucide:arrow-up" class="fs-7 text-white"></iconify-icon>
+    </button>
+    <svg class="scroll-progress-ring" width="60" height="60" viewBox="0 0 60 60">
+      <circle cx="30" cy="30" r="26" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="3"/>
+      <circle id="scrollProgress" cx="30" cy="30" r="26" fill="none" stroke="#ffffff" stroke-width="3"
+        stroke-linecap="round" transform="rotate(-90 30 30)" stroke-dasharray="163.36" stroke-dashoffset="163.36"/>
+    </svg>
+  </div>
 
   <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
   <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -1862,6 +1970,7 @@ border-radius: 50%;">
   <!-- solar icons -->
 
   <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
   <script> document.querySelectorAll('.dropdown').forEach(function(dropdown) {
     dropdown.addEventListener('mouseenter', function () {
       let dropdownToggle = dropdown.querySelector('[data-bs-toggle="dropdown"]');

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap");
 /*!
  * Bootstrap  v5.3.6 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
@@ -87,7 +87,7 @@ body {
   --bs-dark-border-subtle: #1F2A2E;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
-  --bs-font-sans-serif: "Manrope", sans-serif;
+  --bs-font-sans-serif: "Bricolage Grotesque", "Bricolage Grotesque Fallback", sans-serif;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -167,7 +167,7 @@ body {
   --primary-color: #143257;
   --secondary-color: #205388;
 
-  --bs-body-font-family: "Manrope", sans-serif;
+  --bs-body-font-family: "Bricolage Grotesque", sans-serif;
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
@@ -16436,6 +16436,9 @@ textarea.form-control-lg {
 .header .logo .logo-dark {
   display: none;
 }
+.header .logo .logo-white {
+  display: block;
+}
 .header .header-menu .header-item .header-link .animate-spin {
   transition: 0.5s;
 }
@@ -16614,54 +16617,9 @@ textarea.form-control-lg {
   background-color: var(--bs-primary) !important;
 }
 
-.marquee {
-  overflow: hidden;
-  mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
-}
-
-.marquee-content {
-  display: flex;
-  animation: marquee 30s linear infinite;
-  will-change: transform;
-}
-
-.marquee-content:hover {
-  animation-play-state: paused;
-}
-
-.marquee-tag {
-  flex-shrink: 0;
-  width: 180px;
-  height: 90px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 20px;
-}
-
-.marquee-tag img {
-  max-width: 100%;
-  max-height: 65px;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  opacity: 0.65;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.marquee-tag:hover img {
-  opacity: 1;
-  transform: scale(1.05);
-}
-
-@keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+@keyframes pulse-count {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
 }
 .accordion-button::after {
   width: 44px;
@@ -16724,6 +16682,39 @@ textarea.form-control-lg {
 #scrollToTopBtn {
   transition: all 0.5s ease-in-out;
   display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.scroll-btn-wrapper {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-btn-wrapper #scrollToTopBtn {
+  position: static;
+  display: flex;
+}
+
+.scroll-progress-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  filter: drop-shadow(0 0 3px rgba(0,0,0,0.5)) drop-shadow(0 0 1px rgba(0,0,0,0.3));
+}
+
+.navbar-cta:hover {
+  background-color: #1a4a7a !important;
+  transform: scale(1.05);
 }
 
 
